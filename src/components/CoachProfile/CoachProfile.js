@@ -11,7 +11,7 @@ const CoachProfile = () => {
               <nav aria-label="breadcrumb" className="page-breadcrumb">
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
-                    <a href="index-2.html">Home</a>
+                    <Link to="/">Home</Link>
                   </li>
                   <li className="breadcrumb-item active" aria-current="page">
                     Doctor Profile
@@ -57,7 +57,9 @@ const CoachProfile = () => {
                       <i className="fas fa-star filled"></i>
                       <i className="fas fa-star filled"></i>
                       <i className="fas fa-star"></i>
-                      <span className="d-inline-block average-rating">(35)</span>
+                      <span className="d-inline-block average-rating">
+                        (35)
+                      </span>
                     </div>
                     <div className="clinic-details">
                       <p className="doc-location">
@@ -135,7 +137,10 @@ const CoachProfile = () => {
                     </ul>
                   </div>
                   <div className="doctor-action">
-                    <a href="javascript:void(0)" className="btn btn-white fav-btn">
+                    <a
+                      href="javascript:void(0)"
+                      className="btn btn-white fav-btn"
+                    >
                       <i className="far fa-bookmark"></i>
                     </a>
                     <a href="chat.html" className="btn btn-white msg-btn">
@@ -185,12 +190,20 @@ const CoachProfile = () => {
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#doc_locations" data-toggle="tab">
+                    <a
+                      className="nav-link"
+                      href="#doc_locations"
+                      data-toggle="tab"
+                    >
                       Locations
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#doc_reviews" data-toggle="tab">
+                    <a
+                      className="nav-link"
+                      href="#doc_reviews"
+                      data-toggle="tab"
+                    >
                       Reviews
                     </a>
                   </li>
@@ -339,7 +352,9 @@ const CoachProfile = () => {
                               <div className="experience-content">
                                 <div className="timeline-content">
                                   <p className="exp-year">July 2019</p>
-                                  <h4 className="exp-title">Humanitarian Award</h4>
+                                  <h4 className="exp-title">
+                                    Humanitarian Award
+                                  </h4>
                                   <p>
                                     Lorem ipsum dolor sit amet, consectetur
                                     adipiscing elit. Proin a ipsum tellus.
@@ -426,7 +441,11 @@ const CoachProfile = () => {
                 {/* <!-- /Overview Content --> */}
 
                 {/* <!-- Locations Content --> */}
-                <div role="tabpanel" id="doc_locations" className="tab-pane fade">
+                <div
+                  role="tabpanel"
+                  id="doc_locations"
+                  className="tab-pane fade"
+                >
                   {/* <!-- Location List --> */}
                   <div className="location-list">
                     <div className="row">
@@ -452,8 +471,8 @@ const CoachProfile = () => {
                           <div className="clinic-details mb-0">
                             <h5 className="clinic-direction">
                               {" "}
-                              <i className="fas fa-map-marker-alt"></i> 2286 Sundown
-                              Lane, Austin, Texas 78749, USA <br />
+                              <i className="fas fa-map-marker-alt"></i> 2286
+                              Sundown Lane, Austin, Texas 78749, USA <br />
                               <a href="javascript:void(0);">Get Directions</a>
                             </h5>
                             <ul>
@@ -668,7 +687,9 @@ const CoachProfile = () => {
                           />
                           <div className="comment-body">
                             <div className="meta-data">
-                              <span className="comment-author">Richard Wilson</span>
+                              <span className="comment-author">
+                                Richard Wilson
+                              </span>
                               <span className="comment-date">
                                 Reviewed 2 Days ago
                               </span>
@@ -681,8 +702,8 @@ const CoachProfile = () => {
                               </div>
                             </div>
                             <p className="recommended">
-                              <i className="far fa-thumbs-up"></i> I recommend the
-                              doctor
+                              <i className="far fa-thumbs-up"></i> I recommend
+                              the doctor
                             </p>
                             <p className="comment-content">
                               Lorem ipsum dolor sit amet, consectetur
@@ -772,7 +793,9 @@ const CoachProfile = () => {
                           />
                           <div className="comment-body">
                             <div className="meta-data">
-                              <span className="comment-author">Travis Trimble</span>
+                              <span className="comment-author">
+                                Travis Trimble
+                              </span>
                               <span className="comment-date">
                                 Reviewed 4 Days ago
                               </span>
@@ -950,43 +973,57 @@ const CoachProfile = () => {
                                     Open Now
                                   </span>
                                 </span>
-                                <span className="time">07:00 AM - 09:00 PM</span>
+                                <span className="time">
+                                  07:00 AM - 09:00 PM
+                                </span>
                               </div>
                             </div>
                             <div className="listing-day">
                               <div className="day">Monday</div>
                               <div className="time-items">
-                                <span className="time">07:00 AM - 09:00 PM</span>
+                                <span className="time">
+                                  07:00 AM - 09:00 PM
+                                </span>
                               </div>
                             </div>
                             <div className="listing-day">
                               <div className="day">Tuesday</div>
                               <div className="time-items">
-                                <span className="time">07:00 AM - 09:00 PM</span>
+                                <span className="time">
+                                  07:00 AM - 09:00 PM
+                                </span>
                               </div>
                             </div>
                             <div className="listing-day">
                               <div className="day">Wednesday</div>
                               <div className="time-items">
-                                <span className="time">07:00 AM - 09:00 PM</span>
+                                <span className="time">
+                                  07:00 AM - 09:00 PM
+                                </span>
                               </div>
                             </div>
                             <div className="listing-day">
                               <div className="day">Thursday</div>
                               <div className="time-items">
-                                <span className="time">07:00 AM - 09:00 PM</span>
+                                <span className="time">
+                                  07:00 AM - 09:00 PM
+                                </span>
                               </div>
                             </div>
                             <div className="listing-day">
                               <div className="day">Friday</div>
                               <div className="time-items">
-                                <span className="time">07:00 AM - 09:00 PM</span>
+                                <span className="time">
+                                  07:00 AM - 09:00 PM
+                                </span>
                               </div>
                             </div>
                             <div className="listing-day">
                               <div className="day">Saturday</div>
                               <div className="time-items">
-                                <span className="time">07:00 AM - 09:00 PM</span>
+                                <span className="time">
+                                  07:00 AM - 09:00 PM
+                                </span>
                               </div>
                             </div>
                             <div className="listing-day closed">

@@ -19,9 +19,9 @@ const Header = () => {
         </div>
         <div className="main-menu-wrapper">
           <div className="menu-header">
-            <a href="index-2.html" className="menu-logo">
+            <Link to="/" className="menu-logo">
               <img src="assets/images/Logo.svg" className="img-fluid" alt="logo" />
-            </a>
+            </Link>
             <a id="menu_close" className="menu-close" href="javascript:void(0);">
               <i className="fas fa-times"></i>
             </a>
@@ -54,7 +54,7 @@ const Header = () => {
                   <a href="chat-doctor.html">Chat</a>
                 </li>
                 <li>
-                  <a href="invoices.html">Invoices</a>
+                  <a href="/invoice">Invoice</a>
                 </li>
                 <li>
                   <a href="doctor-profile-settings.html">Profile Settings</a>
@@ -73,19 +73,19 @@ const Header = () => {
               </a>
               <ul className="submenu">
                 <li>
-                  <a href="search.html">Search Doctor</a>
+                  <Link to="search.html">Search Doctor</Link>
                 </li>
                 <li>
-                  <a href="doctor-profile.html">Doctor Profile</a>
+                  <a href="/coach-profile">Coach Profile</a>
                 </li>
                 <li>
-                  <a href="booking.html">Booking</a>
+                  <Link to="/book-appointment">Booking</Link>
+                </li>
+                <li> 
+                  <Link to="/checkout">Checkout</Link>
                 </li>
                 <li>
-                  <a href="checkout.html">Checkout</a>
-                </li>
-                <li>
-                  <a href="booking-success.html">Booking Success</a>
+                  <Link to="/booking-successful">Booking Success</Link>
                 </li>
                 <li>
                   <a href="patient-dashboard.html">Patient Dashboard</a>
@@ -93,9 +93,9 @@ const Header = () => {
                 <li>
                   <a href="favourites.html">Favourites</a>
                 </li>
-                <li>
+                {/* <li>
                   <a href="chat.html">Chat</a>
-                </li>
+                </li> */}
                 <li>
                   <a href="profile-settings.html">Profile Settings</a>
                 </li>
@@ -109,43 +109,41 @@ const Header = () => {
                 Pages <i className="fas fa-chevron-down"></i>
               </a>
               <ul className="submenu">
-                <li>
+                {/* <li>
                   <a href="voice-call.html">Voice Call</a>
                 </li>
                 <li>
                   <a href="video-call.html">Video Call</a>
-                </li>
+                </li> */}
                 <li>
                   <a href="search.html">Search Doctors</a>
                 </li>
                 <li>
-                  <a href="calendar">Calendar</a>
+                  <Link to="/calendar">Calendar</Link>
                 </li>
-                <li>
-                  <a href="components.html">Components</a>
-                </li>
+               
                 <li className="has-submenu">
                   <a href="invoices.html">Invoices</a>
                   <ul className="submenu">
                     <li>
-                      <a href="invoices.html">Invoices</a>
+                      <Link to="/invoice">Invoices</Link>
                     </li>
                     <li>
-                      <a href="invoice-view.html">Invoice View</a>
+                      <Link to="/invoices-view">Invoices View</Link>
                     </li>
                   </ul>
                 </li>
-                <li>
+                {/* <li>
                   <a href="blank-page.html">Starter Page</a>
+                </li> */}
+                <li>
+                  <Link to="/login">Login</Link>
                 </li>
                 <li>
-                  <a href="login.html">Login</a>
+                  <Link to="/register">Register</Link>
                 </li>
                 <li>
-                  <a href="register.html">Register</a>
-                </li>
-                <li>
-                  <a href="forgotpassword">Forgot Password</a>
+                  <Link to="/forgot-password">Forgot Password</Link>
                 </li>
               </ul>
             </li>

@@ -12,6 +12,7 @@ import RegisterPage from "../Pages/RegisterPage";
 import CalendarPage from "../Pages/CalendarPage";
 import ForgotPasswordPage from "../Pages/ForgotPasswordPage";
 import SearchCoachPage from "../Pages/SearchCoachPage";
+import InvoicePage from "../Pages/InvoicePage";
 const MyRouts = () => {
   return (
     <div>
@@ -29,6 +30,8 @@ const MyRouts = () => {
           <Route path="/invoices-view" element={<InvoicesViewPage />} />
           <Route path="/search-coach" element={<SearchCoachPage />} />
           
+          <Route path="/invoice" element={<InvoicePage />} />
+         
           <Route path="/*" element={<NotFoundPage />} />
         </Routes>
       </Router>

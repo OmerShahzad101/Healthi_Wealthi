@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Checkout = () => {
   return (
@@ -11,7 +12,7 @@ const Checkout = () => {
               <nav aria-label="breadcrumb" className="page-breadcrumb">
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
-                    <a href="index-2.html">Home</a>
+                    <Link to="/">Home</Link>
                   </li>
                   <li className="breadcrumb-item active" aria-current="page">
                     Checkout
@@ -164,7 +165,6 @@ const Checkout = () => {
                         <button
                           type="submit"
                           className="btn btn-primary submit-btn"
-                          
                         >
                           Confirm and Pay
                         </button>
@@ -202,7 +202,9 @@ const Checkout = () => {
                         <i className="fas fa-star filled"></i>
                         <i className="fas fa-star filled"></i>
                         <i className="fas fa-star"></i>
-                        <span className="d-inline-block average-rating">35</span>
+                        <span className="d-inline-block average-rating">
+                          35
+                        </span>
                       </div>
                       <div className="clinic-details">
                         <p className="doc-location">
