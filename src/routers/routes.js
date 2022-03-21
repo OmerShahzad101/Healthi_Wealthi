@@ -21,7 +21,7 @@ const MyRouts = () => {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/calendar" element={<CalendarPage />} />
-          <Route path="/forgotpassword" element={<ForgotPasswordPage />} />
+          <Route path="/forgot-password" element={<ForgotPasswordPage />} />
           <Route path="/coach-profile" element={<CoachProfilePage />} />
           <Route path="/book-appointment" element={<BookAppointmentPage />} />
           <Route path="/checkout" element={<CheckoutPage />} />
