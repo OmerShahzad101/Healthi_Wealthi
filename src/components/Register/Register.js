@@ -12,14 +12,14 @@ const Register = () => {
                   <img
                     src="assets/img/login-banner.png"
                     className="img-fluid"
-                    alt="Doccure Register"
+                    alt="Register"
                   />
                 </div>
                 <div className="col-md-12 col-lg-6 login-right">
                   <div className="login-header">
                     <h3>
                       Client Register{" "}
-                      <Link href="/register">Are you a Couch?</Link>
+                      <Link to="/register">Are you a Couch?</Link>
                     </h3>
                   </div>
 
@@ -40,7 +40,7 @@ const Register = () => {
                       <label className="focus-label">Create Password</label>
                     </div>
                     <div className="text-right">
-                      <a className="forgot-link" href="login.html">
+                      <a className="forgot-link" href="/login">
                         Already have an account?
                       </a>
                     </div>

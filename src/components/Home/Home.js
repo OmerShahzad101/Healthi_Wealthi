@@ -7,10 +7,9 @@ const Home = () => {
       <div className="container-fluid">
         <div className="banner-wrapper">
           <div className="banner-header text-center">
-            <h1>Search Couch, Make an Appointment</h1>
+            <h1>Search Coach, Make an Appointment</h1>
             <p>
-              Discover the best Couch, clinic & hospital the city nearest to
-              you.
+              Discover the best Couch nearest toyou.
             </p>
           </div>
 
@@ -29,9 +28,9 @@ const Home = () => {
                 <input
                   type="text"
                   className="form-control"
-                  placeholder="Search Doctors, Clinics, Hospitals, Diseases Etc"
+                  placeholder="Search Coach"
                 />
-                <span className="form-text">Ex : Dental or Sugar Check up etc</span>
+                {/* <span className="form-text">Ex : Dental or Sugar Check up etc</span> */}
               </div>
               <button type="submit" className="btn btn-primary search-btn">
                 <i className="fas fa-search"></i> <span>Search</span>

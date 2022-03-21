@@ -31,7 +31,7 @@ const ForgotPassword = () => {
                         <label className="focus-label">Email</label>
                       </div>
                       <div className="text-right">
-                        <Link className="forgot-link" to="login">
+                        <Link className="forgot-link" to="/login">
                           Remember your password?
                         </Link>
                       </div>

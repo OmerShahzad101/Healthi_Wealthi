@@ -14,7 +14,7 @@ const CoachListSlider = () => {
         <div class="row">
           <div class="col-lg-4">
             <div class="section-header ">
-              <h2>Book Our Doctor</h2>
+              <h2>Book Our Coach</h2>
               <p>Lorem Ipsum is simply dummy text </p>
             </div>
             <div class="about-content">

@@ -14,15 +14,27 @@ const Header = () => {
             </span>
           </a>
           <Link to="/" className="navbar-brand logo">
-            <img src="assets/images/Logo.svg" className="img-fluid" alt="Logo" />
+            <img
+              src="assets/images/Logo.svg"
+              className="img-fluid"
+              alt="Logo"
+            />
           </Link>
         </div>
         <div className="main-menu-wrapper">
           <div className="menu-header">
             <Link to="/" className="menu-logo">
-              <img src="assets/images/Logo.svg" className="img-fluid" alt="logo" />
+              <img
+                src="assets/images/Logo.svg"
+                className="img-fluid"
+                alt="logo"
+              />
             </Link>
-            <a id="menu_close" className="menu-close" href="javascript:void(0);">
+            <a
+              id="menu_close"
+              className="menu-close"
+              href="javascript:void(0);"
+            >
               <i className="fas fa-times"></i>
             </a>
           </div>
@@ -32,14 +44,14 @@ const Header = () => {
             </li>
             <li className="has-submenu">
               <a href="#">
-                Doctors <i className="fas fa-chevron-down"></i>
+                Coach <i className="fas fa-chevron-down"></i>
               </a>
               <ul className="submenu">
                 <li>
-                  <a href="doctor-dashboard.html">Doctor Dashboard</a>
+                  <Link to="/coach-dashboard">Coach Dashboard</Link>
                 </li>
                 <li>
-                  <a href="appointments.html">Appointments</a>
+                  <Link to="appointments">Appointments</Link>
                 </li>
                 <li>
                   <a href="schedule-timings.html">Schedule Timing</a>
@@ -54,7 +66,7 @@ const Header = () => {
                   <a href="chat-doctor.html">Chat</a>
                 </li>
                 <li>
-                  <a href="/invoice">Invoice</a>
+                  <Link to="/invoice">Invoice</Link>
                 </li>
                 <li>
                   <a href="doctor-profile-settings.html">Profile Settings</a>
@@ -73,7 +85,7 @@ const Header = () => {
               </a>
               <ul className="submenu">
                 <li>
-                  <Link to="search.html">Search Doctor</Link>
+                  <Link to="/search-coach">Search Coach</Link>
                 </li>
                 <li>
                   <a href="/coach-profile">Coach Profile</a>
@@ -81,7 +93,7 @@ const Header = () => {
                 <li>
                   <Link to="/book-appointment">Booking</Link>
                 </li>
-                <li> 
+                <li>
                   <Link to="/checkout">Checkout</Link>
                 </li>
                 <li>
@@ -116,12 +128,12 @@ const Header = () => {
                   <a href="video-call.html">Video Call</a>
                 </li> */}
                 <li>
-                  <a href="search.html">Search Doctors</a>
+                  <Link to="/search-coach">Search Coach</Link>
                 </li>
                 <li>
                   <Link to="/calendar">Calendar</Link>
                 </li>
-               
+
                 <li className="has-submenu">
                   <a href="invoices.html">Invoices</a>
                   <ul className="submenu">

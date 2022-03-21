@@ -36,7 +36,7 @@ const Login = () => {
                         <label className="focus-label">Password</label>
                       </div>
                       <div className="text-right">
-                        <Link className="forgot-link" to="forgot-password">
+                        <Link className="forgot-link" to="/forgot-password">
                           Forgot Password ?
                         </Link>
                       </div>

@@ -53,12 +53,12 @@ const Footer = () => {
 
             <div className="col-lg-3 col-md-6">
               <div className="footer-widget footer-menu">
-                <h2 className="footer-title">For Patients</h2>
+                <h2 className="footer-title">For Client</h2>
                 <ul>
                   <li>
                     <a href="search.html">
                       <i className="fas fa-angle-double-right"></i> Search for
-                      Doctors
+                      Coach
                     </a>
                   </li>
                   <li>
@@ -88,7 +88,7 @@ const Footer = () => {
 
             <div className="col-lg-3 col-md-6">
               <div className="footer-widget footer-menu">
-                <h2 className="footer-title">For Doctors</h2>
+                <h2 className="footer-title">For Coach</h2>
                 <ul>
                   <li>
                     <a href="appointments.html">
@@ -113,7 +113,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a href="doctor-dashboard.html">
-                      <i className="fas fa-angle-double-right"></i> Doctor
+                      <i className="fas fa-angle-double-right"></i> Coach
                       Dashboard
                     </a>
                   </li>
