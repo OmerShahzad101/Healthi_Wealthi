@@ -11,6 +11,7 @@ import NotFoundPage from "../Pages/NotFoundPage";
 import RegisterPage from "../Pages/RegisterPage";
 import CalendarPage from "../Pages/CalendarPage";
 import ForgotPasswordPage from "../Pages/ForgotPasswordPage";
+import SearchCoachPage from "../Pages/SearchCoachPage";
 const MyRouts = () => {
   return (
     <div>
@@ -26,6 +27,8 @@ const MyRouts = () => {
           <Route path="/checkout" element={<CheckoutPage />} />
           <Route path="/booking-successful" element={<BookingSuccessfulPage />} />
           <Route path="/invoices-view" element={<InvoicesViewPage />} />
+          <Route path="/search-coach" element={<SearchCoachPage />} />
+          
           <Route path="/*" element={<NotFoundPage />} />
         </Routes>
       </Router>
