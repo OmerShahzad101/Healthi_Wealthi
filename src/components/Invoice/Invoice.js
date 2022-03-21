@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Invoice = () => {
   return (
@@ -11,7 +12,7 @@ const Invoice = () => {
               <nav aria-label="breadcrumb" class="page-breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item">
-                    <a href="index-2.html">Home</a>
+                    <Link to="/">Home</Link>
                   </li>
                   <li class="breadcrumb-item active" aria-current="page">
                     Invoice View

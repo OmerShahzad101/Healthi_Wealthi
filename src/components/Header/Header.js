@@ -54,7 +54,7 @@ const Header = () => {
                   <a href="chat-doctor.html">Chat</a>
                 </li>
                 <li>
-                  <a href="invoice">Invoice</a>
+                  <a href="/invoice">Invoice</a>
                 </li>
                 <li>
                   <a href="doctor-profile-settings.html">Profile Settings</a>
@@ -119,17 +119,17 @@ const Header = () => {
                   <a href="search.html">Search Doctors</a>
                 </li>
                 <li>
-                  <Link to="calendar">Calendar</Link>
+                  <Link to="/calendar">Calendar</Link>
                 </li>
                
                 <li className="has-submenu">
                   <a href="invoices.html">Invoices</a>
                   <ul className="submenu">
                     <li>
-                      <Link to="invoice">Invoices</Link>
+                      <Link to="/invoice">Invoices</Link>
                     </li>
                     <li>
-                      <Link to="invoices-view">Invoices View</Link>
+                      <Link to="/invoices-view">Invoices View</Link>
                     </li>
                   </ul>
                 </li>

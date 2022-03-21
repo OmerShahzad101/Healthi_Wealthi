@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const Register = () => {
   return (
     <div className="content">
@@ -18,7 +19,7 @@ const Register = () => {
                   <div className="login-header">
                     <h3>
                       Client Register{" "}
-                      <a href="doctor-register.html">Are you a Couch?</a>
+                      <Link href="/register">Are you a Couch?</Link>
                     </h3>
                   </div>
 
@@ -32,7 +33,10 @@ const Register = () => {
                       <label className="focus-label">Mobile Number</label>
                     </div>
                     <div className="form-group form-focus">
-                      <input type="password" className="form-control floating" />
+                      <input
+                        type="password"
+                        className="form-control floating"
+                      />
                       <label className="focus-label">Create Password</label>
                     </div>
                     <div className="text-right">
@@ -72,4 +76,4 @@ const Register = () => {
     </div>
   );
 };
-export default Register
+export default Register;
