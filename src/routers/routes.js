@@ -29,9 +29,7 @@ const MyRouts = () => {
           <Route path="/booking-successful" element={<BookingSuccessfulPage />} />
           <Route path="/invoices-view" element={<InvoicesViewPage />} />
           <Route path="/search-coach" element={<SearchCoachPage />} />
-          
           <Route path="/invoice" element={<InvoicePage />} />
-         
           <Route path="/*" element={<NotFoundPage />} />
         </Routes>
       </Router>
