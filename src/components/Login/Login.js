@@ -32,9 +32,10 @@ const Login = () => {
                       <label className="focus-label">Password</label>
                     </div>
                     <div className="text-right">
-                      <a className="forgot-link" href="forgot-password.html">
-                        Forgot Password ?
-                      </a>
+                      <Link to="/forgotpassword">
+                        Forgot Password ?</Link>
+
+                    
                     </div>
                     <button
                       className="btn btn-primary btn-block btn-lg login-btn"
