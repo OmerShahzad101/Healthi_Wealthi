@@ -26,7 +26,6 @@ const MyRouts = () => {
           <Route path="/checkout" element={<CheckoutPage />} />
           <Route path="/booking-successful" element={<BookingSuccessfulPage />} />
           <Route path="/invoices-view" element={<InvoicesViewPage />} />
-         
           <Route path="/*" element={<NotFoundPage />} />
         </Routes>
       </Router>
