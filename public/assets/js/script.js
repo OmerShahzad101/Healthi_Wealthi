@@ -1,8 +1,3 @@
-/*
-Author       : Dreamguys
-Template Name: Doccure - Bootstrap Template
-Version      : 1.0
-*/
 
 (function($) {
     "use strict";
@@ -221,44 +216,44 @@ Version      : 1.0
 	
 	// Slick Slider
 	
-	if($('.specialities-slider').length > 0) {
-		$('.specialities-slider').slick({
-			dots: true,
-			autoplay:false,
-			infinite: true,
-			variableWidth: true,
-			prevArrow: false,
-			nextArrow: false
-		});
-	}
+	// if($('.specialities-slider').length > 0) {
+	// 	$('.specialities-slider').slick({
+	// 		dots: true,
+	// 		autoplay:false,
+	// 		infinite: true,
+	// 		variableWidth: true,
+	// 		prevArrow: false,
+	// 		nextArrow: false
+	// 	});
+	// }
 	
-	if($('.doctor-slider').length > 0) {
-		$('.doctor-slider').slick({
-			dots: false,
-			autoplay:false,
-			infinite: true,
-			variableWidth: true,
-		});
-	}
-	if($('.features-slider').length > 0) {
-		$('.features-slider').slick({
-			dots: true,
-			infinite: true,
-			centerMode: true,
-			slidesToShow: 3,
-			speed: 500,
-			variableWidth: true,
-			arrows: false,
-			autoplay:false,
-			responsive: [{
-				  breakpoint: 992,
-				  settings: {
-					slidesToShow: 1
-				  }
+	// if($('.doctor-slider').length > 0) {
+	// 	$('.doctor-slider').slick({
+	// 		dots: false,
+	// 		autoplay:false,
+	// 		infinite: true,
+	// 		variableWidth: true,
+	// 	});
+	// }
+	// if($('.features-slider').length > 0) {
+	// 	$('.features-slider').slick({
+	// 		dots: true,
+	// 		infinite: true,
+	// 		centerMode: true,
+	// 		slidesToShow: 3,
+	// 		speed: 500,
+	// 		variableWidth: true,
+	// 		arrows: false,
+	// 		autoplay:false,
+	// 		responsive: [{
+	// 			  breakpoint: 992,
+	// 			  settings: {
+	// 				slidesToShow: 1
+	// 			  }
 
-			}]
-		});
-	}
+	// 		}]
+	// 	});
+	// }
 	
 	// Date Time Picker
 	
