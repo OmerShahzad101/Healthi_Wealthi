@@ -19,9 +19,9 @@ const Header = () => {
         </div>
         <div className="main-menu-wrapper">
           <div className="menu-header">
-            <a href="index-2.html" className="menu-logo">
+            <Link to="/" className="menu-logo">
               <img src="assets/images/Logo.svg" className="img-fluid" alt="logo" />
-            </a>
+            </Link>
             <a id="menu_close" className="menu-close" href="javascript:void(0);">
               <i className="fas fa-times"></i>
             </a>
@@ -79,10 +79,10 @@ const Header = () => {
                   <a href="doctor-profile.html">Doctor Profile</a>
                 </li>
                 <li>
-                  <a href="booking.html">Booking</a>
+                  <Link to="/booking">Booking</Link>
                 </li>
                 <li>
-                  <a href="checkout.html">Checkout</a>
+                  <Link to="checkout">Checkout</Link>
                 </li>
                 <li>
                   <a href="booking-success.html">Booking Success</a>
@@ -139,13 +139,13 @@ const Header = () => {
                   <a href="blank-page.html">Starter Page</a>
                 </li>
                 <li>
-                  <a href="login.html">Login</a>
+                  <Link to="/login">Login</Link>
                 </li>
                 <li>
-                  <a href="register.html">Register</a>
+                  <Link to="/register">Register</Link>
                 </li>
                 <li>
-                  <a href="forgotpassword">Forgot Password</a>
+                  <Link to="/forgot-password">Forgot Password</Link>
                 </li>
               </ul>
             </li>
