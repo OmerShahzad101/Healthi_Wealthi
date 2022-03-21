@@ -42,7 +42,7 @@ const BookingSuccessful = () => {
                       <br /> on <strong>12 Nov 2019 5:00PM to 6:00PM</strong>
                     </p>
                     <Link
-                      to="invoice-view"
+                      to="/invoice"
                       className="btn btn-primary view-inv-btn"
                     >
                       View Invoice
