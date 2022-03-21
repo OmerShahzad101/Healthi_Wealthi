@@ -1,39 +1,40 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header class="header">
-      <nav class="navbar navbar-expand-lg header-nav">
-        <div class="navbar-header">
+    <header className="header">
+      <nav className="navbar navbar-expand-lg header-nav">
+        <div className="navbar-header">
           <a id="mobile_btn" href="javascript:void(0);">
-            <span class="bar-icon">
+            <span className="bar-icon">
               <span></span>
               <span></span>
               <span></span>
             </span>
           </a>
-          <a href="index-2.html" class="navbar-brand logo">
-            <img src="assets/images/Logo.svg" class="img-fluid" alt="Logo" />
-          </a>
+          <Link to="/" className="navbar-brand logo">
+            <img src="assets/images/Logo.svg" className="img-fluid" alt="Logo" />
+          </Link>
         </div>
-        <div class="main-menu-wrapper">
-          <div class="menu-header">
-            <a href="index-2.html" class="menu-logo">
-              <img src="assets/images/Logo.svg" class="img-fluid" alt="logo" />
+        <div className="main-menu-wrapper">
+          <div className="menu-header">
+            <a href="index-2.html" className="menu-logo">
+              <img src="assets/images/Logo.svg" className="img-fluid" alt="logo" />
             </a>
-            <a id="menu_close" class="menu-close" href="javascript:void(0);">
-              <i class="fas fa-times"></i>
+            <a id="menu_close" className="menu-close" href="javascript:void(0);">
+              <i className="fas fa-times"></i>
             </a>
           </div>
-          <ul class="main-nav">
-            <li class="active">
-              <a href="index-2.html">Home</a>
+          <ul className="main-nav">
+            <li className="active">
+              <Link to="/">Home</Link>
             </li>
-            <li class="has-submenu">
+            <li className="has-submenu">
               <a href="#">
-                Doctors <i class="fas fa-chevron-down"></i>
+                Doctors <i className="fas fa-chevron-down"></i>
               </a>
-              <ul class="submenu">
+              <ul className="submenu">
                 <li>
                   <a href="doctor-dashboard.html">Doctor Dashboard</a>
                 </li>
@@ -66,11 +67,11 @@ const Header = () => {
                 </li>
               </ul>
             </li>
-            <li class="has-submenu">
+            <li className="has-submenu">
               <a href="#">
-                Patients <i class="fas fa-chevron-down"></i>
+                Patients <i className="fas fa-chevron-down"></i>
               </a>
-              <ul class="submenu">
+              <ul className="submenu">
                 <li>
                   <a href="search.html">Search Doctor</a>
                 </li>
@@ -103,11 +104,11 @@ const Header = () => {
                 </li>
               </ul>
             </li>
-            <li class="has-submenu">
+            <li className="has-submenu">
               <a href="#">
-                Pages <i class="fas fa-chevron-down"></i>
+                Pages <i className="fas fa-chevron-down"></i>
               </a>
-              <ul class="submenu">
+              <ul className="submenu">
                 <li>
                   <a href="voice-call.html">Voice Call</a>
                 </li>
@@ -123,9 +124,9 @@ const Header = () => {
                 <li>
                   <a href="components.html">Components</a>
                 </li>
-                <li class="has-submenu">
+                <li className="has-submenu">
                   <a href="invoices.html">Invoices</a>
-                  <ul class="submenu">
+                  <ul className="submenu">
                     <li>
                       <a href="invoices.html">Invoices</a>
                     </li>
@@ -153,25 +154,25 @@ const Header = () => {
                 Admin
               </a>
             </li>
-            <li class="login-link">
-              <a href="login.html">Login / Signup</a>
+            <li className="login-link">
+              <Link to="/login">Login / Signup</Link>
             </li>
           </ul>
         </div>
-        <ul class="nav header-navbar-rht">
-          <li class="nav-item contact-item">
-            <div class="header-contact-img">
-              <i class="far fa-hospital"></i>
+        <ul className="nav header-navbar-rht">
+          <li className="nav-item contact-item">
+            <div className="header-contact-img">
+              <i className="far fa-hospital"></i>
             </div>
-            <div class="header-contact-detail">
-              <p class="contact-header">Contact</p>
-              <p class="contact-info-header">+1 315 369 5943</p>
+            <div className="header-contact-detail">
+              <p className="contact-header">Contact</p>
+              <p className="contact-info-header">+1 315 369 5943</p>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link header-login" href="login.html">
+          <li className="nav-item">
+            <Link className="nav-link header-login" to="/login">
               login / Signup
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

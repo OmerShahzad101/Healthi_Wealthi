@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -60,14 +62,14 @@ const Footer = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="login.html">
+                    <Link to="/login">
                       <i className="fas fa-angle-double-right"></i> Login
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="register.html">
+                    <Link to="/register">
                       <i className="fas fa-angle-double-right"></i> Register
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <a href="booking.html">
@@ -100,14 +102,14 @@ const Footer = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="login.html">
+                    <Link to="/login">
                       <i className="fas fa-angle-double-right"></i> Login
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="doctor-register.html">
+                    <Link to="/register">
                       <i className="fas fa-angle-double-right"></i> Register
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <a href="doctor-dashboard.html">
@@ -139,7 +141,7 @@ const Footer = () => {
                   </p>
                   <p className="mb-0">
                     <i className="fas fa-envelope"></i>
-                    doccure@example.com
+                    healthiwealthi@example.com
                   </p>
                 </div>
               </div>

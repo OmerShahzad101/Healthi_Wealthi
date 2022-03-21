@@ -1,65 +1,66 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   return (
-    <div class="content">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-8 offset-md-2">
-            <div class="account-content">
-              <div class="row align-items-center justify-content-center">
-                <div class="col-md-7 col-lg-6 login-left">
+    <div className="content">
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-md-8 offset-md-2">
+            <div className="account-content">
+              <div className="row align-items-center justify-content-center">
+                <div className="col-md-7 col-lg-6 login-left">
                   <img
                     src="assets/img/login-banner.png"
-                    class="img-fluid"
+                    className="img-fluid"
                     alt="Doccure Login"
                   />
                 </div>
-                <div class="col-md-12 col-lg-6 login-right">
-                  <div class="login-header">
+                <div className="col-md-12 col-lg-6 login-right">
+                  <div className="login-header">
                     <h3>
                       Login <span>Healthi Wealthi</span>
                     </h3>
                   </div>
                   <form action="#">
-                    <div class="form-group form-focus">
-                      <input type="email" class="form-control floating" />
-                      <label class="focus-label">Email</label>
+                    <div className="form-group form-focus">
+                      <input type="email" className="form-control floating" />
+                      <label className="focus-label">Email</label>
                     </div>
-                    <div class="form-group form-focus">
-                      <input type="password" class="form-control floating" />
-                      <label class="focus-label">Password</label>
+                    <div className="form-group form-focus">
+                      <input type="password" className="form-control floating" />
+                      <label className="focus-label">Password</label>
                     </div>
-                    <div class="text-right">
-                      <a class="forgot-link" href="forgot-password.html">
+                    <div className="text-right">
+                      <a className="forgot-link" href="forgot-password.html">
                         Forgot Password ?
                       </a>
                     </div>
                     <button
-                      class="btn btn-primary btn-block btn-lg login-btn"
+                      className="btn btn-primary btn-block btn-lg login-btn"
                       type="submit"
                     >
                       Login
                     </button>
-                    <div class="login-or">
-                      <span class="or-line"></span>
-                      <span class="span-or">or</span>
+                    <div className="login-or">
+                      <span className="or-line"></span>
+                      <span className="span-or">or</span>
                     </div>
-                    <div class="row form-row social-login">
-                      <div class="col-6">
-                        <a href="#" class="btn btn-facebook btn-block">
-                          <i class="fab fa-facebook-f mr-1"></i> Login
+                    <div className="row form-row social-login">
+                      <div className="col-6">
+                        <a href="#" className="btn btn-facebook btn-block">
+                          <i className="fab fa-facebook-f mr-1"></i> Login
                         </a>
                       </div>
-                      <div class="col-6">
-                        <a href="#" class="btn btn-google btn-block">
-                          <i class="fab fa-google mr-1"></i> Login
+                      <div className="col-6">
+                        <a href="#" className="btn btn-google btn-block">
+                          <i className="fab fa-google mr-1"></i> Login
                         </a>
                       </div>
                     </div>
-                    <div class="text-center dont-have">
+                    <div className="text-center dont-have">
                       Don’t have an account?{" "}
-                      <a href="register.html">Register</a>
+                      <Link to="/register">Register</Link>
                     </div>
                   </form>
                 </div>
