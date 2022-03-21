@@ -1,5 +1,4 @@
 import React from "react";
-
 const Register = () => {
   return (
     <div className="content">
@@ -73,4 +72,4 @@ const Register = () => {
     </div>
   );
 };
-export default Register;
+export default Register

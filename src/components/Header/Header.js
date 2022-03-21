@@ -119,7 +119,7 @@ const Header = () => {
                   <a href="search.html">Search Doctors</a>
                 </li>
                 <li>
-                  <a href="calendar.html">Calendar</a>
+                  <a href="calendar">Calendar</a>
                 </li>
                 <li>
                   <a href="components.html">Components</a>
@@ -145,7 +145,7 @@ const Header = () => {
                   <a href="register.html">Register</a>
                 </li>
                 <li>
-                  <a href="forgot-password.html">Forgot Password</a>
+                  <a href="forgotpassword">Forgot Password</a>
                 </li>
               </ul>
             </li>
