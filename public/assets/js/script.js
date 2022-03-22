@@ -41,7 +41,7 @@ setTimeout(function(){
 					$(this).next('ul').slideUp(350);
 				}
 			});
-		
+			//$('.main-nav li.has-submenu a.active').parents('li:last').children('a:first').addClass('active').trigger('click');
 		}
 	
 		// Sidebar Initiate
@@ -49,10 +49,7 @@ setTimeout(function(){
 		}
 }, 200);
 	
-setTimeout(function(){
-	$('.main-nav li.has-submenu a.active').parents('li:last').children('a:first').addClass('active').trigger('click');
-}, 200);
-
+	
 	// Textarea Text Count
 	
 	var maxLength = 100;
