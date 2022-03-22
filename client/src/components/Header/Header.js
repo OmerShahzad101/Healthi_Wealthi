@@ -103,19 +103,19 @@ const Header = () => {
                   <Link to="/booking-successful">Booking Success</Link>
                 </li>
                 <li>
-                  <a href="patient-dashboard.html">Patient Dashboard</a>
+                  <a href="client-dashboard">CLient Dashboard</a>
                 </li>
                 <li>
-                  <a href="favourites.html">Favourites</a>
+                  <a href="favourites">Favourites</a>
                 </li>
                 {/* <li>
                   <a href="chat.html">Chat</a>
                 </li> */}
                 <li>
-                  <a href="profile-settings.html">Profile Settings</a>
+                  <a href="profile-setting">Profile Settings</a>
                 </li>
                 <li>
-                  <a href="change-password.html">Change Password</a>
+                  <a href="change-password">Change Password</a>
                 </li>
               </ul>
             </li>

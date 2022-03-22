@@ -13,6 +13,10 @@ import CalendarPage from "../Pages/CalendarPage";
 import ForgotPasswordPage from "../Pages/ForgotPasswordPage";
 import SearchCoachPage from "../Pages/SearchCoachPage";
 import InvoicePage from "../Pages/InvoicePage";
+import ClientDashboardPage from "../Pages/ClientDashboardPage";
+import FavouritesPage from "../Pages/FavouritesPage";
+import ProfileSettingPage from "../Pages/ProfileSettingPage";
+import ChangePasswordPage from "../Pages/ChangePasswordPage";
 import AppointmentsPage from "../Pages/AppointmentsPage";
 import ReviewsPage from "../Pages/ReviewsPage";
 const MyRouts = () => {
@@ -32,6 +36,10 @@ const MyRouts = () => {
           <Route path="/invoices-view" element={<InvoicesViewPage />} />
           <Route path="/search-coach" element={<SearchCoachPage />} />
           <Route path="/invoice" element={<InvoicePage />} />
+          <Route path="/patient-dashboard" element={<ClientDashboardPage />} />
+          <Route path="/favourite" element={<FavouritesPage />} />
+          <Route path="/profile-setting" element={<ProfileSettingPage />} />
+          <Route path="/change-password" element={<ChangePasswordPage />} />
           <Route path="/appointments" element={<AppointmentsPage />} />
           <Route path="/reviews" element={<ReviewsPage />} />
           <Route path="/*" element={<NotFoundPage />} />
