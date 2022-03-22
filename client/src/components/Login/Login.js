@@ -1,22 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import $ from "jquery";
 
+//Initial Values
+const InitialValues = {
+  email: "",
+  password: "",
+};
 const Login = () => {
-  setTimeout(function () {
-    if ($(".floating").length > 0) {
-      $(".floating")
-        .on("focus blur", function (e) {
-          $(this)
-            .parents(".form-focus")
-            .toggleClass(
-              "focused",
-              e.type === "focus" || this.value.length > 0
-            );
-        })
-        .trigger("blur");
+  const [loginUser, setLoginUser] = useState(InitialValues);
+
+  // JQuery for Input
+  // setTimeout(function () {
+  //   if ($(".floating").length > 0) {
+  //     $(".floating")
+  //       .on("focus blur", function (e) {
+  //         $(this)
+  //           .parents(".form-focus")
+  //           .toggleClass(
+  //             "focused",
+  //             e.type === "focus" || this.value.length > 0
+  //           );
+  //       })
+  //       .trigger("blur");
+  //   }
+  // }, 100);
+
+  //Handle Changes to Get Values
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setLoginUser({
+      ...loginUser,
+      [name]: value,
+    });
+  };
+
+  //API call
+  const LoginCall = async () => {
+    const { email, password } = loginUser;
+    if (email && password) {
+      console.log(loginUser);
+      // const res = await auth.login(`${ENV.API_URL}api/auth/users/`, loginUser);
+      // console.log(res)
     }
-  }, 100);
+  };
 
   return (
     <div className="account-page">
@@ -41,12 +68,21 @@ const Login = () => {
                     </div>
                     <form action="#">
                       <div className="form-group form-focus">
-                        <input type="email" className="form-control floating" />
+                        <input
+                          type="email"
+                          name="email"
+                          value={loginUser.email}
+                          onChange={handleChange}
+                          className="form-control floating"
+                        />
                         <label className="focus-label">Email</label>
                       </div>
                       <div className="form-group form-focus">
                         <input
                           type="password"
+                          name="password"
+                          value={loginUser.password}
+                          onChange={handleChange}
                           className="form-control floating"
                         />
                         <label className="focus-label">Password</label>
@@ -58,7 +94,8 @@ const Login = () => {
                       </div>
                       <button
                         className="btn btn-primary btn-block btn-lg login-btn"
-                        type="submit"
+                        type="button"
+                        onClick={LoginCall}
                       >
                         Login
                       </button>

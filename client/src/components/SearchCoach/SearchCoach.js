@@ -185,7 +185,7 @@ const SearchCoach = () => {
 
 
 							<div className="load-more text-center">
-								<a className="btn btn-primary btn-sm" href="javascript:void(0);">Load More</a>
+								<a className="btn btn-primary btn-sm" href="#;">Load More</a>
 							</div>
 						</div>
 					</div>

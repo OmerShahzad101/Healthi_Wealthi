@@ -9,7 +9,7 @@ const Header = () => {
     <header className="header">
       <nav className="navbar navbar-expand-lg header-nav">
         <div className="navbar-header">
-          <a id="mobile_btn" href="javascript:void(0);">
+          <a id="mobile_btn" href="#">
             <span className="bar-icon">
               <span></span>
               <span></span>
@@ -36,7 +36,7 @@ const Header = () => {
             <a
               id="menu_close"
               className="menu-close"
-              href="javascript:void(0);"
+              href="#;"
             >
               <i className="fas fa-times"></i>
             </a>

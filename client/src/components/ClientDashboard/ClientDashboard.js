@@ -146,10 +146,10 @@ const ClientDashboard = () => {
 																	<td><span className="badge badge-pill bg-success-light">Confirm</span></td>
 																	<td className="text-right">
 																		<div className="table-action">
-																			<a href="javascript:void(0);" className="btn btn-sm bg-primary-light">
+																			<a href="#" className="btn btn-sm bg-primary-light">
 																				<i className="fas fa-print"></i> Print
 																			</a>
-																			<a href="javascript:void(0);" className="btn btn-sm bg-info-light">
+																			<a href="#" className="btn btn-sm bg-info-light">
 																				<i className="far fa-eye"></i> View
 																			</a>
 																		</div>
@@ -171,10 +171,10 @@ const ClientDashboard = () => {
 																	<td><span className="badge badge-pill bg-success-light">Confirm</span></td>
 																	<td className="text-right">
 																		<div className="table-action">
-																			<a href="javascript:void(0);" className="btn btn-sm bg-primary-light">
+																			<a href="#" className="btn btn-sm bg-primary-light">
 																				<i className="fas fa-print"></i> Print
 																			</a>
-																			<a href="javascript:void(0);" className="btn btn-sm bg-info-light">
+																			<a href="#" className="btn btn-sm bg-info-light">
 																				<i className="far fa-eye"></i> View
 																			</a>
 																		</div>
@@ -196,10 +196,10 @@ const ClientDashboard = () => {
 																	<td><span className="badge badge-pill bg-danger-light">Cancelled</span></td>
 																	<td className="text-right">
 																		<div className="table-action">
-																			<a href="javascript:void(0);" className="btn btn-sm bg-primary-light">
+																			<a href="#" className="btn btn-sm bg-primary-light">
 																				<i className="fas fa-print"></i> Print
 																			</a>
-																			<a href="javascript:void(0);" className="btn btn-sm bg-info-light">
+																			<a href="#" className="btn btn-sm bg-info-light">
 																				<i className="far fa-eye"></i> View
 																			</a>
 																		</div>
@@ -221,10 +221,10 @@ const ClientDashboard = () => {
 																	<td><span className="badge badge-pill bg-warning-light">Pending</span></td>
 																	<td className="text-right">
 																		<div className="table-action">
-																			<a href="javascript:void(0);" className="btn btn-sm bg-primary-light">
+																			<a href="#" className="btn btn-sm bg-primary-light">
 																				<i className="fas fa-print"></i> Print
 																			</a>
-																			<a href="javascript:void(0);" className="btn btn-sm bg-info-light">
+																			<a href="#" className="btn btn-sm bg-info-light">
 																				<i className="far fa-eye"></i> View
 																			</a>
 																		</div>
@@ -246,10 +246,10 @@ const ClientDashboard = () => {
 																	<td><span className="badge badge-pill bg-success-light">Confirm</span></td>
 																	<td className="text-right">
 																		<div className="table-action">
-																			<a href="javascript:void(0);" className="btn btn-sm bg-primary-light">
+																			<a href="#" className="btn btn-sm bg-primary-light">
 																				<i className="fas fa-print"></i> Print
 																			</a>
-																			<a href="javascript:void(0);" className="btn btn-sm bg-info-light">
+																			<a href="#" className="btn btn-sm bg-info-light">
 																				<i className="far fa-eye"></i> View
 																			</a>
 																		</div>
@@ -271,10 +271,10 @@ const ClientDashboard = () => {
 																	<td><span className="badge badge-pill bg-danger-light">Cancelled</span></td>
 																	<td className="text-right">
 																		<div className="table-action">
-																			<a href="javascript:void(0);" className="btn btn-sm bg-primary-light">
+																			<a href="#" className="btn btn-sm bg-primary-light">
 																				<i className="fas fa-print"></i> Print
 																			</a>
-																			<a href="javascript:void(0);" className="btn btn-sm bg-info-light">
+																			<a href="#" className="btn btn-sm bg-info-light">
 																				<i className="far fa-eye"></i> View
 																			</a>
 																		</div>
@@ -296,10 +296,10 @@ const ClientDashboard = () => {
 																	<td><span className="badge badge-pill bg-success-light">Confirm</span></td>
 																	<td className="text-right">
 																		<div className="table-action">
-																			<a href="javascript:void(0);" className="btn btn-sm bg-primary-light">
+																			<a href="#" className="btn btn-sm bg-primary-light">
 																				<i className="fas fa-print"></i> Print
 																			</a>
-																			<a href="javascript:void(0);" className="btn btn-sm bg-info-light">
+																			<a href="#" className="btn btn-sm bg-info-light">
 																				<i className="far fa-eye"></i> View
 																			</a>
 																		</div>
@@ -321,10 +321,10 @@ const ClientDashboard = () => {
 																	<td><span className="badge badge-pill bg-success-light">Confirm</span></td>
 																	<td className="text-right">
 																		<div className="table-action">
-																			<a href="javascript:void(0);" className="btn btn-sm bg-primary-light">
+																			<a href="#" className="btn btn-sm bg-primary-light">
 																				<i className="fas fa-print"></i> Print
 																			</a>
-																			<a href="javascript:void(0);" className="btn btn-sm bg-info-light">
+																			<a href="#" className="btn btn-sm bg-info-light">
 																				<i className="far fa-eye"></i> View
 																			</a>
 																		</div>
@@ -346,10 +346,10 @@ const ClientDashboard = () => {
 																	<td><span className="badge badge-pill bg-success-light">Confirm</span></td>
 																	<td className="text-right">
 																		<div className="table-action">
-																			<a href="javascript:void(0);" className="btn btn-sm bg-primary-light">
+																			<a href="#" className="btn btn-sm bg-primary-light">
 																				<i className="fas fa-print"></i> Print
 																			</a>
-																			<a href="javascript:void(0);" className="btn btn-sm bg-info-light">
+																			<a href="#" className="btn btn-sm bg-info-light">
 																				<i className="far fa-eye"></i> View
 																			</a>
 																		</div>
@@ -371,10 +371,10 @@ const ClientDashboard = () => {
 																	<td><span className="badge badge-pill bg-success-light">Confirm</span></td>
 																	<td className="text-right">
 																		<div className="table-action">
-																			<a href="javascript:void(0);" className="btn btn-sm bg-primary-light">
+																			<a href="#" className="btn btn-sm bg-primary-light">
 																				<i className="fas fa-print"></i> Print
 																			</a>
-																			<a href="javascript:void(0);" className="btn btn-sm bg-info-light">
+																			<a href="#" className="btn btn-sm bg-info-light">
 																				<i className="far fa-eye"></i> View
 																			</a>
 																		</div>
@@ -414,10 +414,10 @@ const ClientDashboard = () => {
 																	</td>
 																	<td className="text-right">
 																		<div className="table-action">
-																			<a href="javascript:void(0);" className="btn btn-sm bg-primary-light">
+																			<a href="#" className="btn btn-sm bg-primary-light">
 																				<i className="fas fa-print"></i> Print
 																			</a>
-																			<a href="javascript:void(0);" className="btn btn-sm bg-info-light">
+																			<a href="#" className="btn btn-sm bg-info-light">
 																				<i className="far fa-eye"></i> View
 																			</a>
 																		</div>
@@ -436,10 +436,10 @@ const ClientDashboard = () => {
 																	</td>
 																	<td className="text-right">
 																		<div className="table-action">
-																			<a href="javascript:void(0);" className="btn btn-sm bg-primary-light">
+																			<a href="#" className="btn btn-sm bg-primary-light">
 																				<i className="fas fa-print"></i> Print
 																			</a>
-																			<a href="javascript:void(0);" className="btn btn-sm bg-info-light">
+																			<a href="#" className="btn btn-sm bg-info-light">
 																				<i className="far fa-eye"></i> View
 																			</a>
 																		</div>
@@ -458,10 +458,10 @@ const ClientDashboard = () => {
 																	</td>
 																	<td className="text-right">
 																		<div className="table-action">
-																			<a href="javascript:void(0);" className="btn btn-sm bg-primary-light">
+																			<a href="#" className="btn btn-sm bg-primary-light">
 																				<i className="fas fa-print"></i> Print
 																			</a>
-																			<a href="javascript:void(0);" className="btn btn-sm bg-info-light">
+																			<a href="#" className="btn btn-sm bg-info-light">
 																				<i className="far fa-eye"></i> View
 																			</a>
 																		</div>
@@ -480,10 +480,10 @@ const ClientDashboard = () => {
 																	</td>
 																	<td className="text-right">
 																		<div className="table-action">
-																			<a href="javascript:void(0);" className="btn btn-sm bg-primary-light">
+																			<a href="#" className="btn btn-sm bg-primary-light">
 																				<i className="fas fa-print"></i> Print
 																			</a>
-																			<a href="javascript:void(0);" className="btn btn-sm bg-info-light">
+																			<a href="#" className="btn btn-sm bg-info-light">
 																				<i className="far fa-eye"></i> View
 																			</a>
 																		</div>
@@ -502,10 +502,10 @@ const ClientDashboard = () => {
 																	</td>
 																	<td className="text-right">
 																		<div className="table-action">
-																			<a href="javascript:void(0);" className="btn btn-sm bg-primary-light">
+																			<a href="#" className="btn btn-sm bg-primary-light">
 																				<i className="fas fa-print"></i> Print
 																			</a>
-																			<a href="javascript:void(0);" className="btn btn-sm bg-info-light">
+																			<a href="#" className="btn btn-sm bg-info-light">
 																				<i className="far fa-eye"></i> View
 																			</a>
 																		</div>
@@ -524,10 +524,10 @@ const ClientDashboard = () => {
 																	</td>
 																	<td className="text-right">
 																		<div className="table-action">
-																			<a href="javascript:void(0);" className="btn btn-sm bg-primary-light">
+																			<a href="#" className="btn btn-sm bg-primary-light">
 																				<i className="fas fa-print"></i> Print
 																			</a>
-																			<a href="javascript:void(0);" className="btn btn-sm bg-info-light">
+																			<a href="#" className="btn btn-sm bg-info-light">
 																				<i className="far fa-eye"></i> View
 																			</a>
 																		</div>
@@ -546,10 +546,10 @@ const ClientDashboard = () => {
 																	</td>
 																	<td className="text-right">
 																		<div className="table-action">
-																			<a href="javascript:void(0);" className="btn btn-sm bg-primary-light">
+																			<a href="#" className="btn btn-sm bg-primary-light">
 																				<i className="fas fa-print"></i> Print
 																			</a>
-																			<a href="javascript:void(0);" className="btn btn-sm bg-info-light">
+																			<a href="#" className="btn btn-sm bg-info-light">
 																				<i className="far fa-eye"></i> View
 																			</a>
 																		</div>
@@ -568,10 +568,10 @@ const ClientDashboard = () => {
 																	</td>
 																	<td className="text-right">
 																		<div className="table-action">
-																			<a href="javascript:void(0);" className="btn btn-sm bg-primary-light">
+																			<a href="#" className="btn btn-sm bg-primary-light">
 																				<i className="fas fa-print"></i> Print
 																			</a>
-																			<a href="javascript:void(0);" className="btn btn-sm bg-info-light">
+																			<a href="#" className="btn btn-sm bg-info-light">
 																				<i className="far fa-eye"></i> View
 																			</a>
 																		</div>
@@ -590,10 +590,10 @@ const ClientDashboard = () => {
 																	</td>
 																	<td className="text-right">
 																		<div className="table-action">
-																			<a href="javascript:void(0);" className="btn btn-sm bg-primary-light">
+																			<a href="#" className="btn btn-sm bg-primary-light">
 																				<i className="fas fa-print"></i> Print
 																			</a>
-																			<a href="javascript:void(0);" className="btn btn-sm bg-info-light">
+																			<a href="#" className="btn btn-sm bg-info-light">
 																				<i className="far fa-eye"></i> View
 																			</a>
 																		</div>
@@ -612,10 +612,10 @@ const ClientDashboard = () => {
 																	</td>
 																	<td className="text-right">
 																		<div className="table-action">
-																			<a href="javascript:void(0);" className="btn btn-sm bg-primary-light">
+																			<a href="#" className="btn btn-sm bg-primary-light">
 																				<i className="fas fa-print"></i> Print
 																			</a>
-																			<a href="javascript:void(0);" className="btn btn-sm bg-info-light">
+																			<a href="#" className="btn btn-sm bg-info-light">
 																				<i className="far fa-eye"></i> View
 																			</a>
 																		</div>
@@ -645,7 +645,7 @@ const ClientDashboard = () => {
 															</thead>
 															<tbody>
 																<tr>
-																	<td><a href="javascript:void(0);">#MR-0010</a></td>
+																	<td><a href="#">#MR-0010</a></td>
 																	<td>14 Nov 2019</td>
 																	<td>Dental Filling</td>
 																	<td><a href="#">dental-test.pdf</a></td>
@@ -659,17 +659,17 @@ const ClientDashboard = () => {
 																	</td>
 																	<td className="text-right">
 																		<div className="table-action">
-																			<a href="javascript:void(0);" className="btn btn-sm bg-info-light">
+																			<a href="#" className="btn btn-sm bg-info-light">
 																				<i className="far fa-eye"></i> View
 																			</a>
-																			<a href="javascript:void(0);" className="btn btn-sm bg-primary-light">
+																			<a href="#" className="btn btn-sm bg-primary-light">
 																				<i className="fas fa-print"></i> Print
 																			</a>
 																		</div>
 																	</td>
 																</tr>
 																<tr>
-																	<td><a href="javascript:void(0);">#MR-0009</a></td>
+																	<td><a href="#">#MR-0009</a></td>
 																	<td>13 Nov 2019</td>
 																	<td>Teeth Cleaning</td>
 																	<td><a href="#">dental-test.pdf</a></td>
@@ -683,17 +683,17 @@ const ClientDashboard = () => {
 																	</td>
 																	<td className="text-right">
 																		<div className="table-action">
-																			<a href="javascript:void(0);" className="btn btn-sm bg-info-light">
+																			<a href="#" className="btn btn-sm bg-info-light">
 																				<i className="far fa-eye"></i> View
 																			</a>
-																			<a href="javascript:void(0);" className="btn btn-sm bg-primary-light">
+																			<a href="#" className="btn btn-sm bg-primary-light">
 																				<i className="fas fa-print"></i> Print
 																			</a>
 																		</div>
 																	</td>
 																</tr>
 																<tr>
-																	<td><a href="javascript:void(0);">#MR-0008</a></td>
+																	<td><a href="#">#MR-0008</a></td>
 																	<td>12 Nov 2019</td>
 																	<td>General Checkup</td>
 																	<td><a href="#">cardio-test.pdf</a></td>
@@ -707,17 +707,17 @@ const ClientDashboard = () => {
 																	</td>
 																	<td className="text-right">
 																		<div className="table-action">
-																			<a href="javascript:void(0);" className="btn btn-sm bg-info-light">
+																			<a href="#" className="btn btn-sm bg-info-light">
 																				<i className="far fa-eye"></i> View
 																			</a>
-																			<a href="javascript:void(0);" className="btn btn-sm bg-primary-light">
+																			<a href="#" className="btn btn-sm bg-primary-light">
 																				<i className="fas fa-print"></i> Print
 																			</a>
 																		</div>
 																	</td>
 																</tr>
 																<tr>
-																	<td><a href="javascript:void(0);">#MR-0007</a></td>
+																	<td><a href="#">#MR-0007</a></td>
 																	<td>11 Nov 2019</td>
 																	<td>General Test</td>
 																	<td><a href="#">general-test.pdf</a></td>
@@ -731,17 +731,17 @@ const ClientDashboard = () => {
 																	</td>
 																	<td className="text-right">
 																		<div className="table-action">
-																			<a href="javascript:void(0);" className="btn btn-sm bg-info-light">
+																			<a href="#" className="btn btn-sm bg-info-light">
 																				<i className="far fa-eye"></i> View
 																			</a>
-																			<a href="javascript:void(0);" className="btn btn-sm bg-primary-light">
+																			<a href="#" className="btn btn-sm bg-primary-light">
 																				<i className="fas fa-print"></i> Print
 																			</a>
 																		</div>
 																	</td>
 																</tr>
 																<tr>
-																	<td><a href="javascript:void(0);">#MR-0006</a></td>
+																	<td><a href="#">#MR-0006</a></td>
 																	<td>10 Nov 2019</td>
 																	<td>Eye Test</td>
 																	<td><a href="#">eye-test.pdf</a></td>
@@ -755,17 +755,17 @@ const ClientDashboard = () => {
 																	</td>
 																	<td className="text-right">
 																		<div className="table-action">
-																			<a href="javascript:void(0);" className="btn btn-sm bg-info-light">
+																			<a href="#" className="btn btn-sm bg-info-light">
 																				<i className="far fa-eye"></i> View
 																			</a>
-																			<a href="javascript:void(0);" className="btn btn-sm bg-primary-light">
+																			<a href="#" className="btn btn-sm bg-primary-light">
 																				<i className="fas fa-print"></i> Print
 																			</a>
 																		</div>
 																	</td>
 																</tr>
 																<tr>
-																	<td><a href="javascript:void(0);">#MR-0005</a></td>
+																	<td><a href="#">#MR-0005</a></td>
 																	<td>9 Nov 2019</td>
 																	<td>Leg Pain</td>
 																	<td><a href="#">ortho-test.pdf</a></td>
@@ -779,17 +779,18 @@ const ClientDashboard = () => {
 																	</td>
 																	<td className="text-right">
 																		<div className="table-action">
-																			<a href="javascript:void(0);" className="btn btn-sm bg-info-light">
+																			<a href="#" className="btn btn-sm bg-info-light">
 																				<i className="far fa-eye"></i> View
 																			</a>
-																			<a href="javascript:void(0);" className="btn btn-sm bg-primary-light">
+																			<a href="#" className="btn btn-sm bg-primary-light">
 																				<i className="fas fa-print"></i> Print
 																			</a>
 																		</div>
 																	</td>
 																</tr>
 																<tr>
-																	<td><a href="javascript:void(0);">#MR-0004</a></td>
+																	{/* <td><a href="#">#MR-0004</a></td> */}
+																	<td><a href="#">#MR-0004</a></td>
 																	<td>8 Nov 2019</td>
 																	<td>Head pain</td>
 																	<td><a href="#">neuro-test.pdf</a></td>
@@ -803,17 +804,17 @@ const ClientDashboard = () => {
 																	</td>
 																	<td className="text-right">
 																		<div className="table-action">
-																			<a href="javascript:void(0);" className="btn btn-sm bg-info-light">
+																			<a href="#" className="btn btn-sm bg-info-light">
 																				<i className="far fa-eye"></i> View
 																			</a>
-																			<a href="javascript:void(0);" className="btn btn-sm bg-primary-light">
+																			<a href="#" className="btn btn-sm bg-primary-light">
 																				<i className="fas fa-print"></i> Print
 																			</a>
 																		</div>
 																	</td>
 																</tr>
 																<tr>
-																	<td><a href="javascript:void(0);">#MR-0003</a></td>
+																	<td><a href="#">#MR-0003</a></td>
 																	<td>7 Nov 2019</td>
 																	<td>Skin Alergy</td>
 																	<td><a href="#">alergy-test.pdf</a></td>
@@ -827,17 +828,17 @@ const ClientDashboard = () => {
 																	</td>
 																	<td className="text-right">
 																		<div className="table-action">
-																			<a href="javascript:void(0);" className="btn btn-sm bg-info-light">
+																			<a href="#" className="btn btn-sm bg-info-light">
 																				<i className="far fa-eye"></i> View
 																			</a>
-																			<a href="javascript:void(0);" className="btn btn-sm bg-primary-light">
+																			<a href="#" className="btn btn-sm bg-primary-light">
 																				<i className="fas fa-print"></i> Print
 																			</a>
 																		</div>
 																	</td>
 																</tr>
 																<tr>
-																	<td><a href="javascript:void(0);">#MR-0002</a></td>
+																	<td><a href="#">#MR-0002</a></td>
 																	<td>6 Nov 2019</td>
 																	<td>Dental Removing</td>
 																	<td><a href="#">dental-test.pdf</a></td>
@@ -851,17 +852,17 @@ const ClientDashboard = () => {
 																	</td>
 																	<td className="text-right">
 																		<div className="table-action">
-																			<a href="javascript:void(0);" className="btn btn-sm bg-info-light">
+																			<a href="#" className="btn btn-sm bg-info-light">
 																				<i className="far fa-eye"></i> View
 																			</a>
-																			<a href="javascript:void(0);" className="btn btn-sm bg-primary-light">
+																			<a href="#" className="btn btn-sm bg-primary-light">
 																				<i className="fas fa-print"></i> Print
 																			</a>
 																		</div>
 																	</td>
 																</tr>
 																<tr>
-																	<td><a href="javascript:void(0);">#MR-0001</a></td>
+																	<td><a href="#">#MR-0001</a></td>
 																	<td>5 Nov 2019</td>
 																	<td>Dental Filling</td>
 																	<td><a href="#">dental-test.pdf</a></td>
@@ -875,10 +876,10 @@ const ClientDashboard = () => {
 																	</td>
 																	<td className="text-right">
 																		<div className="table-action">
-																			<a href="javascript:void(0);" className="btn btn-sm bg-info-light">
+																			<a href="#" className="btn btn-sm bg-info-light">
 																				<i className="far fa-eye"></i> View
 																			</a>
-																			<a href="javascript:void(0);" className="btn btn-sm bg-primary-light">
+																			<a href="#" className="btn btn-sm bg-primary-light">
 																				<i className="fas fa-print"></i> Print
 																			</a>
 																		</div>
@@ -925,7 +926,7 @@ const ClientDashboard = () => {
 																			<a href="invoice-view.html" class="btn btn-sm bg-info-light">
 																				<i class="far fa-eye"></i> View
 																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-primary-light">
+																			<a href="#" class="btn btn-sm bg-primary-light">
 																				<i class="fas fa-print"></i> Print
 																			</a>
 																		</div>
@@ -950,7 +951,7 @@ const ClientDashboard = () => {
 																			<a href="invoice-view.html" class="btn btn-sm bg-info-light">
 																				<i class="far fa-eye"></i> View
 																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-primary-light">
+																			<a href="#" class="btn btn-sm bg-primary-light">
 																				<i class="fas fa-print"></i> Print
 																			</a>
 																		</div>
@@ -975,7 +976,7 @@ const ClientDashboard = () => {
 																			<a href="invoice-view.html" class="btn btn-sm bg-info-light">
 																				<i class="far fa-eye"></i> View
 																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-primary-light">
+																			<a href="#" class="btn btn-sm bg-primary-light">
 																				<i class="fas fa-print"></i> Print
 																			</a>
 																		</div>
@@ -1000,7 +1001,7 @@ const ClientDashboard = () => {
 																			<a href="invoice-view.html" class="btn btn-sm bg-info-light">
 																				<i class="far fa-eye"></i> View
 																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-primary-light">
+																			<a href="#" class="btn btn-sm bg-primary-light">
 																				<i class="fas fa-print"></i> Print
 																			</a>
 																		</div>
@@ -1025,7 +1026,7 @@ const ClientDashboard = () => {
 																			<a href="invoice-view.html" class="btn btn-sm bg-info-light">
 																				<i class="far fa-eye"></i> View
 																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-primary-light">
+																			<a href="#" class="btn btn-sm bg-primary-light">
 																				<i class="fas fa-print"></i> Print
 																			</a>
 																		</div>
@@ -1050,7 +1051,7 @@ const ClientDashboard = () => {
 																			<a href="invoice-view.html" class="btn btn-sm bg-info-light">
 																				<i class="far fa-eye"></i> View
 																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-primary-light">
+																			<a href="#" class="btn btn-sm bg-primary-light">
 																				<i class="fas fa-print"></i> Print
 																			</a>
 																		</div>
@@ -1075,7 +1076,7 @@ const ClientDashboard = () => {
 																			<a href="invoice-view.html" class="btn btn-sm bg-info-light">
 																				<i class="far fa-eye"></i> View
 																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-primary-light">
+																			<a href="#" class="btn btn-sm bg-primary-light">
 																				<i class="fas fa-print"></i> Print
 																			</a>
 																		</div>
@@ -1100,7 +1101,7 @@ const ClientDashboard = () => {
 																			<a href="invoice-view.html" class="btn btn-sm bg-info-light">
 																				<i class="far fa-eye"></i> View
 																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-primary-light">
+																			<a href="#" class="btn btn-sm bg-primary-light">
 																				<i class="fas fa-print"></i> Print
 																			</a>
 																		</div>
@@ -1125,7 +1126,7 @@ const ClientDashboard = () => {
 																			<a href="invoice-view.html" class="btn btn-sm bg-info-light">
 																				<i class="far fa-eye"></i> View
 																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-primary-light">
+																			<a href="#" class="btn btn-sm bg-primary-light">
 																				<i class="fas fa-print"></i> Print
 																			</a>
 																		</div>
@@ -1150,7 +1151,7 @@ const ClientDashboard = () => {
 																			<a href="invoice-view.html" class="btn btn-sm bg-info-light">
 																				<i class="far fa-eye"></i> View
 																			</a>
-																			<a href="javascript:void(0);" class="btn btn-sm bg-primary-light">
+																			<a href="#" class="btn btn-sm bg-primary-light">
 																				<i class="fas fa-print"></i> Print
 																			</a>
 																		</div>

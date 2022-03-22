@@ -44,7 +44,7 @@ const CoachListSlider = () => {
                       src="assets/img/doctors/doctor-01.jpg"
                     />
                   </a>
-                  <a href="javascript:void(0)" class="fav-btn">
+                  <a href="#" class="fav-btn">
                     <i class="far fa-bookmark"></i>
                   </a>
                 </div>
@@ -106,7 +106,7 @@ const CoachListSlider = () => {
                       src="assets/img/doctors/doctor-02.jpg"
                     />
                   </a>
-                  <a href="javascript:void(0)" class="fav-btn">
+                  <a href="#" class="fav-btn">
                     <i class="far fa-bookmark"></i>
                   </a>
                 </div>
@@ -168,7 +168,7 @@ const CoachListSlider = () => {
                       src="assets/img/doctors/doctor-03.jpg"
                     />
                   </a>
-                  <a href="javascript:void(0)" class="fav-btn">
+                  <a href="#" class="fav-btn">
                     <i class="far fa-bookmark"></i>
                   </a>
                 </div>
@@ -230,7 +230,7 @@ const CoachListSlider = () => {
                       src="assets/img/doctors/doctor-04.jpg"
                     />
                   </a>
-                  <a href="javascript:void(0)" class="fav-btn">
+                  <a href="#" class="fav-btn">
                     <i class="far fa-bookmark"></i>
                   </a>
                 </div>
@@ -292,7 +292,7 @@ const CoachListSlider = () => {
                       src="assets/img/doctors/doctor-05.jpg"
                     />
                   </a>
-                  <a href="javascript:void(0)" class="fav-btn">
+                  <a href="#" class="fav-btn">
                     <i class="far fa-bookmark"></i>
                   </a>
                 </div>
@@ -354,7 +354,7 @@ const CoachListSlider = () => {
                       src="assets/img/doctors/doctor-06.jpg"
                     />
                   </a>
-                  <a href="javascript:void(0)" class="fav-btn">
+                  <a href="#" class="fav-btn">
                     <i class="far fa-bookmark"></i>
                   </a>
                 </div>
@@ -416,7 +416,7 @@ const CoachListSlider = () => {
                       src="assets/img/doctors/doctor-07.jpg"
                     />
                   </a>
-                  <a href="javascript:void(0)" class="fav-btn">
+                  <a href="#" class="fav-btn">
                     <i class="far fa-bookmark"></i>
                   </a>
                 </div>
@@ -478,7 +478,7 @@ const CoachListSlider = () => {
                       src="assets/img/doctors/doctor-08.jpg"
                     />
                   </a>
-                  <a href="javascript:void(0)" class="fav-btn">
+                  <a href="#" class="fav-btn">
                     <i class="far fa-bookmark"></i>
                   </a>
                 </div>

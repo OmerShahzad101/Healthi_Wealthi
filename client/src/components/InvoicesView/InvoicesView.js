@@ -176,7 +176,7 @@ const InvoicesView = () => {
                                 <i className="far fa-eye"></i> View
                               </a>
                               <a
-                                href="javascript:void(0);"
+                                href="#"
                                 className="btn btn-sm bg-primary-light"
                               >
                                 <i className="fas fa-print"></i> Print
@@ -216,7 +216,7 @@ const InvoicesView = () => {
                                 <i className="far fa-eye"></i> View
                               </a>
                               <a
-                                href="javascript:void(0);"
+                                href="#"
                                 className="btn btn-sm bg-primary-light"
                               >
                                 <i className="fas fa-print"></i> Print
@@ -256,7 +256,7 @@ const InvoicesView = () => {
                                 <i className="far fa-eye"></i> View
                               </a>
                               <a
-                                href="javascript:void(0);"
+                                href="#"
                                 className="btn btn-sm bg-primary-light"
                               >
                                 <i className="fas fa-print"></i> Print
@@ -296,7 +296,7 @@ const InvoicesView = () => {
                                 <i className="far fa-eye"></i> View
                               </a>
                               <a
-                                href="javascript:void(0);"
+                                href="#"
                                 className="btn btn-sm bg-primary-light"
                               >
                                 <i className="fas fa-print"></i> Print
@@ -336,7 +336,7 @@ const InvoicesView = () => {
                                 <i className="far fa-eye"></i> View
                               </a>
                               <a
-                                href="javascript:void(0);"
+                                href="#"
                                 className="btn btn-sm bg-primary-light"
                               >
                                 <i className="fas fa-print"></i> Print
@@ -376,7 +376,7 @@ const InvoicesView = () => {
                                 <i className="far fa-eye"></i> View
                               </a>
                               <a
-                                href="javascript:void(0);"
+                                href="#"
                                 className="btn btn-sm bg-primary-light"
                               >
                                 <i className="fas fa-print"></i> Print
@@ -416,7 +416,7 @@ const InvoicesView = () => {
                                 <i className="far fa-eye"></i> View
                               </a>
                               <a
-                                href="javascript:void(0);"
+                                href="#"
                                 className="btn btn-sm bg-primary-light"
                               >
                                 <i className="fas fa-print"></i> Print
@@ -456,7 +456,7 @@ const InvoicesView = () => {
                                 <i className="far fa-eye"></i> View
                               </a>
                               <a
-                                href="javascript:void(0);"
+                                href="#"
                                 className="btn btn-sm bg-primary-light"
                               >
                                 <i className="fas fa-print"></i> Print
@@ -496,7 +496,7 @@ const InvoicesView = () => {
                                 <i className="far fa-eye"></i> View
                               </a>
                               <a
-                                href="javascript:void(0);"
+                                href="#"
                                 className="btn btn-sm bg-primary-light"
                               >
                                 <i className="fas fa-print"></i> Print
@@ -536,7 +536,7 @@ const InvoicesView = () => {
                                 <i className="far fa-eye"></i> View
                               </a>
                               <a
-                                href="javascript:void(0);"
+                                href="#"
                                 className="btn btn-sm bg-primary-light"
                               >
                                 <i className="fas fa-print"></i> Print

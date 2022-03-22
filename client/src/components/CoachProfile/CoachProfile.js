@@ -64,7 +64,7 @@ const CoachProfile = () => {
                     <div className="clinic-details">
                       <p className="doc-location">
                         <i className="fas fa-map-marker-alt"></i> Newyork, USA -{" "}
-                        <a href="javascript:void(0);">Get Directions</a>
+                        <a href="#;">Get Directions</a>
                       </p>
                       <ul className="clinic-gallery">
                         <li>
@@ -138,7 +138,7 @@ const CoachProfile = () => {
                   </div>
                   <div className="doctor-action">
                     <a
-                      href="javascript:void(0)"
+                      href="#"
                       className="btn btn-white fav-btn"
                     >
                       <i className="far fa-bookmark"></i>
@@ -147,7 +147,7 @@ const CoachProfile = () => {
                       <i className="far fa-comment-alt"></i>
                     </a>
                     <a
-                      href="javascript:void(0)"
+                      href="#"
                       className="btn btn-white call-btn"
                       data-toggle="modal"
                       data-target="#voice_call"
@@ -155,7 +155,7 @@ const CoachProfile = () => {
                       <i className="fas fa-phone"></i>
                     </a>
                     <a
-                      href="javascript:void(0)"
+                      href="#"
                       className="btn btn-white call-btn"
                       data-toggle="modal"
                       data-target="#video_call"
@@ -473,7 +473,7 @@ const CoachProfile = () => {
                               {" "}
                               <i className="fas fa-map-marker-alt"></i> 2286
                               Sundown Lane, Austin, Texas 78749, USA <br />
-                              <a href="javascript:void(0);">Get Directions</a>
+                              <a href="#;">Get Directions</a>
                             </h5>
                             <ul>
                               <li>
@@ -585,7 +585,7 @@ const CoachProfile = () => {
                               <i className="fas fa-map-marker-alt"></i> 2883
                               University Street, Seattle, Texas Washington,
                               98155 <br />
-                              <a href="javascript:void(0);">Get Directions</a>
+                              <a href="#;">Get Directions</a>
                             </p>
                             <ul>
                               <li>

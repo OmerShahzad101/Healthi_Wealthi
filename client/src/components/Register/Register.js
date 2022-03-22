@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import $ from "jquery";
+// import auth from "../../services/auth.service";
+// import ENV from "../../env"
 const Register = () => {
+  // Initial Values
+  const InitialValues = {
+    name: "",
+    email: "",
+    password: "",
+  };
+  //state
+  const [user, setUser] = useState(InitialValues);
+
+  // JQuery for Input Field
   setTimeout(function () {
     if ($(".floating").length > 0) {
       $(".floating")
@@ -16,6 +28,25 @@ const Register = () => {
         .trigger("blur");
     }
   }, 100);
+
+  // Handel Input change
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setUser({
+      ...user,
+      [name]: value,
+    });
+  };
+
+  //API call
+  const RegisterCall = async() => {
+    const { name, email, password } = user;
+    if (name && email && password) {
+      console.log(user)
+      // const res = await auth.register(`${ENV.API_URL}api/auth/users/`, user);
+      // console.log(res)
+    }
+  };
 
   return (
     <div className="account-page">
@@ -43,28 +74,46 @@ const Register = () => {
 
                     <form action="#">
                       <div className="form-group form-focus">
-                        <input type="text" className="form-control floating" />
+                        <input
+                          type="text"
+                          name="name"
+                          value={user.name}
+                          onChange={handleChange}
+                          className="form-control floating"
+                        />
                         <label className="focus-label">Name</label>
                       </div>
                       <div className="form-group form-focus">
-                        <input type="text" className="form-control floating" />
-                        <label className="focus-label">Mobile Number</label>
+                        <input
+                          type="text"
+                          name="email"
+                          value={user.email}
+                          onChange={handleChange}
+                          className="form-control floating"
+                        />
+                        <label className="focus-label">
+                          Email / Mobile Number
+                        </label>
                       </div>
                       <div className="form-group form-focus">
                         <input
                           type="password"
+                          name="password"
+                          value={user.password}
+                          onChange={handleChange}
                           className="form-control floating"
                         />
                         <label className="focus-label">Create Password</label>
                       </div>
                       <div className="text-right">
-                        <a className="forgot-link" href="login.html">
+                        <Link className="forgot-link" to="/login">
                           Already have an account?
-                        </a>
+                        </Link>
                       </div>
                       <button
                         className="btn btn-primary btn-block btn-lg login-btn"
-                        type="submit"
+                        type="button"
+                        onClick={RegisterCall}
                       >
                         Signup
                       </button>
