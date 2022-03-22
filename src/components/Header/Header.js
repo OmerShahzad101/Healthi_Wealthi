@@ -51,9 +51,9 @@ const Header = () => {
                   <Link to="/coach-dashboard">Coach Dashboard</Link>
                 </li>
                 <li>
-                  <Link to="appointments">Appointments</Link>
+                  <Link to="/appointments">Appointments</Link>
                 </li>
-                <li>
+                {/* <li>
                   <a href="schedule-timings.html">Schedule Timing</a>
                 </li>
                 <li>
@@ -61,21 +61,21 @@ const Header = () => {
                 </li>
                 <li>
                   <a href="patient-profile.html">Patients Profile</a>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <a href="chat-doctor.html">Chat</a>
-                </li>
+                </li> */}
                 <li>
-                  <Link to="/invoice">Invoice</Link>
+                  <Link to="/invoices-view">Invoice</Link>
                 </li>
-                <li>
+                {/* <li>
                   <a href="doctor-profile-settings.html">Profile Settings</a>
+                </li> */}
+                <li>
+                  <Link to="/reviews">Reviews</Link>
                 </li>
                 <li>
-                  <a href="reviews.html">Reviews</a>
-                </li>
-                <li>
-                  <a href="doctor-register.html">Doctor Register</a>
+                  <Link to="/register">Register</Link>
                 </li>
               </ul>
             </li>
