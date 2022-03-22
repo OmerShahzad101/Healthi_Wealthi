@@ -29,7 +29,7 @@ const CoachListSlider = () => {
                 still in their infancy. Various versions have evolved over the
                 years, sometimes
               </p>
-              <a href="javascript:;">Read More..</a>
+              <a href="#">Read More..</a>
             </div>
           </div>
           <div class="col-lg-8">
