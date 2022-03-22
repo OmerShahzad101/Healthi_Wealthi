@@ -52,9 +52,9 @@ const Login = () => {
                         <label className="focus-label">Password</label>
                       </div>
                       <div className="text-right">
-                        <a className="forgot-link" href="forgot-password.html">
+                        <Link className="forgot-link" to="/forgot-password">
                           Forgot Password ?
-                        </a>
+                        </Link>
                       </div>
                       <button
                         className="btn btn-primary btn-block btn-lg login-btn"

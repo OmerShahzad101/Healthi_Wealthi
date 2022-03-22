@@ -12,7 +12,7 @@ const BookingSuccessful = () => {
               <nav aria-label="breadcrumb" className="page-breadcrumb">
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
-                    <a href="index-2.html">Home</a>
+                    <Link to="/">Home</Link>
                   </li>
                   <li className="breadcrumb-item active" aria-current="page">
                     Booking
@@ -42,7 +42,7 @@ const BookingSuccessful = () => {
                       <br /> on <strong>12 Nov 2019 5:00PM to 6:00PM</strong>
                     </p>
                     <Link
-                      to="invoice-view"
+                      to="/invoice"
                       className="btn btn-primary view-inv-btn"
                     >
                       View Invoice

@@ -11,6 +11,8 @@ import NotFoundPage from "../Pages/NotFoundPage";
 import RegisterPage from "../Pages/RegisterPage";
 import CalendarPage from "../Pages/CalendarPage";
 import ForgotPasswordPage from "../Pages/ForgotPasswordPage";
+import SearchCoachPage from "../Pages/SearchCoachPage";
+import InvoicePage from "../Pages/InvoicePage";
 const MyRouts = () => {
   return (
     <div>
@@ -20,13 +22,14 @@ const MyRouts = () => {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/calendar" element={<CalendarPage />} />
-          <Route path="/forgotpassword" element={<ForgotPasswordPage />} />
+          <Route path="/forgot-password" element={<ForgotPasswordPage />} />
           <Route path="/coach-profile" element={<CoachProfilePage />} />
           <Route path="/book-appointment" element={<BookAppointmentPage />} />
           <Route path="/checkout" element={<CheckoutPage />} />
           <Route path="/booking-successful" element={<BookingSuccessfulPage />} />
           <Route path="/invoices-view" element={<InvoicesViewPage />} />
-         
+          <Route path="/search-coach" element={<SearchCoachPage />} />
+          <Route path="/invoice" element={<InvoicePage />} />
           <Route path="/*" element={<NotFoundPage />} />
         </Routes>
       </Router>
