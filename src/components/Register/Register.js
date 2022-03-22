@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 const Register = () => {
   return (
+    <>
     <div className="content">
       <div className="container-fluid">
         <div className="row">
@@ -74,6 +75,7 @@ const Register = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 export default Register;
