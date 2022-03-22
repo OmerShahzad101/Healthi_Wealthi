@@ -78,7 +78,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a href="patient-dashboard.html">
-                      <i className="fas fa-angle-double-right"></i> Patient
+                      <i className="fas fa-angle-double-right"></i> Client
                       Dashboard
                     </a>
                   </li>

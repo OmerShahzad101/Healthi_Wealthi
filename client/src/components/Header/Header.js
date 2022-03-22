@@ -54,9 +54,9 @@ const Header = () => {
                   <Link to="/coach-dashboard">Coach Dashboard</Link>
                 </li>
                 <li>
-                  <Link to="appointments">Appointments</Link>
+                  <Link to="/appointments">Appointments</Link>
                 </li>
-                <li>
+                {/* <li>
                   <a href="schedule-timings.html">Schedule Timing</a>
                 </li>
                 <li>
@@ -64,21 +64,21 @@ const Header = () => {
                 </li>
                 <li>
                   <a href="patient-profile.html">Patients Profile</a>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <a href="chat-doctor.html">Chat</a>
-                </li>
+                </li> */}
                 <li>
-                  <Link to="/invoice">Invoice</Link>
+                  <Link to="/invoices-view">Invoice</Link>
                 </li>
-                <li>
+                {/* <li>
                   <a href="doctor-profile-settings.html">Profile Settings</a>
+                </li> */}
+                <li>
+                  <Link to="/reviews">Reviews</Link>
                 </li>
                 <li>
-                  <a href="reviews.html">Reviews</a>
-                </li>
-                <li>
-                  <a href="doctor-register.html">Doctor Register</a>
+                  <Link to="/register">Register</Link>
                 </li>
               </ul>
             </li>
@@ -103,19 +103,19 @@ const Header = () => {
                   <Link to="/booking-successful">Booking Success</Link>
                 </li>
                 <li>
-                  <a href="patient-dashboard.html">Patient Dashboard</a>
+                  <Link to="/client-dashboard">Client Dashboard</Link>
                 </li>
                 <li>
-                  <a href="favourites.html">Favourites</a>
+                  <Link to="/favourites">Favourites</Link>
                 </li>
                 {/* <li>
                   <a href="chat.html">Chat</a>
                 </li> */}
                 <li>
-                  <a href="profile-settings.html">Profile Settings</a>
+                  <Link to="/profile-setting">Profile Settings</Link>
                 </li>
                 <li>
-                  <a href="change-password.html">Change Password</a>
+                  <Link to="/change-password">Change Password</Link>
                 </li>
               </ul>
             </li>
@@ -138,7 +138,7 @@ const Header = () => {
                 </li>
 
                 <li className="has-submenu">
-                  <a href="invoices.html">Invoices</a>
+                  <Link to="invoices">Invoices</Link>
                   <ul className="submenu">
                     <li>
                       <Link to="/invoice">Invoices</Link>
