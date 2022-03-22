@@ -1,7 +1,28 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import $ from "jquery";
 
 const Header = () => {
+  // $("body").append('<div class="sidebar-overlay"></div>');
+  // $(document).on("click", "#mobile_btn", function () {
+  //   $("main-wrapper").toggleClass("slide-nav");
+  //   $(".sidebar-overlay").toggleClass("opened");
+  //   $("html").addClass("menu-opened");
+  //   return false;
+  // });
+
+  // $(document).on("click", ".sidebar-overlay", function () {
+  //   $("html").removeClass("menu-opened");
+  //   $(this).removeClass("opened");
+  //   $("main-wrapper").removeClass("slide-nav");
+  // });
+
+  // $(document).on("click", "#menu_close", function () {
+  //   $("html").removeClass("menu-opened");
+  //   $(".sidebar-overlay").removeClass("opened");
+  //   $("main-wrapper").removeClass("slide-nav");
+  // });
+
   return (
     <header className="header">
       <nav className="navbar navbar-expand-lg header-nav">
@@ -14,15 +35,27 @@ const Header = () => {
             </span>
           </a>
           <Link to="/" className="navbar-brand logo">
-            <img src="assets/images/Logo.svg" className="img-fluid" alt="Logo" />
+            <img
+              src="assets/images/Logo.svg"
+              className="img-fluid"
+              alt="Logo"
+            />
           </Link>
         </div>
         <div className="main-menu-wrapper">
           <div className="menu-header">
             <a href="index-2.html" className="menu-logo">
-              <img src="assets/images/Logo.svg" className="img-fluid" alt="logo" />
+              <img
+                src="assets/images/Logo.svg"
+                className="img-fluid"
+                alt="logo"
+              />
             </a>
-            <a id="menu_close" className="menu-close" href="javascript:void(0);">
+            <a
+              id="menu_close"
+              className="menu-close"
+              href="javascript:void(0);"
+            >
               <i className="fas fa-times"></i>
             </a>
           </div>
