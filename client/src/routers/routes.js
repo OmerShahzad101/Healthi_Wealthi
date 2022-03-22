@@ -19,6 +19,7 @@ import ProfileSettingPage from "../Pages/ProfileSettingPage";
 import ChangePasswordPage from "../Pages/ChangePasswordPage";
 import AppointmentsPage from "../Pages/AppointmentsPage";
 import ReviewsPage from "../Pages/ReviewsPage";
+import UsersContainer from "../components/UsersContainer"
 const MyRouts = () => {
   return (
     <div>
@@ -26,6 +27,8 @@ const MyRouts = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<LoginPage />} />
+
+          <Route path="/user-container" element={<UsersContainer />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/calendar" element={<CalendarPage />} />
           <Route path="/checkout" element={<CheckoutPage />} />
