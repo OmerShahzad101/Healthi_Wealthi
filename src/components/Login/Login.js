@@ -1,7 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import $ from "jquery";
 
 const Login = () => {
+  setTimeout(function () {
+    if ($(".floating").length > 0) {
+      $(".floating")
+        .on("focus blur", function (e) {
+          $(this)
+            .parents(".form-focus")
+            .toggleClass(
+              "focused",
+              e.type === "focus" || this.value.length > 0
+            );
+        })
+        .trigger("blur");
+    }
+  }, 100);
+
   return (
     <div className="account-page">
       <div className="content">
@@ -36,7 +52,7 @@ const Login = () => {
                         <label className="focus-label">Password</label>
                       </div>
                       <div className="text-right">
-                        <Link className="forgot-link" to="forgot-password">
+                        <Link className="forgot-link" to="/forgot-password">
                           Forgot Password ?
                         </Link>
                       </div>

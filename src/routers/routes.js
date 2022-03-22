@@ -17,6 +17,8 @@ import ClientDashboardPage from "../Pages/ClientDashboardPage";
 import FavouritesPage from "../Pages/FavouritesPage";
 import ProfileSettingPage from "../Pages/ProfileSettingPage";
 import ChangePasswordPage from "../Pages/ChangePasswordPage";
+import AppointmentsPage from "../Pages/AppointmentsPage";
+import ReviewsPage from "../Pages/ReviewsPage";
 const MyRouts = () => {
   return (
     <div>
@@ -38,6 +40,8 @@ const MyRouts = () => {
           <Route path="/favourite" element={<FavouritesPage />} />
           <Route path="/profile-setting" element={<ProfileSettingPage />} />
           <Route path="/change-password" element={<ChangePasswordPage />} />
+          <Route path="/appointments" element={<AppointmentsPage />} />
+          <Route path="/reviews" element={<ReviewsPage />} />
           <Route path="/*" element={<NotFoundPage />} />
         </Routes>
       </Router>
