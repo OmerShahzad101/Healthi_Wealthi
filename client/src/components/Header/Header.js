@@ -103,19 +103,19 @@ const Header = () => {
                   <Link to="/booking-successful">Booking Success</Link>
                 </li>
                 <li>
-                  <a href="patient-dashboard.html">Patient Dashboard</a>
+                  <Link to="/client-dashboard">Client Dashboard</Link>
                 </li>
                 <li>
-                  <a href="favourites.html">Favourites</a>
+                  <Link to="/favourites">Favourites</Link>
                 </li>
                 {/* <li>
                   <a href="chat.html">Chat</a>
                 </li> */}
                 <li>
-                  <a href="profile-settings.html">Profile Settings</a>
+                  <Link to="/profile-setting">Profile Settings</Link>
                 </li>
                 <li>
-                  <a href="change-password.html">Change Password</a>
+                  <Link to="/change-password">Change Password</Link>
                 </li>
               </ul>
             </li>
@@ -138,7 +138,7 @@ const Header = () => {
                 </li>
 
                 <li className="has-submenu">
-                  <a href="invoices.html">Invoices</a>
+                  <Link to="invoices">Invoices</Link>
                   <ul className="submenu">
                     <li>
                       <Link to="/invoice">Invoices</Link>

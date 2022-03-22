@@ -13,6 +13,10 @@ import CalendarPage from "../Pages/CalendarPage";
 import ForgotPasswordPage from "../Pages/ForgotPasswordPage";
 import SearchCoachPage from "../Pages/SearchCoachPage";
 import InvoicePage from "../Pages/InvoicePage";
+import ClientDashboardPage from "../Pages/ClientDashboardPage";
+import FavouritesPage from "../Pages/FavouritesPage";
+import ProfileSettingPage from "../Pages/ProfileSettingPage";
+import ChangePasswordPage from "../Pages/ChangePasswordPage";
 import AppointmentsPage from "../Pages/AppointmentsPage";
 import ReviewsPage from "../Pages/ReviewsPage";
 import UsersContainer from "../components/UsersContainer"
@@ -27,14 +31,18 @@ const MyRouts = () => {
           <Route path="/user-container" element={<UsersContainer />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/calendar" element={<CalendarPage />} />
-          <Route path="/forgot-password" element={<ForgotPasswordPage />} />
-          <Route path="/coach-profile" element={<CoachProfilePage />} />
-          <Route path="/book-appointment" element={<BookAppointmentPage />} />
           <Route path="/checkout" element={<CheckoutPage />} />
-          <Route path="/booking-successful" element={<BookingSuccessfulPage />} />
-          <Route path="/invoices-view" element={<InvoicesViewPage />} />
-          <Route path="/search-coach" element={<SearchCoachPage />} />
           <Route path="/invoice" element={<InvoicePage />} />
+          <Route path="/favourites" element={<FavouritesPage />} />
+          <Route path="/search-coach" element={<SearchCoachPage />} />
+          <Route path="/coach-profile" element={<CoachProfilePage />} />
+          <Route path="/invoices-view" element={<InvoicesViewPage />} />
+          <Route path="/forgot-password" element={<ForgotPasswordPage />} />
+          <Route path="/book-appointment" element={<BookAppointmentPage />} />
+          <Route path="/booking-successful" element={<BookingSuccessfulPage />} />
+          <Route path="/client-dashboard" element={<ClientDashboardPage />} />
+          <Route path="/profile-setting" element={<ProfileSettingPage />} />
+          <Route path="/change-password" element={<ChangePasswordPage />} />
           <Route path="/appointments" element={<AppointmentsPage />} />
           <Route path="/reviews" element={<ReviewsPage />} />
           <Route path="/*" element={<NotFoundPage />} />
