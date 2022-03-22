@@ -18,7 +18,6 @@ const Register = () => {
   }, 100);
 
   return (
-<<<<<<< HEAD
     <>
     <div className="content">
       <div className="container-fluid">
@@ -39,21 +38,6 @@ const Register = () => {
                       Client Register{" "}
                       <Link href="/register">Are you a Couch?</Link>
                     </h3>
-=======
-    <div className="account-page">
-      <div className="content">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-md-8 offset-md-2">
-              <div className="account-content">
-                <div className="row align-items-center justify-content-center">
-                  <div className="col-md-7 col-lg-6 login-left">
-                    <img
-                      src="assets/img/login-banner.png"
-                      className="img-fluid"
-                      alt="Register"
-                    />
->>>>>>> 4b09903233220c6212f183d653008e4fb52ce9f1
                   </div>
                   <div className="col-md-12 col-lg-6 login-right">
                     <div className="login-header">

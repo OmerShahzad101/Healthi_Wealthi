@@ -28,16 +28,16 @@ const MyRouts = () => {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/calendar" element={<CalendarPage />} />
-          <Route path="/forgot-password" element={<ForgotPasswordPage />} />
-          <Route path="/coach-profile" element={<CoachProfilePage />} />
-          <Route path="/book-appointment" element={<BookAppointmentPage />} />
           <Route path="/checkout" element={<CheckoutPage />} />
-          <Route path="/booking-successful" element={<BookingSuccessfulPage />} />
-          <Route path="/invoices-view" element={<InvoicesViewPage />} />
-          <Route path="/search-coach" element={<SearchCoachPage />} />
           <Route path="/invoice" element={<InvoicePage />} />
-          <Route path="/patient-dashboard" element={<ClientDashboardPage />} />
-          <Route path="/favourite" element={<FavouritesPage />} />
+          <Route path="/favourites" element={<FavouritesPage />} />
+          <Route path="/search-coach" element={<SearchCoachPage />} />
+          <Route path="/coach-profile" element={<CoachProfilePage />} />
+          <Route path="/invoices-view" element={<InvoicesViewPage />} />
+          <Route path="/forgot-password" element={<ForgotPasswordPage />} />
+          <Route path="/book-appointment" element={<BookAppointmentPage />} />
+          <Route path="/booking-successful" element={<BookingSuccessfulPage />} />
+          <Route path="/client-dashboard" element={<ClientDashboardPage />} />
           <Route path="/profile-setting" element={<ProfileSettingPage />} />
           <Route path="/change-password" element={<ChangePasswordPage />} />
           <Route path="/appointments" element={<AppointmentsPage />} />
