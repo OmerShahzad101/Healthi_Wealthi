@@ -47,7 +47,7 @@ const MyRouts = () => {
           <Route path="/book-appointment" element={<BookAppointmentPage />} />
           <Route path="/booking-successful" element={<BookingSuccessfulPage />} />
           <Route path="/client-dashboard" element={<ClientDashboardPage />} />
-          <Route path="/profile-setting" element={<ProfileSettingPage />} />
+          <Route path="/profile-settings" element={<ProfileSettingPage />} />
           <Route path="/change-password" element={<ChangePasswordPage />} />
           <Route path="/appointments" element={<AppointmentsPage />} />
           <Route path="/reviews" element={<ReviewsPage />} />

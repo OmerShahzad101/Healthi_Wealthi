@@ -135,7 +135,7 @@ const InvoicesView = () => {
                       <thead>
                         <tr>
                           <th>Invoice No</th>
-                          <th>Patient</th>
+                          <th>Client</th>
                           <th>Amount</th>
                           <th>Paid On</th>
                           <th></th>

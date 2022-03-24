@@ -146,7 +146,7 @@ const MyClient = () => {
 
                             <div className="patient-details">
                               <h5>
-                                <b>Patient ID :</b> P0016
+                                <b>Client ID :</b> P0016
                               </h5>
                               <h5 className="mb-0">
                                 <i className="fas fa-map-marker-alt"></i>{" "}
@@ -194,7 +194,7 @@ const MyClient = () => {
 
                             <div className="patient-details">
                               <h5>
-                                <b>Patient ID :</b> P0001
+                                <b>Client ID :</b> P0001
                               </h5>
                               <h5 className="mb-0">
                                 <i className="fas fa-map-marker-alt"></i> North
@@ -236,7 +236,7 @@ const MyClient = () => {
                             <h3>Travis Trimble </h3>
                             <div className="patient-details">
                               <h5>
-                                <b>Patient ID :</b> PT0002
+                                <b>Client ID :</b> PT0002
                               </h5>
                               <h5 className="mb-0">
                                 <i className="fas fa-map-marker-alt"></i> Maine,

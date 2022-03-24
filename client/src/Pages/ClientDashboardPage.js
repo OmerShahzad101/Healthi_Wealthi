@@ -5,9 +5,7 @@ import ClientDashboard from '../components/ClientDashboard/ClientDashboard'
 const ClientDashboardPage = () => {
     return (
         <>
-            <Header />
             <ClientDashboard />
-            <Footer />
 
         </>
     )

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ClientDashboard = () => {
   return (
@@ -10,7 +11,7 @@ const ClientDashboard = () => {
               <nav aria-label="breadcrumb" className="page-breadcrumb">
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
-                    <a href="index-2.html">Home</a>
+                    <Link to="/">Home</Link>
                   </li>
                   <li className="breadcrumb-item active" aria-current="page">
                     Dashboard
@@ -53,41 +54,41 @@ const ClientDashboard = () => {
                   <nav className="dashboard-menu">
                     <ul>
                       <li className="active">
-                        <a href="patient-dashboard.html">
+                        <Link to="/client-dashboard">
                           <i className="fas fa-columns"></i>
                           <span>Dashboard</span>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="favourites.html">
+                        <Link to="/favourites">
                           <i className="fas fa-bookmark"></i>
                           <span>Favourites</span>
-                        </a>
+                        </Link>
                       </li>
-                      <li>
+                      {/* <li>
                         <a href="chat.html">
                           <i className="fas fa-comments"></i>
                           <span>Message</span>
                           <small className="unread-msg">23</small>
                         </a>
-                      </li>
+                      </li> */}
                       <li>
-                        <a href="profile-settings.html">
+                        <Link to="/profile-settings">
                           <i className="fas fa-user-cog"></i>
                           <span>Profile Settings</span>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="change-password.html">
+                        <Link to="/change-password">
                           <i className="fas fa-lock"></i>
                           <span>Change Password</span>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="index-2.html">
+                        <Link to="/">
                           <i className="fas fa-sign-out-alt"></i>
                           <span>Logout</span>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </nav>
