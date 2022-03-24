@@ -118,12 +118,12 @@ const Register = () => {
                         <span className="span-or">or</span>
                       </div>
                       <div className="row form-row social-login">
-                        <div className="col-6">
+                        {/* <div className="col-6">
                           <a href="#" className="btn btn-facebook btn-block">
                             <i className="fab fa-facebook-f mr-1"></i> Login
                           </a>
-                        </div>
-                        <div className="col-6">
+                        </div> */}
+                        <div className="col-12">
                           <a href="#" className="btn btn-google btn-block">
                             <i className="fab fa-google mr-1"></i> Login
                           </a>
