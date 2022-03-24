@@ -1,32 +1,24 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import $ from "jquery";
 import auth from "../../services/auth.service";
 import jwt_decode from "jwt-decode";
 
-//Initial Values
-const InitialValues = {
-  email: "",
-  password: "",
-};
-const Login = () => {
-  const [loginUser, setLoginUser] = useState(InitialValues);
 
+const Login = () => {
+  //Initial Values
+  const InitialValues = {
+    email: "",
+    password: "",
+  };
+  const [loginUser, setLoginUser] = useState(InitialValues);
+  let navigate = useNavigate();
   // JQuery for Input
-  // setTimeout(function () {
-  //   if ($(".floating").length > 0) {
-  //     $(".floating")
-  //       .on("focus blur", function (e) {
-  //         $(this)
-  //           .parents(".form-focus")
-  //           .toggleClass(
-  //             "focused",
-  //             e.type === "focus" || this.value.length > 0
-  //           );
-  //       })
-  //       .trigger("blur");
-  //   }
-  // }, 100);
+  $(".floating").on("focus blur", function (e) {
+    $(this)
+      .parents(".form-focus")
+      .toggleClass("focused", e.type === "focus" || this.value.length > 0);
+  });
 
   //Handle Changes to Get Values
   const handleChange = (e) => {
@@ -46,9 +38,14 @@ const Login = () => {
         `http://localhost:8080/api/auth/login`,
         loginUser
       );
-      console.log(res);
-
-     
+      if (res.success == true) {
+        localStorage.setItem(
+          "accessToken",
+          JSON.stringify(res.user.accessToken)
+        );
+        navigate("/");
+        alert(res.message);
+      }
     }
   };
 
@@ -69,9 +66,7 @@ const Login = () => {
                   </div>
                   <div className="col-md-12 col-lg-6 login-right">
                     <div className="login-header">
-                      <h3>
-                        Login <span>Healthi Wealthi</span>
-                      </h3>
+                      <h3>Login</h3>
                     </div>
                     <form action="#">
                       <div className="form-group form-focus">
