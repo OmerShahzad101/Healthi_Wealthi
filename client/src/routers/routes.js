@@ -19,7 +19,9 @@ import ProfileSettingPage from "../Pages/ProfileSettingPage";
 import ChangePasswordPage from "../Pages/ChangePasswordPage";
 import AppointmentsPage from "../Pages/AppointmentsPage";
 import ReviewsPage from "../Pages/ReviewsPage";
+import CoachDashboardPage from "../Pages/CoachDashboardPage";
 import UsersContainer from "../components/UsersContainer"
+import MyClientPage from "../Pages/MyClientPage"
 const MyRouts = () => {
   return (
     <div>
@@ -45,6 +47,10 @@ const MyRouts = () => {
           <Route path="/change-password" element={<ChangePasswordPage />} />
           <Route path="/appointments" element={<AppointmentsPage />} />
           <Route path="/reviews" element={<ReviewsPage />} />
+          <Route path="/coach-dashboard" element={<CoachDashboardPage/>} />
+          <Route path="/my-client" element={<MyClientPage/>} />
+
+          
           <Route path="/*" element={<NotFoundPage />} />
         </Routes>
       </Router>
