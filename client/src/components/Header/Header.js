@@ -32,7 +32,7 @@ const Header = () => {
           </a>
           <Link to="/" className="navbar-brand logo">
             <img
-              src="assets/images/Logo.svg"
+              src="assets/img/Logo.svg"
               className="img-fluid"
               alt="Logo"
             />
@@ -42,7 +42,7 @@ const Header = () => {
           <div className="menu-header">
             <Link to="/" className="menu-logo">
               <img
-                src="assets/images/Logo.svg"
+                src="assets/img/Logo.svg"
                 className="img-fluid"
                 alt="logo"
               />
@@ -172,11 +172,11 @@ const Header = () => {
                 </li>
               </ul>
             </li>
-            <li>
+            {/* <li>
               <a href="admin/index.html" target="_blank">
                 Admin
               </a>
-            </li>
+            </li> */}
             <li className="login-link">
               <Link to="/login">Login / Signup</Link>
             </li>

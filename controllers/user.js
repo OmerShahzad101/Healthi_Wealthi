@@ -4,24 +4,16 @@ const csv = require("csv-parser");
 const fs = require("fs");
 const path = require("path");
 const mongoose = require("mongoose");
-
-
-
 const User = require("../models/user");
-
 const roles = require("../_helper/roles");
-
 const { validateEmail } = require("../_helper/validation");
 const { SendEmail } = require("../_utils/email_Send");
 const { sendFileS3Bucket } = require("../_utils/awsS3Bucket");
 const { baseURL } = require("../config/vars");
-const {
-  inviteUserViaEmailTemplate,
-} = require("../emailTemplate/emailTemplate");
-
+const { inviteUserViaEmailTemplate,} = require("../emailTemplate/emailTemplate");
 const { generateUniqueId } = require("../_helper/uniqueIdGeneration");
-
 const saltRounds = 10;
+
 
 exports.uploadImage = async (req, res) => {
   try {
@@ -374,8 +366,6 @@ exports.editUser = async (req, res) => {
     };
 
     try {
-
-
       const doc = await User.updateOne({ _id: id }, updateDocument, {
         upsert: true,
       }).exec();
