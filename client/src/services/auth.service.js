@@ -21,7 +21,12 @@ const AuthService = {
         "Content-Type": "application/json",
       },
     };
-    const _data = fetch(`${url}`, requestOptions).then((res) => res.json());
+    const _data = fetch(`${url}`, requestOptions)
+      .then((res) => res.json())
+      .then((res) => {
+        localStorage.setItem("accessToken", JSON.stringify(res.user.accessToken));
+      });
+   
     return _data;
   },
 };

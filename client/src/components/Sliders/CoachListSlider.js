@@ -7,6 +7,8 @@ const CoachListSlider = () => {
     autoplay: false,
     infinite: true,
     variableWidth: true,
+    slidesToShow: 1,
+      slidesToScroll: 1
   };
   return (
     <section className="section section-doctor">
@@ -32,8 +34,8 @@ const CoachListSlider = () => {
               <a href="#">Read More..</a>
             </div>
           </div>
-          <div className="col-lg-8">
-            <Slider {...settings} classNameName="doctor-slider slider">
+          <div className="col-lg-8 doctor-slider slider">
+            <Slider {...settings}>
               {/* <!-- Doctor Widget --> */}
               <div className="profile-widget">
                 <div className="doc-img">

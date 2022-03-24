@@ -1,10 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import jwt_decode from "jwt-decode";
+import moment from "moment";
 
 const Header = () => {
- 
-  
+  const logout = () => {
+    localStorage.removeItem("accessToken");
+  };
+  const token = JSON.parse(localStorage.getItem("accessToken"));
+  let id = null;
+  let decoded = null;
+  if (token) {
+    decoded = jwt_decode(token);
+    let exp_date = decoded.exp;
+    var dateString = moment.unix(exp_date).format("DD-MM-YYYY");
+    if (dateString <= moment().format("DD-MM-YYYY")) {
+      logout();
+    }
+  }
+
   return (
     <header className="header">
       <nav className="navbar navbar-expand-lg header-nav">
@@ -33,11 +47,7 @@ const Header = () => {
                 alt="logo"
               />
             </Link>
-            <a
-              id="menu_close"
-              className="menu-close"
-              href="#;"
-            >
+            <a id="menu_close" className="menu-close" href="#;">
               <i className="fas fa-times"></i>
             </a>
           </div>
@@ -183,9 +193,15 @@ const Header = () => {
             </div>
           </li>
           <li className="nav-item">
-            <Link className="nav-link header-login" to="/login">
-              login / Signup
-            </Link>
+            {token ? (
+              <Link className="nav-link header-login" to="/login"  onClick={logout}>
+                logout
+              </Link>
+            ) : (
+              <Link className="nav-link header-login" to="/login">
+                login / Signup
+              </Link>
+            )}
           </li>
         </ul>
       </nav>
