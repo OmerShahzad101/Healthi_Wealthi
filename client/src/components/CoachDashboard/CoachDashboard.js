@@ -10,7 +10,7 @@ const CoachDashboard = () => {
               <nav aria-label="breadcrumb" className="page-breadcrumb">
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
-                    <a href="index-2.html">Home</a>
+                    <Link to="/">Home</Link>
                   </li>
                   <li className="breadcrumb-item active" aria-current="page">
                     Dashboard
@@ -41,7 +41,7 @@ const CoachDashboard = () => {
 
                       <div className="patient-details">
                         <h5 className="mb-0">
-                          BDS, MDS - Oral & Maxillofacial Surgery
+                        Donec sollicitudin molestie malesuada.
                         </h5>
                       </div>
                     </div>
@@ -51,16 +51,16 @@ const CoachDashboard = () => {
                   <nav className="dashboard-menu">
                     <ul>
                       <li className="active">
-                        <a href="doctor-dashboard.html">
+                        <Link to="/coach-dashboard">
                           <i className="fas fa-columns"></i>
                           <span>Dashboard</span>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="appointments.html">
+                        <Link to="/appointments">
                           <i className="fas fa-calendar-check"></i>
                           <span>Appointments</span>
-                        </a>
+                        </Link>
                       </li>
                       <li>
                         <Link to="/my-clients">
@@ -68,54 +68,54 @@ const CoachDashboard = () => {
                           <span>My Clients</span>
                         </Link>
                       </li>
-                      <li>
+                      {/* <li>
                         <a href="schedule-timings.html">
                           <i className="fas fa-hourglass-start"></i>
                           <span>Schedule Timings</span>
                         </a>
-                      </li>
+                      </li> */}
                       <li>
-                        <a href="invoices.html">
+                        <Link to="/invoices">
                           <i className="fas fa-file-invoice"></i>
                           <span>Invoices</span>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="reviews.html">
+                        <Link to="/reviews">
                           <i className="fas fa-star"></i>
                           <span>Reviews</span>
-                        </a>
+                        </Link>
                       </li>
-                      <li>
+                      {/* <li>
                         <a href="chat-doctor.html">
                           <i className="fas fa-comments"></i>
                           <span>Message</span>
                           <small className="unread-msg">23</small>
                         </a>
-                      </li>
+                      </li> */}
                       <li>
-                        <a href="doctor-profile-settings.html">
+                        <Link to="/profile-setting">
                           <i className="fas fa-user-cog"></i>
                           <span>Profile Settings</span>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="social-media.html">
+                        <Link to="/social-media">
                           <i className="fas fa-share-alt"></i>
                           <span>Social Media</span>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="doctor-change-password.html">
+                        <Link to="/change-password">
                           <i className="fas fa-lock"></i>
                           <span>Change Password</span>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="index-2.html">
+                        <Link to="/">
                           <i className="fas fa-sign-out-alt"></i>
                           <span>Logout</span>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </nav>
@@ -141,7 +141,7 @@ const CoachDashboard = () => {
                               </div>
                             </div>
                             <div className="dash-widget-info">
-                              <h6>Total Patient</h6>
+                              <h6>Total Clients</h6>
                               <h3>1500</h3>
                               <p className="text-muted">Till Today</p>
                             </div>
@@ -160,7 +160,7 @@ const CoachDashboard = () => {
                               </div>
                             </div>
                             <div className="dash-widget-info">
-                              <h6>Today Patient</h6>
+                              <h6>Today Clients</h6>
                               <h3>160</h3>
                               <p className="text-muted">06, Nov 2019</p>
                             </div>
@@ -193,7 +193,7 @@ const CoachDashboard = () => {
 
               <div className="row">
                 <div className="col-md-12">
-                  <h4 className="mb-4">Patient Appoinment</h4>
+                  <h4 className="mb-4">Client Appoinment</h4>
                   <div className="appointment-tab">
                     <ul className="nav nav-tabs nav-tabs-solid nav-tabs-rounded">
                       <li className="nav-item">
@@ -227,7 +227,7 @@ const CoachDashboard = () => {
                               <table className="table table-hover table-center mb-0">
                                 <thead>
                                   <tr>
-                                    <th>Patient Name</th>
+                                    <th>Client Name</th>
                                     <th>Appt Date</th>
                                     <th>Purpose</th>
                                     <th>Type</th>
@@ -261,7 +261,7 @@ const CoachDashboard = () => {
                                       </span>
                                     </td>
                                     <td>General</td>
-                                    <td>New Patient</td>
+                                    <td>New Client</td>
                                     <td className="text-center">$150</td>
                                     <td className="text-right">
                                       <div className="table-action">
@@ -314,7 +314,7 @@ const CoachDashboard = () => {
                                       </span>
                                     </td>
                                     <td>General</td>
-                                    <td>Old Patient</td>
+                                    <td>Old Client</td>
                                     <td className="text-center">$200</td>
                                     <td className="text-right">
                                       <div className="table-action">
@@ -367,7 +367,7 @@ const CoachDashboard = () => {
                                       </span>
                                     </td>
                                     <td>General</td>
-                                    <td>New Patient</td>
+                                    <td>New Client</td>
                                     <td className="text-center">$75</td>
                                     <td className="text-right">
                                       <div className="table-action">
@@ -420,7 +420,7 @@ const CoachDashboard = () => {
                                       </span>
                                     </td>
                                     <td>General</td>
-                                    <td>Old Patient</td>
+                                    <td>Old Client</td>
                                     <td className="text-center">$100</td>
                                     <td className="text-right">
                                       <div className="table-action">
@@ -473,7 +473,7 @@ const CoachDashboard = () => {
                                       </span>
                                     </td>
                                     <td>General</td>
-                                    <td>New Patient</td>
+                                    <td>New Client</td>
                                     <td className="text-center">$350</td>
                                     <td className="text-right">
                                       <div className="table-action">
@@ -526,7 +526,7 @@ const CoachDashboard = () => {
                                       </span>
                                     </td>
                                     <td>General</td>
-                                    <td>Old Patient</td>
+                                    <td>Old Client</td>
                                     <td className="text-center">$250</td>
                                     <td className="text-right">
                                       <div className="table-action">
@@ -568,7 +568,7 @@ const CoachDashboard = () => {
                               <table className="table table-hover table-center mb-0">
                                 <thead>
                                   <tr>
-                                    <th>Patient Name</th>
+                                    <th>Client Name</th>
                                     <th>Appt Date</th>
                                     <th>Purpose</th>
                                     <th>Type</th>
@@ -602,7 +602,7 @@ const CoachDashboard = () => {
                                       </span>
                                     </td>
                                     <td>Fever</td>
-                                    <td>Old Patient</td>
+                                    <td>Old Client</td>
                                     <td className="text-center">$300</td>
                                     <td className="text-right">
                                       <div className="table-action">
@@ -655,7 +655,7 @@ const CoachDashboard = () => {
                                       </span>
                                     </td>
                                     <td>General</td>
-                                    <td>Old Patient</td>
+                                    <td>Old Client</td>
                                     <td className="text-center">$100</td>
                                     <td className="text-right">
                                       <div className="table-action">
@@ -708,7 +708,7 @@ const CoachDashboard = () => {
                                       </span>
                                     </td>
                                     <td>General</td>
-                                    <td>New Patient</td>
+                                    <td>New Client</td>
                                     <td className="text-center">$75</td>
                                     <td className="text-right">
                                       <div className="table-action">
@@ -761,7 +761,7 @@ const CoachDashboard = () => {
                                       </span>
                                     </td>
                                     <td>General</td>
-                                    <td>Old Patient</td>
+                                    <td>Old Client</td>
                                     <td className="text-center">$350</td>
                                     <td className="text-right">
                                       <div className="table-action">
@@ -814,7 +814,7 @@ const CoachDashboard = () => {
                                       </span>
                                     </td>
                                     <td>General</td>
-                                    <td>New Patient</td>
+                                    <td>New Client</td>
                                     <td className="text-center">$175</td>
                                     <td className="text-right">
                                       <div className="table-action">
@@ -867,7 +867,7 @@ const CoachDashboard = () => {
                                       </span>
                                     </td>
                                     <td>General</td>
-                                    <td>New Patient</td>
+                                    <td>New Client</td>
                                     <td className="text-center">$450</td>
                                     <td className="text-right">
                                       <div className="table-action">

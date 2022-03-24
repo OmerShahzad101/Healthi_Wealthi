@@ -14,20 +14,11 @@ const Login = () => {
   const [loginUser, setLoginUser] = useState(InitialValues);
   let navigate = useNavigate();
   // JQuery for Input
-  // setTimeout(function () {
-  //   if ($(".floating").length > 0) {
-  //     $(".floating")
-  //       .on("focus blur", function (e) {
-  //         $(this)
-  //           .parents(".form-focus")
-  //           .toggleClass(
-  //             "focused",
-  //             e.type === "focus" || this.value.length > 0
-  //           );
-  //       })
-  //       .trigger("blur");
-  //   }
-  // }, 100);
+  $(".floating").on("focus blur", function (e) {
+    $(this)
+      .parents(".form-focus")
+      .toggleClass("focused", e.type === "focus" || this.value.length > 0);
+  });
 
   //Handle Changes to Get Values
   const handleChange = (e) => {
@@ -43,10 +34,17 @@ const Login = () => {
     const { email, password } = loginUser;
     if (email && password) {
       console.log(loginUser);
-      const res = await auth.login(`http://localhost:8080/api/auth/login`,   loginUser);
-      console.log(res.success)
+      const res = await auth.login(
+        `http://localhost:8080/api/auth/login`,
+        loginUser
+      );
       if (res.success == true) {
+        localStorage.setItem(
+          "accessToken",
+          JSON.stringify(res.user.accessToken)
+        );
         navigate("/");
+        alert(res.message);
       }
     }
   };
@@ -68,9 +66,7 @@ const Login = () => {
                   </div>
                   <div className="col-md-12 col-lg-6 login-right">
                     <div className="login-header">
-                      <h3>
-                        Login <span>Healthi Wealthi</span>
-                      </h3>
+                      <h3>Login</h3>
                     </div>
                     <form action="#">
                       <div className="form-group form-focus">

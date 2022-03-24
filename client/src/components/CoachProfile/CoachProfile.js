@@ -14,7 +14,7 @@ const CoachProfile = () => {
                     <Link to="/">Home</Link>
                   </li>
                   <li className="breadcrumb-item active" aria-current="page">
-                    Doctor Profile
+                  Coach Profile
                   </li>
                 </ol>
               </nav>
@@ -41,7 +41,7 @@ const CoachProfile = () => {
                   <div className="doc-info-cont">
                     <h4 className="doc-name">Dr. Darren Elder</h4>
                     <p className="doc-speciality">
-                      BDS, MDS - Oral & Maxillofacial Surgery
+                    Donec sollicitudin molestie malesuada.
                     </p>
                     <p className="doc-department">
                       <img
@@ -49,7 +49,7 @@ const CoachProfile = () => {
                         className="img-fluid"
                         alt="Speciality"
                       />
-                      Dentist
+                      Yoga Expert
                     </p>
                     <div className="rating">
                       <i className="fas fa-star filled"></i>
@@ -114,8 +114,8 @@ const CoachProfile = () => {
                       </ul>
                     </div>
                     <div className="clinic-services">
-                      <span>Dental Fillings</span>
-                      <span>Teeth Whitneing</span>
+                      <span>Diet</span>
+                      <span>Fitness</span>
                     </div>
                   </div>
                 </div>
