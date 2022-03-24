@@ -44,6 +44,7 @@ const Register = () => {
     if (name && email && password) {
       console.log(user)
        const res = await auth.register(`http://localhost:8080/api/auth/signup`, user);
+       alert(res.message)
        console.log(res)
     }
   };

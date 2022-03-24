@@ -59,11 +59,13 @@ exports.signup = async (req, res) => {
       .status(200)
       .send({
         success: true,
-        message: "Please check your email to verify your account!",
+        // message: "Please check your email to verify your account!",
+        message: "Account created successfull !",
         data: userObj,
       });
   } catch (e) {
-    return res.status(500).json({ success: false, message: e.message });
+    // return res.status(500).json({ success: false, message: e.message });
+    return res.status(500).json({ success: false, message: "Email already exists" });
   }
 };
 
@@ -94,32 +96,32 @@ exports.login = async (req, res) => {
           .send({ success: false, message: "Invalid email or password" });
       }
 
-      // Check if user is not verified
-      if (!user.isEmailVerified) {
-        return res
-          .status(200)
-          .send({
-            success: false,
-            message: "Your Email Address is not verified yet!",
-          });
-      }
+      // // Check if user is not verified
+      // if (!user.isEmailVerified) {
+      //   return res
+      //     .status(200)
+      //     .send({
+      //       success: false,
+      //       message: "Your Email Address is not verified yet!",
+      //     });
+      // }
 
-      // Create and save a new access token for the user
-      const accessToken = jwt.sign({ user: user.id }, TOKEN_SECRET, {
-        expiresIn: "2d",
-      });
-      const accessTokenDocument = { accessToken, userId: user.id };
-      await AccessToken.create(accessTokenDocument);
+      // // Create and save a new access token for the user
+      // const accessToken = jwt.sign({ user: user.id }, TOKEN_SECRET, {
+      //   expiresIn: "2d",
+      // });
+      // const accessTokenDocument = { accessToken, userId: user.id };
+      // await AccessToken.create(accessTokenDocument);
 
-      // Fetch the user's permissions from the roles constants file
-      let accessControlInfo = {};
-      Object.keys(roles).some((role) => {
-        const userRoleFound = user.role === roles[role].key;
-        if (userRoleFound) {
-          accessControlInfo = roles[role];
-        }
-        return userRoleFound;
-      });
+      // // Fetch the user's permissions from the roles constants file
+      // let accessControlInfo = {};
+      // Object.keys(roles).some((role) => {
+      //   const userRoleFound = user.role === roles[role].key;
+      //   if (userRoleFound) {
+      //     accessControlInfo = roles[role];
+      //   }
+      //   return userRoleFound;
+      // });
 
       // Construct the response data objects
       const userData = {
@@ -130,44 +132,14 @@ exports.login = async (req, res) => {
       };
 
       // Get the user's company data
-      let userCompany = {};
-      if (user.role === "301") {
-        userCompany = await Company.findOne({ userId: user.id }).exec();
-      } else if (user.role === "302" || user.role === "303") {
-        userCompany = await Company.findOne({ userId: user.parentId }).exec();
-      }
-
-      if (user.role === "302") {
-        accessControlInfo = {
-          key: "302",
-          value: "Manager",
-        };
-        let permissions = [];
-        permissions.push("view-dashboard");
-        if (user.allowWorkFlow) {
-          permissions.push("create-workflow");
-        }
-        if (user.allowTemplate) {
-          permissions.push("view-all-template-listing");
-        }
-        if (user.allowDocument) {
-          permissions.push("view-document-listing");
-        }
-        if (user.allowUser) {
-          permissions.push("view-company-users-listing");
-        }
-        if (user.allowCompany) {
-          permissions.push("edit-company");
-        }
-        accessControlInfo.permissions = permissions;
-      }
+      
+      // accessToken,
+      // company: userCompany,
+      // permission: accessControlInfo,
 
       return res.status(200).send({
         success: true,
-        accessToken,
         user: userData,
-        company: userCompany,
-        permission: accessControlInfo,
         message: "Logged In successfully!",
       });
     } catch (err) {
