@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="col-lg-3 col-md-6">
               <div className="footer-widget footer-about">
                 <div className="footer-logo">
-                  <img src="assets/images/Logo.svg" alt="logo" />
+                  <img src="assets/img/Logo.svg" alt="logo" />
                 </div>
                 <div className="footer-about-content">
                   <p>
