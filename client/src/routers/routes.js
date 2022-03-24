@@ -22,6 +22,7 @@ import ReviewsPage from "../Pages/ReviewsPage";
 import CoachDashboardPage from "../Pages/CoachDashboardPage";
 import UsersContainer from "../components/UsersContainer"
 import MyClientPage from "../Pages/MyClientPage"
+import AboutPage from "../Pages/AboutPage"
 const MyRouts = () => {
   return (
     <div>
@@ -49,6 +50,7 @@ const MyRouts = () => {
           <Route path="/reviews" element={<ReviewsPage />} />
           <Route path="/coach-dashboard" element={<CoachDashboardPage/>} />
           <Route path="/my-client" element={<MyClientPage/>} />
+          <Route path="/about" element={<AboutPage/>} />
 
           
           <Route path="/*" element={<NotFoundPage />} />

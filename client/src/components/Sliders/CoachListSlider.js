@@ -8,7 +8,7 @@ const CoachListSlider = () => {
     infinite: true,
     variableWidth: true,
     slidesToShow: 1,
-      slidesToScroll: 1
+    slidesToScroll: 1,
   };
   return (
     <section className="section section-doctor">
@@ -55,9 +55,7 @@ const CoachListSlider = () => {
                     <a href="doctor-profile.html">Ruby Perrin</a>
                     <i className="fas fa-check-circle verified"></i>
                   </h3>
-                  <p className="speciality">
-                    MDS - Periodontology and Oral Implantology, BDS
-                  </p>
+                  <p className="speciality">Sed porttitor lectus nibh.</p>
                   <div className="rating">
                     <i className="fas fa-star filled"></i>
                     <i className="fas fa-star filled"></i>
@@ -117,9 +115,7 @@ const CoachListSlider = () => {
                     <a href="doctor-profile.html">Darren Elder</a>
                     <i className="fas fa-check-circle verified"></i>
                   </h3>
-                  <p className="speciality">
-                    BDS, MDS - Oral & Maxillofacial Surgery
-                  </p>
+                  <p className="speciality">Sed porttitor lectus nibh.</p>
                   <div className="rating">
                     <i className="fas fa-star filled"></i>
                     <i className="fas fa-star filled"></i>
@@ -179,9 +175,7 @@ const CoachListSlider = () => {
                     <a href="doctor-profile.html">Deborah Angel</a>
                     <i className="fas fa-check-circle verified"></i>
                   </h3>
-                  <p className="speciality">
-                    MBBS, MD - General Medicine, DNB - Cardiology
-                  </p>
+                  <p className="speciality">Sed porttitor lectus nibh.</p>
                   <div className="rating">
                     <i className="fas fa-star filled"></i>
                     <i className="fas fa-star filled"></i>
@@ -241,9 +235,7 @@ const CoachListSlider = () => {
                     <a href="doctor-profile.html">Sofia Brient</a>
                     <i className="fas fa-check-circle verified"></i>
                   </h3>
-                  <p className="speciality">
-                    MBBS, MS - General Surgery, MCh - Urology
-                  </p>
+                  <p className="speciality">Sed porttitor lectus nibh.</p>
                   <div className="rating">
                     <i className="fas fa-star filled"></i>
                     <i className="fas fa-star filled"></i>
@@ -303,9 +295,7 @@ const CoachListSlider = () => {
                     <a href="doctor-profile.html">Marvin Campbell</a>
                     <i className="fas fa-check-circle verified"></i>
                   </h3>
-                  <p className="speciality">
-                    MBBS, MD - Ophthalmology, DNB - Ophthalmology
-                  </p>
+                  <p className="speciality">Sed porttitor lectus nibh.</p>
                   <div className="rating">
                     <i className="fas fa-star filled"></i>
                     <i className="fas fa-star filled"></i>
@@ -365,9 +355,7 @@ const CoachListSlider = () => {
                     <a href="doctor-profile.html">Katharine Berthold</a>
                     <i className="fas fa-check-circle verified"></i>
                   </h3>
-                  <p className="speciality">
-                    MS - Orthopaedics, MBBS, M.Ch - Orthopaedics
-                  </p>
+                  <p className="speciality">Sed porttitor lectus nibh.</p>
                   <div className="rating">
                     <i className="fas fa-star filled"></i>
                     <i className="fas fa-star filled"></i>
@@ -427,9 +415,7 @@ const CoachListSlider = () => {
                     <a href="doctor-profile.html">Linda Tobin</a>
                     <i className="fas fa-check-circle verified"></i>
                   </h3>
-                  <p className="speciality">
-                    MBBS, MD - General Medicine, DM - Neurology
-                  </p>
+                  <p className="speciality">Sed porttitor lectus nibh.</p>
                   <div className="rating">
                     <i className="fas fa-star filled"></i>
                     <i className="fas fa-star filled"></i>
@@ -489,9 +475,7 @@ const CoachListSlider = () => {
                     <a href="doctor-profile.html">Paul Richard</a>
                     <i className="fas fa-check-circle verified"></i>
                   </h3>
-                  <p className="speciality">
-                    MBBS, MD - Dermatology , Venereology & Lepros
-                  </p>
+                  <p className="speciality">Sed porttitor lectus nibh.</p>
                   <div className="rating">
                     <i className="fas fa-star filled"></i>
                     <i className="fas fa-star filled"></i>

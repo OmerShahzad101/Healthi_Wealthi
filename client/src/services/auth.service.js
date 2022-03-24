@@ -21,13 +21,12 @@ const AuthService = {
         "Content-Type": "application/json",
       },
     };
-    const _data = fetch(`${url}`, requestOptions)
-      .then((res) => res.json())
-      .then((res) => {
-        localStorage.setItem("accessToken", JSON.stringify(res.user.accessToken));
-      });
-   
+    const _data = fetch(`${url}`, requestOptions).then((res) => res.json());
     return _data;
   },
 };
 export default AuthService;
+
+
+
+// .then((res) => { localStorage.setItem("accessToken", JSON.stringify(res.user.accessToken));});

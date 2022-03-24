@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import $ from "jquery";
 import auth from "../../services/auth.service";
-import ENV from "../../env"
+import ENV from "../../env";
 const Register = () => {
   // Initial Values
   const InitialValues = {
@@ -12,23 +12,14 @@ const Register = () => {
   };
   //state
   const [user, setUser] = useState(InitialValues);
+  let navigate = useNavigate();
 
   // JQuery for Input Field
-  // setTimeout(function () {
-  //   if ($(".floating").length > 0) {
-  //     $(".floating")
-  //       .on("focus blur", function (e) {
-  //         $(this)
-  //           .parents(".form-focus")
-  //           .toggleClass(
-  //             "focused",
-  //             e.type === "focus" || this.value.length > 0
-  //           );
-  //       })
-  //       .trigger("blur");
-  //   }
-  // }, 100);
-
+  $(".floating").on("focus blur", function (e) {
+    $(this)
+      .parents(".form-focus")
+      .toggleClass("focused", e.type === "focus" || this.value.length > 0);
+  });
   // Handel Input change
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -39,13 +30,17 @@ const Register = () => {
   };
 
   //API call
-  const RegisterCall = async() => {
+  const RegisterCall = async () => {
     const { name, email, password } = user;
     if (name && email && password) {
-      console.log(user)
-       const res = await auth.register(`http://localhost:8080/api/auth/signup`, user);
-       alert(res.message)
-       console.log(res)
+      const res = await auth.register(
+        `http://localhost:8080/api/auth/signup`,
+        user
+      );
+      if (res.success == true) {
+        navigate("/login");
+        alert(res.message);
+      }
     }
   };
 

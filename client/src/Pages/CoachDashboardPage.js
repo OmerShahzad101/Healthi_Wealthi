@@ -5,9 +5,7 @@ import CoachDashboard from '../components/CoachDashboard/CoachDashboard'
 const CoachDashboardPage = () => {
   return (
   <>
-  <Header/>
   <CoachDashboard/>
-  <Footer/>
   </>
   )
 }

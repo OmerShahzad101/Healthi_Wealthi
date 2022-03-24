@@ -9,7 +9,7 @@ const Home = () => {
           <div className="banner-header text-center">
             <h1>Search Coach, Make an Appointment</h1>
             <p>
-              Discover the best Couch nearest toyou.
+              Discover the best Couch nearest to you.
             </p>
           </div>
 
@@ -30,7 +30,7 @@ const Home = () => {
                   className="form-control"
                   placeholder="Search Coach"
                 />
-                {/* <span className="form-text">Ex : Dental or Sugar Check up etc</span> */}
+                <span className="form-text">Ex : Nutritionists or Yoga Expert etc</span>
               </div>
               <button type="submit" className="btn btn-primary search-btn">
                 <i className="fas fa-search"></i> <span>Search</span>
