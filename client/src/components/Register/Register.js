@@ -61,15 +61,15 @@ const Register = () => {
                     <img
                       src="assets/img/login-banner.png"
                       className="img-fluid"
-                      alt="Doccure Register"
+                      alt="Register"
                     />
                   </div>
 
                   <div className="col-md-12 col-lg-6 login-right">
                     <div className="login-header">
                       <h3>
-                        Client Register{" "}
-                        <Link to="/register">Are you a Coach?</Link>
+                        Register{" "}
+                        {/* <Link to="/register">Are you a Coach?</Link> */}
                       </h3>
                     </div>
 

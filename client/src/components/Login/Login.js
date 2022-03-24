@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import $ from "jquery";
 import auth from "../../services/auth.service";
 
@@ -11,7 +11,7 @@ const InitialValues = {
 };
 const Login = () => {
   const [loginUser, setLoginUser] = useState(InitialValues);
-
+  let navigate = useNavigate()
   // JQuery for Input
   // setTimeout(function () {
   //   if ($(".floating").length > 0) {
@@ -43,8 +43,13 @@ const Login = () => {
     if (email && password) {
       console.log(loginUser);
       const res = await auth.login(`http://localhost:8080/api/auth/login`, loginUser);
+      console.log(res.success)
       console.log(res)
-      alert(res.message)
+      if (res.success == true)
+      {
+        navigate("/")
+        alert(res.message)
+      }
     }
   };
 
@@ -66,7 +71,7 @@ const Login = () => {
                   <div className="col-md-12 col-lg-6 login-right">
                     <div className="login-header">
                       <h3>
-                        Login <span>Healthi Wealthi</span>
+                        Login
                       </h3>
                     </div>
                     <form action="#">

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ForgotPassword = () => {
   return (
-    <>
+    <div className="account-page">
       <div className="content">
         <div className="container-fluid">
           <div className="row">
@@ -49,7 +49,7 @@ const ForgotPassword = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
