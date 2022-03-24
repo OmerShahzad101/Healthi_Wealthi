@@ -1,6 +1,6 @@
 module.exports = {
-    // 1. accountVerificationEmailTemplate
-    accountVerificationEmailTemplate: `
+  // 1. accountVerificationEmailTemplate
+  accountVerificationEmailTemplate: `
        Hi,
             <p>Thank you for creating an account with Digno.</p>
             <p>
@@ -12,7 +12,7 @@ module.exports = {
             <p>
             All the best</p>
        `, // 1. resetPasswordEmailTemplate
-    resetPasswordEmailTemplate: `
+  resetPasswordEmailTemplate: `
          Hi,
               <p>Forget Pass Key.</p>
               <p>
@@ -24,7 +24,7 @@ module.exports = {
               <p>
               All the best</p>
          `,
-    newCompanyInvitationEmailTemplate: `Hi,
+  newCompanyInvitationEmailTemplate: `Hi,
          <p>Thank you for creating an account with Digno.</p>
 
          <p>
@@ -44,7 +44,7 @@ module.exports = {
          <p>
          All the best</p>
          `,
-    inviteUserViaEmailTemplate: `<div>
+  inviteUserViaEmailTemplate: `<div>
         Hi,
         <p>
             You have been invited by <b>Netrust</b>.
