@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import jwt_decode from "jwt-decode";
 import moment from "moment";
 
 const Header = () => {
+  const [refreshKey, setRefreshKey] = useState(0);
+
   const logout = () => {
     localStorage.removeItem("accessToken");
+setRefreshKey(1)
   };
   const token = JSON.parse(localStorage.getItem("accessToken"));
   let id = null;

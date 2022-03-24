@@ -1,17 +1,18 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import $ from "jquery";
 import auth from "../../services/auth.service";
 import jwt_decode from "jwt-decode";
 
-//Initial Values
-const InitialValues = {
-  email: "",
-  password: "",
-};
-const Login = () => {
-  const [loginUser, setLoginUser] = useState(InitialValues);
 
+const Login = () => {
+  //Initial Values
+  const InitialValues = {
+    email: "",
+    password: "",
+  };
+  const [loginUser, setLoginUser] = useState(InitialValues);
+  let navigate = useNavigate();
   // JQuery for Input
   // setTimeout(function () {
   //   if ($(".floating").length > 0) {
@@ -42,13 +43,11 @@ const Login = () => {
     const { email, password } = loginUser;
     if (email && password) {
       console.log(loginUser);
-      const res = await auth.login(
-        `http://localhost:8080/api/auth/login`,
-        loginUser
-      );
-      console.log(res);
-
-     
+      const res = await auth.login(`http://localhost:8080/api/auth/login`,   loginUser);
+      console.log(res.success)
+      if (res.success == true) {
+        navigate("/");
+      }
     }
   };
 
