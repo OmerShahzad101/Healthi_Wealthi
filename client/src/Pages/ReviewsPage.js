@@ -6,9 +6,7 @@ import Reviews from "../components/Reviews/Reviews";
 const ReviewsPage = () => {
   return (
     <div>
-      <Header />
       <Reviews />
-      <Footer />
     </div>
   );
 };

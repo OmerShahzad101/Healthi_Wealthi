@@ -5,9 +5,7 @@ import Header from "../components/Header/Header";
 const AppointmentsPage = () => {
   return (
     <div>
-      <Header />
       <Appointments />
-      <Footer />
     </div>
   );
 };

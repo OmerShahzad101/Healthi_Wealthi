@@ -30,8 +30,7 @@ const Reviews = () => {
       <div className="content">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar">
-              {/* <!-- Profile Sidebar --> */}
+          <div className="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar">
               <div className="profile-sidebar">
                 <div className="widget-profile pro-widget-content">
                   <div className="profile-info-widget">
@@ -46,7 +45,7 @@ const Reviews = () => {
 
                       <div className="patient-details">
                         <h5 className="mb-0">
-                          BDS, MDS - Oral & Maxillofacial Surgery
+                        Donec sollicitudin molestie malesuada.
                         </h5>
                       </div>
                     </div>
@@ -55,78 +54,77 @@ const Reviews = () => {
                 <div className="dashboard-widget">
                   <nav className="dashboard-menu">
                     <ul>
-                      <li>
-                        <a href="doctor-dashboard.html">
+                      <li >
+                        <Link to="/coach-dashboard">
                           <i className="fas fa-columns"></i>
                           <span>Dashboard</span>
-                        </a>
+                        </Link>
                       </li>
-                      <li>
-                        <a href="appointments.html">
+                      <li >
+                        <Link to="/appointments">
                           <i className="fas fa-calendar-check"></i>
                           <span>Appointments</span>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="my-patients.html">
+                        <Link to="/my-clients">
                           <i className="fas fa-user-injured"></i>
-                          <span>My Patients</span>
-                        </a>
+                          <span>My Clients</span>
+                        </Link>
                       </li>
-                      <li>
+                      {/* <li>
                         <a href="schedule-timings.html">
                           <i className="fas fa-hourglass-start"></i>
                           <span>Schedule Timings</span>
                         </a>
-                      </li>
+                      </li> */}
                       <li>
-                        <a href="invoices.html">
+                        <Link to="/invoices-view">
                           <i className="fas fa-file-invoice"></i>
                           <span>Invoices</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className="active">
-                        <a href="reviews.html">
+                        <Link to="/reviews">
                           <i className="fas fa-star"></i>
                           <span>Reviews</span>
-                        </a>
+                        </Link>
                       </li>
-                      <li>
+                      {/* <li>
                         <a href="chat-doctor.html">
                           <i className="fas fa-comments"></i>
                           <span>Message</span>
                           <small className="unread-msg">23</small>
                         </a>
-                      </li>
+                      </li> */}
                       <li>
-                        <a href="doctor-profile-settings.html">
+                        <Link to="/coach-profile-setting">
                           <i className="fas fa-user-cog"></i>
                           <span>Profile Settings</span>
-                        </a>
+                        </Link>
                       </li>
-                      <li>
-                        <a href="social-media.html">
+                      {/* <li>
+                        <Link to="/social-media">
                           <i className="fas fa-share-alt"></i>
                           <span>Social Media</span>
-                        </a>
-                      </li>
+                        </Link>
+                      </li> */}
                       <li>
-                        <a href="doctor-change-password.html">
+                        <Link to="/coach-change-password">
                           <i className="fas fa-lock"></i>
                           <span>Change Password</span>
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="index-2.html">
+                        <Link to="/">
                           <i className="fas fa-sign-out-alt"></i>
                           <span>Logout</span>
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </nav>
                 </div>
               </div>
-              {/* <!-- /Profile Sidebar --> */}
             </div>
             <div className="col-md-7 col-lg-8 col-xl-9">
               <div className="doc-review review-listing">

@@ -23,6 +23,8 @@ import CoachDashboardPage from "../Pages/CoachDashboardPage";
 import UsersContainer from "../components/UsersContainer"
 import MyClientPage from "../Pages/MyClientPage"
 import AboutPage from "../Pages/AboutPage"
+import CoachProfileSetting from "../components/CoachProfileSetting/CoachProfileSetting";
+import CoachChangePasswordPage from "../Pages/CoachChangePasswordPage";
 const MyRouts = () => {
   return (
     <div>
@@ -49,8 +51,10 @@ const MyRouts = () => {
           <Route path="/appointments" element={<AppointmentsPage />} />
           <Route path="/reviews" element={<ReviewsPage />} />
           <Route path="/coach-dashboard" element={<CoachDashboardPage/>} />
-          <Route path="/my-client" element={<MyClientPage/>} />
+          <Route path="/my-clients" element={<MyClientPage/>} />
           <Route path="/about" element={<AboutPage/>} />
+          <Route path="/coach-profile-setting" element={<CoachProfileSetting/>} />
+          <Route path="/coach-change-password" element={<CoachChangePasswordPage/>} />
 
           
           <Route path="/*" element={<NotFoundPage />} />

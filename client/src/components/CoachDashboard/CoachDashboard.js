@@ -75,7 +75,7 @@ const CoachDashboard = () => {
                         </a>
                       </li> */}
                       <li>
-                        <Link to="/invoices">
+                        <Link to="/invoices-view">
                           <i className="fas fa-file-invoice"></i>
                           <span>Invoices</span>
                         </Link>
@@ -94,19 +94,19 @@ const CoachDashboard = () => {
                         </a>
                       </li> */}
                       <li>
-                        <Link to="/profile-setting">
+                        <Link to="/coach-profile-setting">
                           <i className="fas fa-user-cog"></i>
                           <span>Profile Settings</span>
                         </Link>
                       </li>
-                      <li>
+                      {/* <li>
                         <Link to="/social-media">
                           <i className="fas fa-share-alt"></i>
                           <span>Social Media</span>
                         </Link>
-                      </li>
+                      </li> */}
                       <li>
-                        <Link to="/change-password">
+                        <Link to="/coach-change-password">
                           <i className="fas fa-lock"></i>
                           <span>Change Password</span>
                         </Link>

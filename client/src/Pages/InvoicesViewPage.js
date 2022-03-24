@@ -6,9 +6,7 @@ import Footer from "../components/Footer/Footer";
 const InvoicePage = () => {
   return (
     <div>
-      <Header />
       <InvoicesView />
-      <Footer />
     </div>
   );
 };
