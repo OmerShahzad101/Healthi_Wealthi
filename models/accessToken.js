@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 
+
+
 const accessTokenSchema = new mongoose.Schema({
     accessToken: { type: String, requires: true },
     userId: { type: mongoose.Schema.Types.ObjectId, ref: 'user' },
