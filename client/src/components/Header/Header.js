@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useLocation  } from "react-router-dom";
 import jwt_decode from "jwt-decode";
 import moment from "moment";
 
@@ -7,17 +7,21 @@ const Header = () => {
   const logout = () => {
     localStorage.removeItem("accessToken");
   };
+  const location = useLocation();
+  const { pathname } = location;
+  const splitLocation = pathname.split("/");
+  console.log(splitLocation)
   const token = JSON.parse(localStorage.getItem("accessToken"));
-  // let id = null;
-  // let decoded = null;
-  // if (token) {
-  //   decoded = jwt_decode(token);
-  //   let exp_date = decoded.exp;
-  //   var dateString = moment.unix(exp_date).format("DD-MM-YYYY");
-  //   if (dateString <= moment().format("DD-MM-YYYY")) {
-  //     logout();
-  //   }
-  // }
+  let id = null;
+  let decoded = null;
+  if (token) {
+    decoded = jwt_decode(token);
+    let exp_date = decoded.exp;
+    var dateString = moment.unix(exp_date).format("DD-MM-YYYY");
+    if (dateString <= moment().format("DD-MM-YYYY")) {
+      logout();
+    }
+  }
 
   return (
     <header className="header">
@@ -44,19 +48,24 @@ const Header = () => {
             </a>
           </div>
           <ul className="main-nav">
-            <li className="active">
+            <li className={splitLocation[1] === "" ? "active" : ""}>
               <Link to="/">Home</Link>
             </li>{" "}
-            <li >
+            <li className={splitLocation[1] === "about" ? "active" : ""}>
               <Link to="/about">About</Link>
             </li>
-            <li >
+            <li className={splitLocation[1] === "search-coach" ? "active" : ""}>
               <Link to="/search-coach">Search Coach</Link>
             </li>
-            <li >
-              <Link to="/about">Contact us</Link>
+            <li>
+              <Link to="/coach-dashboard">Coach Dashboard</Link>
             </li>
-            
+            <li>
+              <Link to="/client-dashboard">Client Dashboard</Link>
+            </li>
+            <li className={splitLocation[1] === "contact-us" ? "active" : ""}>
+              <Link to="/contact-us">Contact us</Link>
+            </li>
           </ul>
         </div>
         <ul className="nav header-navbar-rht">

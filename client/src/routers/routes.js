@@ -23,8 +23,12 @@ import CoachDashboardPage from "../Pages/CoachDashboardPage";
 import UsersContainer from "../components/UsersContainer"
 import MyClientPage from "../Pages/MyClientPage"
 import AboutPage from "../Pages/AboutPage"
+<<<<<<< HEAD
 import CoachProfileSetting from "../components/CoachProfileSetting/CoachProfileSetting";
 import CoachChangePasswordPage from "../Pages/CoachChangePasswordPage";
+=======
+import ContactPage from "../Pages/ContactPage";
+>>>>>>> 3600fd1b90a85830e89e7df722ae86eafec96c33
 const MyRouts = () => {
   return (
     <div>
@@ -56,6 +60,7 @@ const MyRouts = () => {
           <Route path="/coach-profile-setting" element={<CoachProfileSetting/>} />
           <Route path="/coach-change-password" element={<CoachChangePasswordPage/>} />
 
+          <Route path="/contact-us" element={<ContactPage/>} />
           
           <Route path="/*" element={<NotFoundPage />} />
         </Routes>
