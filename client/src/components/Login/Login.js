@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import $ from "jquery";
 import auth from "../../services/auth.service";
-
+import jwt_decode from "jwt-decode";
 
 //Initial Values
 const InitialValues = {
@@ -42,9 +42,13 @@ const Login = () => {
     const { email, password } = loginUser;
     if (email && password) {
       console.log(loginUser);
-      const res = await auth.login(`http://localhost:8080/api/auth/login`, loginUser);
-      console.log(res)
-      alert(res.message)
+      const res = await auth.login(
+        `http://localhost:8080/api/auth/login`,
+        loginUser
+      );
+      console.log(res);
+
+     
     }
   };
 

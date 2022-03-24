@@ -106,12 +106,12 @@ exports.login = async (req, res) => {
       //     });
       // }
 
-      // // Create and save a new access token for the user
-      // const accessToken = jwt.sign({ user: user.id }, TOKEN_SECRET, {
-      //   expiresIn: "2d",
-      // });
-      // const accessTokenDocument = { accessToken, userId: user.id };
-      // await AccessToken.create(accessTokenDocument);
+      // Create and save a new access token for the user
+      const accessToken = jwt.sign({ user: user.id }, TOKEN_SECRET, {
+        expiresIn: "2d",
+      });
+      const accessTokenDocument = { accessToken, userId: user.id };
+      await AccessToken.create(accessTokenDocument);
 
       // // Fetch the user's permissions from the roles constants file
       // let accessControlInfo = {};
@@ -128,12 +128,12 @@ exports.login = async (req, res) => {
         userName: user.userName,
         email: user.email,
         avatar: user.avatar,
-        role: user.role,
+        accessToken,
       };
-
+      
       // Get the user's company data
       
-      // accessToken,
+      // role: user.role,
       // company: userCompany,
       // permission: accessControlInfo,
 
