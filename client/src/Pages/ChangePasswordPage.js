@@ -6,9 +6,9 @@ import Header from '../components/Header/Header'
 const ChangePasswordPage = () => {
   return (
 <>
-<Header/>
+
 <ChangePassword/>
-<Footer/>
+
 </>  )
 }
 

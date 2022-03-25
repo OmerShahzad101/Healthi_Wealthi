@@ -26,6 +26,9 @@ import AboutPage from "../Pages/AboutPage"
 import CoachProfileSetting from "../components/CoachProfileSetting/CoachProfileSetting";
 import CoachChangePasswordPage from "../Pages/CoachChangePasswordPage";
 import ContactPage from "../Pages/ContactPage";
+import Chat from "../components/Chat/Chat";
+import VideoCall from "../components/VideoCall/VideoCall";
+import AudioCall from "../components/AudioCall/AudioCall";
 const MyRouts = () => {
   return (
     <div>
@@ -56,8 +59,10 @@ const MyRouts = () => {
           <Route path="/about" element={<AboutPage/>} />
           <Route path="/coach-profile-setting" element={<CoachProfileSetting/>} />
           <Route path="/coach-change-password" element={<CoachChangePasswordPage/>} />
-
+          <Route path="/chat" element={<Chat/>} />
           <Route path="/contact-us" element={<ContactPage/>} />
+          <Route path="/videocall" element={<VideoCall/>} />
+          <Route path="/audiocall" element={<AudioCall/>} />
           
           <Route path="/*" element={<NotFoundPage />} />
         </Routes>

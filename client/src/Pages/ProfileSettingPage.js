@@ -5,9 +5,9 @@ import ProfileSetting from '../components/ProfileSetting/ProfileSetting'
 const ProfileSettingPage = () => {
   return (
 <>
-<Header/>
+
 <ProfileSetting/>
-<Footer/>
+
 </>  )
 }
 

@@ -65,13 +65,26 @@ const ClientDashboard = () => {
                           <span>Favourites</span>
                         </Link>
                       </li>
-                      {/* <li>
-                        <a href="chat.html">
+                      <li>
+                        <Link to="/chat">
                           <i className="fas fa-comments"></i>
                           <span>Message</span>
                           <small className="unread-msg">23</small>
-                        </a>
-                      </li> */}
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/videocall">
+                          <i className="fas fa-comments"></i>
+                          <span>Video Call</span>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/audiocall">
+                          <i className="fas fa-comments"></i>
+                          <span>Voice Call</span>
+                          
+                        </Link>
+                      </li>
                       <li>
                         <Link to="/profile-settings">
                           <i className="fas fa-user-cog"></i>
