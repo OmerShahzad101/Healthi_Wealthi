@@ -2987,6 +2987,7 @@ html.menu-opened body {
   width: 19px;
   display: inline-block;
   margin-right: 10px;
+  display: none;
 }
 .doc-location {
   color: #757575;
@@ -7086,3 +7087,10 @@ html.menu-opened body {
 	border: 2px solid #d32986;
 	color: #d32986;
   }
+
+
+  .doc-img img {
+    width: 228px;
+    height: 151px;
+    object-fit: cover;
+}

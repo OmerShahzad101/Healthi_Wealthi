@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 const MyClient = () => {
   return (
-  
     <>
       <div className="breadcrumb-bar">
         <div className="container-fluid">
@@ -11,7 +10,7 @@ const MyClient = () => {
               <nav aria-label="breadcrumb" className="page-breadcrumb">
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
-                    <a href="index-2.html">Home</a>
+                    <Link to="/">Home</Link>
                   </li>
                   <li className="breadcrumb-item active" aria-current="page">
                     My Client
@@ -27,7 +26,7 @@ const MyClient = () => {
       <div className="content">
         <div className="container-fluid">
           <div className="row">
-          <div className="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar">
+            <div className="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar">
               <div className="profile-sidebar">
                 <div className="widget-profile pro-widget-content">
                   <div className="profile-info-widget">
@@ -42,7 +41,7 @@ const MyClient = () => {
 
                       <div className="patient-details">
                         <h5 className="mb-0">
-                        Donec sollicitudin molestie malesuada.
+                          Donec sollicitudin molestie malesuada.
                         </h5>
                       </div>
                     </div>
@@ -51,13 +50,13 @@ const MyClient = () => {
                 <div className="dashboard-widget">
                   <nav className="dashboard-menu">
                     <ul>
-                      <li >
+                      <li>
                         <Link to="/coach-dashboard">
                           <i className="fas fa-columns"></i>
                           <span>Dashboard</span>
                         </Link>
                       </li>
-                      <li >
+                      <li>
                         <Link to="/appointments">
                           <i className="fas fa-calendar-check"></i>
                           <span>Appointments</span>
@@ -104,7 +103,6 @@ const MyClient = () => {
                         <Link to="/audiocall">
                           <i className="fas fa-comments"></i>
                           <span>Voice Call</span>
-                         
                         </Link>
                       </li>
                       <li>

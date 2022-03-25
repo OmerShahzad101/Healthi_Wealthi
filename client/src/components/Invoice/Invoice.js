@@ -36,7 +36,7 @@ const Invoice = () => {
                   <div className="row">
                     <div className="col-md-6">
                       <div className="invoice-logo">
-                        <img src="assets/images/Logo.svg" alt="logo" />
+                        <img src="assets/img/Logo.svg" alt="logo" />
                       </div>
                     </div>
                     <div className="col-md-6">

@@ -11,7 +11,7 @@ const ChangePassword = () => {
               <nav aria-label="breadcrumb" className="page-breadcrumb">
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
-                    <a href="index-2.html">Home</a>
+                  <Link to="/">Home</Link>
                   </li>
                   <li className="breadcrumb-item active" aria-current="page">
                     Change Password
