@@ -33,19 +33,20 @@ const Login = () => {
   const LoginCall = async () => {
     const { email, password } = loginUser;
     if (email && password) {
-      console.log(loginUser);
-      const res = await auth.login(
-        `http://localhost:8080/api/auth/login`,
-        loginUser
-      );
-      if (res.success == true) {
-        localStorage.setItem(
-          "accessToken",
-          JSON.stringify(res.user.accessToken)
-        );
-        navigate("/");
-        alert(res.message);
-      }
+      // console.log(loginUser);
+      // const res = await auth.login(
+      //   `http://localhost:8080/api/auth/login`,
+      //   loginUser
+      // );
+      // if (res.success == true) {
+      //   localStorage.setItem(
+      //     "accessToken",
+      //     JSON.stringify(res.user.accessToken)
+      //   );
+      //   navigate("/");
+      //   alert(res.message);
+      // }
+      navigate("/");
     }
   };
 

@@ -33,14 +33,15 @@ const Register = () => {
   const RegisterCall = async () => {
     const { name, email, password } = user;
     if (name && email && password) {
-      const res = await auth.register(
-        `http://localhost:8080/api/auth/signup`,
-        user
-      );
-      if (res.success == true) {
-        navigate("/login");
-        alert(res.message);
-      }
+      // const res = await auth.register(
+      //   `http://localhost:8080/api/auth/signup`,
+      //   user
+      // );
+      // if (res.success == true) {
+      //   navigate("/login");
+      //   alert(res.message);
+      // }
+      navigate("/login");
     }
   };
 
