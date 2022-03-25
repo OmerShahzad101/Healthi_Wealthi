@@ -15,7 +15,7 @@ const Home = () => {
 
           {/* <!-- Search --> */}
           <div className="search-box">
-            <form action="templateshub.net">
+            <form action="#">
               <div className="form-group search-location">
                 <input
                   type="text"
