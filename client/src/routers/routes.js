@@ -29,6 +29,7 @@ import ContactPage from "../Pages/ContactPage";
 import Chat from "../components/Chat/Chat";
 import VideoCall from "../components/VideoCall/VideoCall";
 import AudioCall from "../components/AudioCall/AudioCall";
+import ClientProfile from "../components/ClientProfile/ClientProfile";
 const MyRouts = () => {
   return (
     <div>
@@ -63,6 +64,7 @@ const MyRouts = () => {
           <Route path="/contact-us" element={<ContactPage/>} />
           <Route path="/videocall" element={<VideoCall/>} />
           <Route path="/audiocall" element={<AudioCall/>} />
+          <Route path="/client-profile" element={<ClientProfile/>} />
           
           <Route path="/*" element={<NotFoundPage />} />
         </Routes>

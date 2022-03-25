@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Chat = () => {
   return (
@@ -613,6 +614,7 @@ const Chat = () => {
         </div>
       </div>
       {/* <!-- Voice Call Modal --> */}
+      
 		<div class="modal fade call-modal" id="voice_call">
 			<div class="modal-dialog modal-dialog-centered" role="document">
 				<div class="modal-content">
@@ -629,7 +631,7 @@ const Chat = () => {
 									</div>							
 									<div class="call-items">
 										<a href="javascript:void(0);" class="btn call-item call-end" data-dismiss="modal" aria-label="Close"><i class="material-icons">call_end</i></a>
-										<a href="voice-call.html" class="btn call-item call-start"><i class="material-icons">call</i></a>
+										<Link to="/voice-call" class="btn call-item call-start"><i class="material-icons">call</i></Link>
 									</div>
 								</div>
 							</div>
@@ -659,7 +661,7 @@ const Chat = () => {
 									</div>							
 									<div class="call-items">
 										<a href="javascript:void(0);" class="btn call-item call-end" data-dismiss="modal" aria-label="Close"><i class="material-icons">call_end</i></a>
-										<a href="video-call.html" class="btn call-item call-start"><i class="material-icons">videocam</i></a>
+										<Link to="/video-call" class="btn call-item call-start"><i class="material-icons">videocam</i></Link>
 									</div>
 								</div>
 							</div>

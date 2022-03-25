@@ -135,17 +135,17 @@ const SearchCoach = () => {
                   <div className="doctor-widget">
                     <div className="doc-info-left">
                       <div className="doctor-img">
-                        <a href="doctor-profile.html">
+                        <Link to="/coach-profile">
                           <img
                             src="assets/img/doctors/Ellie-Krieger.png"
                             className="img-fluid"
                             alt="User Image"
                           />
-                        </a>
+                        </Link>
                       </div>
                       <div className="doc-info-cont">
                         <h4 className="doc-name">
-                          <a href="doctor-profile.html">Dr. Ellie Krieger</a>
+                          <Link to="/coach-profile">Dr. Ellie Krieger</Link>
                         </h4>
                         <p className="doc-speciality">
                           Donec sollicitudin molestie malesuada.

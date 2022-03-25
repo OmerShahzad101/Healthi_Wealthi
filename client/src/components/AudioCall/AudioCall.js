@@ -1,7 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AudioCall = () => {
   return (
+    
     <div className="call-page">
       <div class="content">
         <div class="container">
@@ -16,9 +18,9 @@ const AudioCall = () => {
                       <div class="navbar">
                         <div class="user-details mr-auto">
                           <div class="float-left user-img">
-                            <a
+                            <Link
                               class="avatar avatar-sm mr-2"
-                              href="patient-profile.html"
+                              to="client-dashboard"
                               title="Charlene Reed"
                             >
                               <img
@@ -27,12 +29,12 @@ const AudioCall = () => {
                                 class="rounded-circle"
                               />
                               <span class="status online"></span>
-                            </a>
+                            </Link>
                           </div>
                           <div class="user-info float-left">
-                            <a href="patient-profile.html">
+                            <Link to="client-dashboard">
                               <span>Charlene Reed</span>
-                            </a>
+                            </Link>
                             <span class="last-seen">Online</span>
                           </div>
                         </div>

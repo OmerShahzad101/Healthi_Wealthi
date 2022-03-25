@@ -144,15 +144,15 @@ const Appointments = () => {
                 {/* <!-- Appointment List --> */}
                 <div className="appointment-list">
                   <div className="profile-info-widget">
-                    <a href="patient-profile.html" className="booking-doc-img">
+                    <Link to="client-dashboard" className="booking-doc-img">
                       <img
                         src="assets/img/patients/patient.jpg"
                         alt="User Image"
                       />
-                    </a>
+                    </Link>
                     <div className="profile-det-info">
                       <h3>
-                        <a href="patient-profile.html">Richard Wilson</a>
+                        <Link to="client-dashboard">Richard Wilson</Link>
                       </h3>
                       <div className="patient-details">
                         <h5>

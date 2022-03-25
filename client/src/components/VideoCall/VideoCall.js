@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const VideoCall = () => {
   return (
@@ -16,9 +17,9 @@ const VideoCall = () => {
                       <div class="navbar">
                         <div class="user-details">
                           <div class="float-left user-img">
-                            <a
+                            <Link
                               class="avatar avatar-sm mr-2"
-                              href="patient-profile.html"
+                              to="/client-profile"
                               title="Charlene Reed"
                             >
                               <img
@@ -27,12 +28,12 @@ const VideoCall = () => {
                                 class="rounded-circle"
                               />
                               <span class="status online"></span>
-                            </a>
+                            </Link>
                           </div>
                           <div class="user-info float-left">
-                            <a href="patient-profile.html">
+                            <Link to="/client-profile">
                               <span>Charlene Reed</span>
-                            </a>
+                            </Link>
                             <span class="last-seen">Online</span>
                           </div>
                         </div>
@@ -52,6 +53,7 @@ const VideoCall = () => {
                                 class="dropdown-item"
                               >
                                 Settings
+                                
                               </a>
                             </div>
                           </li>

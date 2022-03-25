@@ -253,7 +253,7 @@ const CoachDashboard = () => {
                                     <td>
                                       <h2 className="table-avatar">
                                         <a
-                                          href="patient-profile.html"
+                                         to="/client-profile"
                                           className="avatar avatar-sm mr-2"
                                         >
                                           <img
@@ -262,9 +262,9 @@ const CoachDashboard = () => {
                                             alt="User Image"
                                           />
                                         </a>
-                                        <a href="patient-profile.html">
+                                        <Link to="/client-profile">
                                           Richard Wilson <span>#PT0016</span>
-                                        </a>
+                                          </Link>
                                       </h2>
                                     </td>
                                     <td>
@@ -302,117 +302,12 @@ const CoachDashboard = () => {
                                       </div>
                                     </td>
                                   </tr>
+                                 
                                   <tr>
                                     <td>
                                       <h2 className="table-avatar">
                                         <a
-                                          href="patient-profile.html"
-                                          className="avatar avatar-sm mr-2"
-                                        >
-                                          <img
-                                            className="avatar-img rounded-circle"
-                                            src="assets/img/patients/patient1.jpg"
-                                            alt="User Image"
-                                          />
-                                        </a>
-                                        <a href="patient-profile.html">
-                                          Charlene Reed <span>#PT0001</span>
-                                        </a>
-                                      </h2>
-                                    </td>
-                                    <td>
-                                      3 Nov 2019{" "}
-                                      <span className="d-block text-info">
-                                        11.00 AM
-                                      </span>
-                                    </td>
-                                    <td>General</td>
-                                    <td>Old Client</td>
-                                    <td className="text-center">$200</td>
-                                    <td className="text-right">
-                                      <div className="table-action">
-                                        <a
-                                          href="javascript:void(0);"
-                                          className="btn btn-sm bg-info-light"
-                                        >
-                                          <i className="far fa-eye"></i> View
-                                        </a>
-
-                                        <a
-                                          href="javascript:void(0);"
-                                          className="btn btn-sm bg-success-light"
-                                        >
-                                          <i className="fas fa-check"></i>{" "}
-                                          Accept
-                                        </a>
-                                        <a
-                                          href="javascript:void(0);"
-                                          className="btn btn-sm bg-danger-light"
-                                        >
-                                          <i className="fas fa-times"></i>{" "}
-                                          Cancel
-                                        </a>
-                                      </div>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td>
-                                      <h2 className="table-avatar">
-                                        <a
-                                          href="patient-profile.html"
-                                          className="avatar avatar-sm mr-2"
-                                        >
-                                          <img
-                                            className="avatar-img rounded-circle"
-                                            src="assets/img/patients/patient2.jpg"
-                                            alt="User Image"
-                                          />
-                                        </a>
-                                        <a href="patient-profile.html">
-                                          Travis Trimble <span>#PT0002</span>
-                                        </a>
-                                      </h2>
-                                    </td>
-                                    <td>
-                                      1 Nov 2019{" "}
-                                      <span className="d-block text-info">
-                                        1.00 PM
-                                      </span>
-                                    </td>
-                                    <td>General</td>
-                                    <td>New Client</td>
-                                    <td className="text-center">$75</td>
-                                    <td className="text-right">
-                                      <div className="table-action">
-                                        <a
-                                          href="javascript:void(0);"
-                                          className="btn btn-sm bg-info-light"
-                                        >
-                                          <i className="far fa-eye"></i> View
-                                        </a>
-
-                                        <a
-                                          href="javascript:void(0);"
-                                          className="btn btn-sm bg-success-light"
-                                        >
-                                          <i className="fas fa-check"></i>{" "}
-                                          Accept
-                                        </a>
-                                        <a
-                                          href="javascript:void(0);"
-                                          className="btn btn-sm bg-danger-light"
-                                        >
-                                          <i className="fas fa-times"></i>{" "}
-                                          Cancel
-                                        </a>
-                                      </div>
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td>
-                                      <h2 className="table-avatar">
-                                        <a
-                                          href="patient-profile.html"
+                                         to="/client-profile"
                                           className="avatar avatar-sm mr-2"
                                         >
                                           <img
@@ -421,9 +316,9 @@ const CoachDashboard = () => {
                                             alt="User Image"
                                           />
                                         </a>
-                                        <a href="patient-profile.html">
+                                        <Link to="/client-profile">
                                           Carl Kelly <span>#PT0003</span>
-                                        </a>
+                                          </Link>
                                       </h2>
                                     </td>
                                     <td>
@@ -465,7 +360,7 @@ const CoachDashboard = () => {
                                     <td>
                                       <h2 className="table-avatar">
                                         <a
-                                          href="patient-profile.html"
+                                         to="/client-profile"
                                           className="avatar avatar-sm mr-2"
                                         >
                                           <img
@@ -474,9 +369,9 @@ const CoachDashboard = () => {
                                             alt="User Image"
                                           />
                                         </a>
-                                        <a href="patient-profile.html">
+                                        <Link to="/client-profile">
                                           Michelle Fairfax <span>#PT0004</span>
-                                        </a>
+                                        </Link>
                                       </h2>
                                     </td>
                                     <td>
@@ -518,7 +413,7 @@ const CoachDashboard = () => {
                                     <td>
                                       <h2 className="table-avatar">
                                         <a
-                                          href="patient-profile.html"
+                                         to="/client-profile"
                                           className="avatar avatar-sm mr-2"
                                         >
                                           <img
@@ -527,9 +422,9 @@ const CoachDashboard = () => {
                                             alt="User Image"
                                           />
                                         </a>
-                                        <a href="patient-profile.html">
+                                        <Link to="/client-profile">
                                           Gina Moore <span>#PT0005</span>
-                                        </a>
+                                          </Link>
                                       </h2>
                                     </td>
                                     <td>
@@ -594,7 +489,7 @@ const CoachDashboard = () => {
                                     <td>
                                       <h2 className="table-avatar">
                                         <a
-                                          href="patient-profile.html"
+                                         to="/client-profile"
                                           className="avatar avatar-sm mr-2"
                                         >
                                           <img
@@ -603,9 +498,9 @@ const CoachDashboard = () => {
                                             alt="User Image"
                                           />
                                         </a>
-                                        <a href="patient-profile.html">
+                                        <Link to="/client-profile">
                                           Elsie Gilley <span>#PT0006</span>
-                                        </a>
+                                          </Link>
                                       </h2>
                                     </td>
                                     <td>
@@ -647,7 +542,7 @@ const CoachDashboard = () => {
                                     <td>
                                       <h2 className="table-avatar">
                                         <a
-                                          href="patient-profile.html"
+                                         to="/client-profile"
                                           className="avatar avatar-sm mr-2"
                                         >
                                           <img
@@ -656,9 +551,9 @@ const CoachDashboard = () => {
                                             alt="User Image"
                                           />
                                         </a>
-                                        <a href="patient-profile.html">
+                                        <Link to="/client-profile">
                                           Joan Gardner <span>#PT0006</span>
-                                        </a>
+                                          </Link>
                                       </h2>
                                     </td>
                                     <td>
@@ -700,7 +595,7 @@ const CoachDashboard = () => {
                                     <td>
                                       <h2 className="table-avatar">
                                         <a
-                                          href="patient-profile.html"
+                                         to="/client-profile"
                                           className="avatar avatar-sm mr-2"
                                         >
                                           <img
@@ -709,9 +604,9 @@ const CoachDashboard = () => {
                                             alt="User Image"
                                           />
                                         </a>
-                                        <a href="patient-profile.html">
+                                        <Link to="/client-profile">
                                           Daniel Griffing <span>#PT0007</span>
-                                        </a>
+                                          </Link>
                                       </h2>
                                     </td>
                                     <td>
@@ -753,7 +648,7 @@ const CoachDashboard = () => {
                                     <td>
                                       <h2 className="table-avatar">
                                         <a
-                                          href="patient-profile.html"
+                                         to="/client-profile"
                                           className="avatar avatar-sm mr-2"
                                         >
                                           <img
@@ -762,9 +657,9 @@ const CoachDashboard = () => {
                                             alt="User Image"
                                           />
                                         </a>
-                                        <a href="patient-profile.html">
+                                        <Link to="/client-profile">
                                           Walter Roberson <span>#PT0008</span>
-                                        </a>
+                                          </Link>
                                       </h2>
                                     </td>
                                     <td>
@@ -806,7 +701,7 @@ const CoachDashboard = () => {
                                     <td>
                                       <h2 className="table-avatar">
                                         <a
-                                          href="patient-profile.html"
+                                         to="/client-profile"
                                           className="avatar avatar-sm mr-2"
                                         >
                                           <img
@@ -815,9 +710,9 @@ const CoachDashboard = () => {
                                             alt="User Image"
                                           />
                                         </a>
-                                        <a href="patient-profile.html">
+                                        <Link to="/client-profile">
                                           Robert Rhodes <span>#PT0010</span>
-                                        </a>
+                                          </Link>
                                       </h2>
                                     </td>
                                     <td>
@@ -859,7 +754,7 @@ const CoachDashboard = () => {
                                     <td>
                                       <h2 className="table-avatar">
                                         <a
-                                          href="patient-profile.html"
+                                         to="/client-profile"
                                           className="avatar avatar-sm mr-2"
                                         >
                                           <img
@@ -868,9 +763,9 @@ const CoachDashboard = () => {
                                             alt="User Image"
                                           />
                                         </a>
-                                        <a href="patient-profile.html">
+                                        <Link to="/client-profile">
                                           Harry Williams <span>#PT0011</span>
-                                        </a>
+                                          </Link>
                                       </h2>
                                     </td>
                                     <td>

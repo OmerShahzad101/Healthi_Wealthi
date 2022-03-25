@@ -165,10 +165,10 @@ const Footer = () => {
                 <div className="copyright-menu">
                   <ul className="policy-menu">
                     <li>
-                      <a href="term-condition.html">Terms and Conditions</a>
+                      <a href="#">Terms and Conditions</a>
                     </li>
                     <li>
-                      <a href="privacy-policy.html">Policy</a>
+                      <a href="#">Policy</a>
                     </li>
                   </ul>
                 </div>

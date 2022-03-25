@@ -14,7 +14,7 @@ const CoachProfile = () => {
                     <Link to="/">Home</Link>
                   </li>
                   <li className="breadcrumb-item active" aria-current="page">
-                  Coach Profile
+                    Coach Profile
                   </li>
                 </ol>
               </nav>
@@ -41,7 +41,7 @@ const CoachProfile = () => {
                   <div className="doc-info-cont">
                     <h4 className="doc-name">Dr. Darren Elder</h4>
                     <p className="doc-speciality">
-                    Donec sollicitudin molestie malesuada.
+                      Donec sollicitudin molestie malesuada.
                     </p>
                     <p className="doc-department">
                       <img
@@ -137,31 +137,28 @@ const CoachProfile = () => {
                     </ul>
                   </div>
                   <div className="doctor-action">
-                    <a
-                      href="#"
-                      className="btn btn-white fav-btn"
-                    >
+                    <a href="#" className="btn btn-white fav-btn">
                       <i className="far fa-bookmark"></i>
                     </a>
-                    <a href="chat.html" className="btn btn-white msg-btn">
+                    <Link to="/chat" className="btn btn-white msg-btn">
                       <i className="far fa-comment-alt"></i>
-                    </a>
-                    <a
-                      href="#"
+                    </Link>
+                    <Link
+                      to="/audiocall"
                       className="btn btn-white call-btn"
                       data-toggle="modal"
                       data-target="#voice_call"
                     >
                       <i className="fas fa-phone"></i>
-                    </a>
-                    <a
-                      href="#"
+                    </Link>
+                    <Link
+                      to="/videocall"
                       className="btn btn-white call-btn"
                       data-toggle="modal"
                       data-target="#video_call"
                     >
                       <i className="fas fa-video"></i>
-                    </a>
+                    </Link>
                   </div>
                   <div className="clinic-booking">
                     <Link className="apt-btn" to="/book-appointment">

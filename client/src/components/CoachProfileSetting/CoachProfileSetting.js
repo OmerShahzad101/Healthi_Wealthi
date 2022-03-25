@@ -71,12 +71,7 @@ const CoachProfileSetting = () => {
                           <span>My Clients</span>
                         </Link>
                       </li>
-                      {/* <li>
-                        <a href="schedule-timings.html">
-                          <i className="fas fa-hourglass-start"></i>
-                          <span>Schedule Timings</span>
-                        </a>
-                      </li> */}
+                    
                       <li >
                         <Link to="/invoices-view">
                           <i className="fas fa-file-invoice"></i>

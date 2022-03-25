@@ -51,7 +51,7 @@ const CoachListSlider = () => {
                 </div>
                 <div className="pro-content">
                   <h3 className="title">
-                    <a href="doctor-profile.html">Ruby Perrin</a>
+                    <Link to="/coach-profile">Ruby Perrin</Link>
                     <i className="fas fa-check-circle verified"></i>
                   </h3>
                   <p className="speciality">
@@ -113,7 +113,7 @@ const CoachListSlider = () => {
                 </div>
                 <div className="pro-content">
                   <h3 className="title">
-                    <a href="doctor-profile.html">Darren Elder</a>
+                    <Link to="/coach-profile">Darren Elder</Link>
                     <i className="fas fa-check-circle verified"></i>
                   </h3>
                   <p className="speciality">
@@ -175,7 +175,7 @@ const CoachListSlider = () => {
                 </div>
                 <div className="pro-content">
                   <h3 className="title">
-                    <a href="doctor-profile.html">Deborah Angel</a>
+                    <Link to="/coach-profile">Deborah Angel</Link>
                     <i className="fas fa-check-circle verified"></i>
                   </h3>
                   <p className="speciality">
@@ -237,7 +237,7 @@ const CoachListSlider = () => {
                 </div>
                 <div className="pro-content">
                   <h3 className="title">
-                    <a href="doctor-profile.html">Sofia Brient</a>
+                    <Link to="/coach-profile">Sofia Brient</Link>
                     <i className="fas fa-check-circle verified"></i>
                   </h3>
                   <p className="speciality">
@@ -299,7 +299,7 @@ const CoachListSlider = () => {
                 </div>
                 <div className="pro-content">
                   <h3 className="title">
-                    <a href="doctor-profile.html">Marvin Campbell</a>
+                    <Link to="/coach-profile">Marvin Campbell</Link>
                     <i className="fas fa-check-circle verified"></i>
                   </h3>
                   <p className="speciality">
@@ -361,7 +361,7 @@ const CoachListSlider = () => {
                 </div>
                 <div className="pro-content">
                   <h3 className="title">
-                    <a href="doctor-profile.html">Katharine Berthold</a>
+                    <Link to="/coach-profile">Katharine Berthold</Link>
                     <i className="fas fa-check-circle verified"></i>
                   </h3>
                   <p className="speciality">
@@ -423,7 +423,7 @@ const CoachListSlider = () => {
                 </div>
                 <div className="pro-content">
                   <h3 className="title">
-                    <a href="doctor-profile.html">Linda Tobin</a>
+                    <Link to="/coach-profile">Linda Tobin</Link>
                     <i className="fas fa-check-circle verified"></i>
                   </h3>
                   <p className="speciality">
@@ -485,7 +485,7 @@ const CoachListSlider = () => {
                 </div>
                 <div className="pro-content">
                   <h3 className="title">
-                    <a href="doctor-profile.html">Paul Richard</a>
+                    <Link to="/coach-profile">Paul Richard</Link>
                     <i className="fas fa-check-circle verified"></i>
                   </h3>
                   <p className="speciality">

@@ -68,12 +68,7 @@ const MyClient = () => {
                           <span>My Clients</span>
                         </Link>
                       </li>
-                      {/* <li>
-                        <a href="schedule-timings.html">
-                          <i className="fas fa-hourglass-start"></i>
-                          <span>Schedule Timings</span>
-                        </a>
-                      </li> */}
+
                       <li>
                         <Link to="/invoices-view">
                           <i className="fas fa-file-invoice"></i>
@@ -141,18 +136,18 @@ const MyClient = () => {
                     <div className="card-body">
                       <div className="pro-widget-content">
                         <div className="profile-info-widget">
-                          <a
-                            href="patient-profile.html"
+                          <Link
+                            to="/client-profile"
                             className="booking-doc-img"
                           >
                             <img
                               src="assets/img/patients/patient.jpg"
                               alt="User Image"
                             />
-                          </a>
+                          </Link>{" "}
                           <div className="profile-det-info">
                             <h3>
-                              <a href="patient-profile.html">Richard Wilson</a>
+                              <Link to="/client-profile">Richard Wilson</Link>
                             </h3>
 
                             <div className="patient-details">
@@ -189,18 +184,15 @@ const MyClient = () => {
                     <div className="card-body">
                       <div className="pro-widget-content">
                         <div className="profile-info-widget">
-                          <a
-                            href="patient-profile.html"
-                            className="booking-doc-img"
-                          >
+                          <Link to="client-profile" className="booking-doc-img">
                             <img
                               src="assets/img/patients/patient1.jpg"
                               alt="User Image"
                             />
-                          </a>
+                          </Link>{" "}
                           <div className="profile-det-info">
                             <h3>
-                              <a href="patient-profile.html">Charlene Reed</a>
+                              <Link to="/client-profile">Charlene Reed</Link>
                             </h3>
 
                             <div className="patient-details">
