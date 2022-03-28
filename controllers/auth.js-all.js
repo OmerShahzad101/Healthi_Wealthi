@@ -21,6 +21,7 @@ const saltRounds = 10;
 exports.signup = async (req, res) => {
   try {
     const { name, email, password, role } = req.body;
+
     if (!role) {
       return res
         .status(200)
@@ -50,7 +51,7 @@ exports.signup = async (req, res) => {
       email,
       name,
       password: hash,
-      role,
+      role
     };
 
     // create user
@@ -58,36 +59,54 @@ exports.signup = async (req, res) => {
 
     return res.status(200).send({
       success: true,
-      message: "Register successfull !!",
+      // message: "Please check your email to verify your account!",
+      message: "Account created successfull !",
       data: userObj,
     });
   } catch (e) {
-    return res.status(500).json({ success: false, message: e.message });
+    // return res.status(500).json({ success: false, message: e.message });
+    return res
+      .status(500)
+      .json({ success: false, message: "Email already exists" });
   }
 };
 
 exports.login = async (req, res) => {
   try {
     const { email, password } = req.body;
+
     if (!email || !password) {
       return res
         .status(200)
         .send({ success: false, message: "Please enter all required Field!" });
     }
+
     try {
       const user = await User.findOne({ email: email.toLowerCase() }).exec();
+
       if (!user) {
         return res.status(200).send({
           success: false,
           message: "User not found",
         });
       }
+
       // Check if user entered incorrect password
       if (!user.verifyPassword(password)) {
         return res
           .status(200)
           .send({ success: false, message: "Invalid email or password" });
       }
+
+      // // Check if user is not verified
+      // if (!user.isEmailVerified) {
+      //   return res
+      //     .status(200)
+      //     .send({
+      //       success: false,
+      //       message: "Your Email Address is not verified yet!",
+      //     });
+      // }
 
       // Create and save a new access token for the user
       const accessToken = jwt.sign({ user: user.id }, TOKEN_SECRET, {
@@ -96,13 +115,29 @@ exports.login = async (req, res) => {
       const accessTokenDocument = { accessToken, userId: user.id };
       await AccessToken.create(accessTokenDocument);
 
+      // // Fetch the user's permissions from the roles constants file
+      // let accessControlInfo = {};
+      // Object.keys(roles).some((role) => {
+      //   const userRoleFound = user.role === roles[role].key;
+      //   if (userRoleFound) {
+      //     accessControlInfo = roles[role];
+      //   }
+      //   return userRoleFound;
+      // });
+
+      // Construct the response data objects
       const userData = {
-        name: user.name,
-        role: user.role,
+        userName: user.userName,
         email: user.email,
         avatar: user.avatar,
         accessToken,
       };
+
+      // Get the user's company data
+
+      // role: user.role,
+      // company: userCompany,
+      // permission: accessControlInfo,
 
       return res.status(200).send({
         success: true,
@@ -141,17 +176,53 @@ exports.googleLogin = async (req, res) => {
       const accessTokenDocument = { accessToken, userId: user.id };
       await AccessToken.create(accessTokenDocument);
 
+      // Fetch the user's permissions from the roles constants file
+      let accessControlInfo = {};
+      Object.keys(roles).some((role) => {
+        const userRoleFound = user.role === roles[role].key;
+        if (userRoleFound) {
+          accessControlInfo = roles[role];
+        }
+        return userRoleFound;
+      });
+
+      // Get the user's company data
+      let userCompany = {};
+      if (user.role === "301") {
+        userCompany = await Company.findOne({ userId: user.id }).exec();
+      } else if (user.role === "302" || user.role === "303") {
+        userCompany = await Company.findOne({ userId: user.parentId }).exec();
+      }
+
+      if (user.role !== "300" && userCompany && !userCompany.isActive) {
+        return res.status(200).send({
+          success: false,
+          message: "Company Disable Contact with Digno Support!",
+        });
+      }
+
       // Construct the response data objects
       const userData = {
-        name: user.name,
+        userName: user.userName,
         email: user.email,
+        avatar: user.avatar,
         role: user.role,
       };
+
+      const subscriptionData = await Subscription.find({ userId: user.id })
+        .sort({ $natural: -1 })
+        .limit(1)
+        .exec();
+      const departmentData = await Department.find({ userId: user.id }).exec();
 
       return res.status(200).send({
         success: true,
         accessToken,
         user: userData,
+        subscription: subscriptionData[0],
+        permission: accessControlInfo,
+        company: userCompany,
+        departments: departmentData,
         message: "Log In successfully!",
       });
     } catch (err) {
@@ -181,7 +252,7 @@ exports.forgotPassword = async (req, res) => {
     if (!userWithEmail) {
       return res.status(200).json({
         success: false,
-        message: `Sorry, the address ${email} is not know.`,
+        message: `Sorry, the address ${email} is not known to Digno.`,
       });
     }
 
@@ -395,7 +466,7 @@ function sendAccountVerificationEmail(userObj) {
 
 function sendPasswordResetEmail(id, email) {
   const token = jwt.sign({ userId: id }, TOKEN_SECRET, { expiresIn: "30m" });
-  const subject = "Forget Password!";
+  const subject = "Digno Forget Password!";
   const to = email;
   const url = `${baseURL}reset-password/${token}`;
   const emailBody = resetPasswordEmailTemplate.replace("{{url}}", url);

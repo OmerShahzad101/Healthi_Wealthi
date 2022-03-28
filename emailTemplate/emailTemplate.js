@@ -16,7 +16,7 @@ module.exports = {
          Hi,
               <p>Forget Pass Key.</p>
               <p>
-              Your email address is not yet verified. To Launch Digno , please click this link to verify your email
+              To Reset your Password,  Please click this link to create new password 
               <a href = {{url}}>Click Here</a></p>
               <p>
               If you have further questions, please do not hesitate to ask:)

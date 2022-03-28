@@ -2,13 +2,16 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import $ from "jquery";
 import auth from "../../services/auth.service";
-import ENV from "../../env";
+import { ENV } from "../../env";
+import { ToastContainer, toast } from "react-toastify";
+
 const Register = () => {
   // Initial Values
   const InitialValues = {
     name: "",
     email: "",
     password: "",
+    role: "",
   };
   //state
   const [user, setUser] = useState(InitialValues);
@@ -31,16 +34,12 @@ const Register = () => {
 
   //API call
   const RegisterCall = async () => {
-    const { name, email, password } = user;
-    if (name && email && password) {
-      const res = await auth.register(
-        `http://localhost:8080/api/auth/signup`,
-        user
-      );
-      if (res.success == true) {
-        navigate("/login");
-        alert(res.message);
-      }
+    const res = await auth.register(`${ENV.API_URL}api/auth/signup`, user);
+    if (res.success == true) {
+      toast.success(res.message);
+      navigate("/login");
+    } else {
+      toast.error(res.message);
     }
   };
 
@@ -62,10 +61,7 @@ const Register = () => {
 
                   <div className="col-md-12 col-lg-6 login-right">
                     <div className="login-header">
-                      <h3>
-                        Register{" "}
-                        {/* <Link to="/register">Are you a Coach?</Link> */}
-                      </h3>
+                      <h3>Register </h3>
                     </div>
 
                     <form action="#">
@@ -101,6 +97,29 @@ const Register = () => {
                         />
                         <label className="focus-label">Create Password</label>
                       </div>
+
+                      <div className="col ps-1" md="6">
+                        <label>Register as a </label>
+                        <div className="form-group">
+                          <label>Coach</label>
+                          <input
+                            type="radio"
+                            name="role"
+                            value="coach"
+                            checked={user.role == "coach" ? true : false}
+                            onChange={handleChange}
+                          />
+                          <label>Client</label>
+                          <input
+                            type="radio"
+                            name="role"
+                            value="client"
+                            checked={user.role == "client" ? true : false}
+                            onChange={handleChange}
+                          />
+                        </div>
+                      </div>
+
                       <div className="text-right">
                         <Link className="forgot-link" to="/login">
                           Already have an account?

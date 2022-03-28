@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const SearchCoach = () => {
   return (
@@ -156,6 +157,7 @@ const SearchCoach = () => {
                             alt="Speciality"
                           />
                           Nutritionists
+                          
                         </h5>
                         <div className="rating">
                           <i className="fas fa-star filled"></i>
@@ -250,12 +252,12 @@ const SearchCoach = () => {
                         </ul>
                       </div>
                       <div className="clinic-booking">
-                        <a className="view-pro-btn" href="doctor-profile.html">
+                        <Link className="view-pro-btn" to="/coach-profile">
                           View Profile
-                        </a>
-                        <a className="apt-btn" href="booking.html">
+                        </Link>
+                        <Link className="apt-btn" to="/book-appointment">
                           Book Appointment
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>

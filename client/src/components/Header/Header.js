@@ -10,7 +10,6 @@ const Header = () => {
   const location = useLocation();
   const { pathname } = location;
   const splitLocation = pathname.split("/");
-  console.log(splitLocation)
   const token = JSON.parse(localStorage.getItem("accessToken"));
   let id = null;
   let decoded = null;
