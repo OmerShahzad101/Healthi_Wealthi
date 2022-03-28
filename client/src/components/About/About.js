@@ -9,7 +9,7 @@ const About = () => {
       <div className="our-team py-5 container">
         <div className="trending-property">
           <p>WE HAVE PROFESSIONAL AGENTS</p>
-          <h3>Meet our Founder</h3>
+          <h3>Meet our Founder's</h3>
         </div>
         <div className="row">
           <div className="col-lg-4">
