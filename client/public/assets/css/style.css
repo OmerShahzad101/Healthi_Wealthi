@@ -2987,6 +2987,7 @@ html.menu-opened body {
   width: 19px;
   display: inline-block;
   margin-right: 10px;
+  display: none;
 }
 .doc-location {
   color: #757575;
@@ -3614,8 +3615,8 @@ html.menu-opened body {
   margin-bottom: 0;
 }
 .time-slot li .timing.selected {
-  background-color: #42c0fb;
-  border: 1px solid #42c0fb;
+  background-color: #d32986;
+  border: 1px solid #d32986;
   color: #fff;
 }
 .time-slot li .timing.selected::before {
@@ -7086,3 +7087,10 @@ html.menu-opened body {
 	border: 2px solid #d32986;
 	color: #d32986;
   }
+
+
+  .doc-img img {
+    width: 228px;
+    height: 151px;
+    object-fit: cover;
+}

@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 const MyClient = () => {
   return (
-  
     <>
       <div className="breadcrumb-bar">
         <div className="container-fluid">
@@ -11,7 +10,7 @@ const MyClient = () => {
               <nav aria-label="breadcrumb" className="page-breadcrumb">
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
-                    <a href="index-2.html">Home</a>
+                    <Link to="/">Home</Link>
                   </li>
                   <li className="breadcrumb-item active" aria-current="page">
                     My Client
@@ -27,7 +26,7 @@ const MyClient = () => {
       <div className="content">
         <div className="container-fluid">
           <div className="row">
-          <div className="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar">
+            <div className="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar">
               <div className="profile-sidebar">
                 <div className="widget-profile pro-widget-content">
                   <div className="profile-info-widget">
@@ -42,7 +41,7 @@ const MyClient = () => {
 
                       <div className="patient-details">
                         <h5 className="mb-0">
-                        Donec sollicitudin molestie malesuada.
+                          Donec sollicitudin molestie malesuada.
                         </h5>
                       </div>
                     </div>
@@ -51,13 +50,13 @@ const MyClient = () => {
                 <div className="dashboard-widget">
                   <nav className="dashboard-menu">
                     <ul>
-                      <li >
+                      <li>
                         <Link to="/coach-dashboard">
                           <i className="fas fa-columns"></i>
                           <span>Dashboard</span>
                         </Link>
                       </li>
-                      <li >
+                      <li>
                         <Link to="/appointments">
                           <i className="fas fa-calendar-check"></i>
                           <span>Appointments</span>
@@ -69,12 +68,7 @@ const MyClient = () => {
                           <span>My Clients</span>
                         </Link>
                       </li>
-                      {/* <li>
-                        <a href="schedule-timings.html">
-                          <i className="fas fa-hourglass-start"></i>
-                          <span>Schedule Timings</span>
-                        </a>
-                      </li> */}
+
                       <li>
                         <Link to="/invoices-view">
                           <i className="fas fa-file-invoice"></i>
@@ -87,13 +81,25 @@ const MyClient = () => {
                           <span>Reviews</span>
                         </Link>
                       </li>
-                      {/* <li>
-                        <a href="chat-doctor.html">
+                      <li>
+                        <Link to="/chat">
                           <i className="fas fa-comments"></i>
                           <span>Message</span>
                           <small className="unread-msg">23</small>
-                        </a>
-                      </li> */}
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/videocall">
+                          <i className="fas fa-comments"></i>
+                          <span>Video Call</span>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/audiocall">
+                          <i className="fas fa-comments"></i>
+                          <span>Voice Call</span>
+                        </Link>
+                      </li>
                       <li>
                         <Link to="/coach-profile-setting">
                           <i className="fas fa-user-cog"></i>
@@ -130,18 +136,18 @@ const MyClient = () => {
                     <div className="card-body">
                       <div className="pro-widget-content">
                         <div className="profile-info-widget">
-                          <a
-                            href="patient-profile.html"
+                          <Link
+                            to="/client-profile"
                             className="booking-doc-img"
                           >
                             <img
                               src="assets/img/patients/patient.jpg"
                               alt="User Image"
                             />
-                          </a>
+                          </Link>{" "}
                           <div className="profile-det-info">
                             <h3>
-                              <a href="patient-profile.html">Richard Wilson</a>
+                              <Link to="/client-profile">Richard Wilson</Link>
                             </h3>
 
                             <div className="patient-details">
@@ -178,18 +184,15 @@ const MyClient = () => {
                     <div className="card-body">
                       <div className="pro-widget-content">
                         <div className="profile-info-widget">
-                          <a
-                            href="patient-profile.html"
-                            className="booking-doc-img"
-                          >
+                          <Link to="client-profile" className="booking-doc-img">
                             <img
                               src="assets/img/patients/patient1.jpg"
                               alt="User Image"
                             />
-                          </a>
+                          </Link>{" "}
                           <div className="profile-det-info">
                             <h3>
-                              <a href="patient-profile.html">Charlene Reed</a>
+                              <Link to="/client-profile">Charlene Reed</Link>
                             </h3>
 
                             <div className="patient-details">

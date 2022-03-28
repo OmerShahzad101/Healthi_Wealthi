@@ -56,10 +56,10 @@ const Footer = () => {
                 <h2 className="footer-title">For Client</h2>
                 <ul>
                   <li>
-                    <a href="search.html">
+                    <Link to="/search-coach">
                       <i className="fas fa-angle-double-right"></i> Search for
                       Coach
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <Link to="/login">
@@ -72,15 +72,15 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <a href="booking.html">
+                    <Link to="/book-appointment">
                       <i className="fas fa-angle-double-right"></i> Booking
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="patient-dashboard.html">
+                    <Link to="/client-dashboard">
                       <i className="fas fa-angle-double-right"></i> Client
                       Dashboard
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -91,15 +91,15 @@ const Footer = () => {
                 <h2 className="footer-title">For Coach</h2>
                 <ul>
                   <li>
-                    <a href="appointments.html">
+                    <Link to="/appointments">
                       <i className="fas fa-angle-double-right"></i>
                       Appointments
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="chat.html">
+                    <Link to="/chat">
                       <i className="fas fa-angle-double-right"></i> Chat
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <Link to="/login">
@@ -112,10 +112,10 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <a href="doctor-dashboard.html">
+                    <Link to="/coach-dashboard">
                       <i className="fas fa-angle-double-right"></i> Coach
                       Dashboard
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -165,10 +165,10 @@ const Footer = () => {
                 <div className="copyright-menu">
                   <ul className="policy-menu">
                     <li>
-                      <a href="term-condition.html">Terms and Conditions</a>
+                      <a href="#">Terms and Conditions</a>
                     </li>
                     <li>
-                      <a href="privacy-policy.html">Policy</a>
+                      <a href="#">Policy</a>
                     </li>
                   </ul>
                 </div>

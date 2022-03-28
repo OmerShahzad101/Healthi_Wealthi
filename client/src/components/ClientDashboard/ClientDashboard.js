@@ -65,13 +65,26 @@ const ClientDashboard = () => {
                           <span>Favourites</span>
                         </Link>
                       </li>
-                      {/* <li>
-                        <a href="chat.html">
+                      <li>
+                        <Link to="/chat">
                           <i className="fas fa-comments"></i>
                           <span>Message</span>
                           <small className="unread-msg">23</small>
-                        </a>
-                      </li> */}
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/videocall">
+                          <i className="fas fa-comments"></i>
+                          <span>Video Call</span>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/audiocall">
+                          <i className="fas fa-comments"></i>
+                          <span>Voice Call</span>
+                          
+                        </Link>
+                      </li>
                       <li>
                         <Link to="/profile-settings">
                           <i className="fas fa-user-cog"></i>
@@ -164,8 +177,7 @@ const ClientDashboard = () => {
                                 <tr>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -173,10 +185,10 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-01.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Ruby Perrin <span>Yoga Expert</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td>
@@ -213,8 +225,7 @@ const ClientDashboard = () => {
                                 <tr>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -222,10 +233,10 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-02.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Darren Elder <span>Nutritionists</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td>
@@ -262,8 +273,7 @@ const ClientDashboard = () => {
                                 <tr>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -271,11 +281,11 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-03.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Deborah Angel{" "}
                                         <span>Kick Boxing</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td>
@@ -312,8 +322,7 @@ const ClientDashboard = () => {
                                 <tr>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -321,10 +330,10 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-04.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Sofia Brient <span>Wellness Health</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td>
@@ -361,8 +370,7 @@ const ClientDashboard = () => {
                                 <tr>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -370,11 +378,11 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-05.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Marvin Campbell{" "}
                                         <span>Paleo Health</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td>
@@ -411,8 +419,7 @@ const ClientDashboard = () => {
                                 <tr>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -420,11 +427,11 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-06.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Katharine Berthold{" "}
                                         <span>Paleo Health</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td>
@@ -461,8 +468,7 @@ const ClientDashboard = () => {
                                 <tr>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -470,10 +476,10 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-07.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Linda Tobin <span>Paleo Health</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td>
@@ -510,8 +516,7 @@ const ClientDashboard = () => {
                                 <tr>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -519,11 +524,11 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-08.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Paul Richard{" "}
                                         <span>Paleo Health</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td>
@@ -560,8 +565,7 @@ const ClientDashboard = () => {
                                 <tr>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -569,10 +573,10 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-09.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. John Gibbs <span>Paleo Health</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td>
@@ -609,8 +613,7 @@ const ClientDashboard = () => {
                                 <tr>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -618,10 +621,10 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-10.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Olga Barlow <span>Paleo Health</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td>
@@ -681,8 +684,7 @@ const ClientDashboard = () => {
                                   <td>Plan 1</td>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -690,10 +692,10 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-01.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Ruby Perrin <span>Nutritionists</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td className="text-right">
@@ -718,8 +720,7 @@ const ClientDashboard = () => {
                                   <td>Plan 2</td>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -727,10 +728,10 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-02.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Darren Elder <span>Nutritionists</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td className="text-right">
@@ -755,8 +756,7 @@ const ClientDashboard = () => {
                                   <td>Plan 3</td>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -764,11 +764,11 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-03.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Deborah Angel{" "}
                                         <span>Nutritionists</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td className="text-right">
@@ -793,8 +793,7 @@ const ClientDashboard = () => {
                                   <td>Plan 4</td>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -802,10 +801,10 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-04.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Sofia Brient <span>Holistic Health</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td className="text-right">
@@ -830,8 +829,7 @@ const ClientDashboard = () => {
                                   <td>Plan 5</td>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -839,10 +837,10 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-05.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Marvin Campbell <span>Nutritionists</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td className="text-right">
@@ -867,8 +865,7 @@ const ClientDashboard = () => {
                                   <td>Plan 6</td>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -876,11 +873,11 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-06.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Katharine Berthold{" "}
                                         <span>Wellness Health</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td className="text-right">
@@ -905,8 +902,7 @@ const ClientDashboard = () => {
                                   <td>Plan 7</td>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -914,10 +910,10 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-07.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Linda Tobin <span>kick Boxing</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td className="text-right">
@@ -942,8 +938,7 @@ const ClientDashboard = () => {
                                   <td>Plan 8</td>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -951,11 +946,11 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-08.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Paul Richard{" "}
                                         <span>Yoga Expert</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td className="text-right">
@@ -980,8 +975,7 @@ const ClientDashboard = () => {
                                   <td>Plan 9</td>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -989,10 +983,10 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-09.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. John Gibbs <span>Nutritionists</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td className="text-right">
@@ -1017,8 +1011,7 @@ const ClientDashboard = () => {
                                   <td>Plan 10</td>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -1026,10 +1019,10 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-10.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Olga Barlow <span>Nutritionists</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td className="text-right">
@@ -1083,8 +1076,7 @@ const ClientDashboard = () => {
                                   </td>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -1092,10 +1084,10 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-01.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Ruby Perrin <span>Nutritionists</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td className="text-right">
@@ -1126,8 +1118,7 @@ const ClientDashboard = () => {
                                   </td>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -1135,10 +1126,10 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-02.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Darren Elder <span>Nutritionists</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td className="text-right">
@@ -1169,8 +1160,7 @@ const ClientDashboard = () => {
                                   </td>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -1178,11 +1168,11 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-03.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Deborah Angel{" "}
                                         <span>Cardiology</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td className="text-right">
@@ -1213,8 +1203,7 @@ const ClientDashboard = () => {
                                   </td>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -1222,10 +1211,10 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-04.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Sofia Brient <span>Holistic Health</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td className="text-right">
@@ -1256,8 +1245,7 @@ const ClientDashboard = () => {
                                   </td>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -1265,11 +1253,11 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-05.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Marvin Campbell{" "}
                                         <span>Ophthalmology</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td className="text-right">
@@ -1300,8 +1288,7 @@ const ClientDashboard = () => {
                                   </td>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -1309,11 +1296,11 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-06.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Katharine Berthold{" "}
                                         <span>Wellness Health</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td className="text-right">
@@ -1345,8 +1332,7 @@ const ClientDashboard = () => {
                                   </td>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -1354,10 +1340,10 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-07.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Linda Tobin <span>kick Boxing</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td className="text-right">
@@ -1388,8 +1374,7 @@ const ClientDashboard = () => {
                                   </td>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -1397,11 +1382,11 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-08.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Paul Richard{" "}
                                         <span>Yoga Expert</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td className="text-right">
@@ -1432,8 +1417,7 @@ const ClientDashboard = () => {
                                   </td>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -1441,10 +1425,10 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-09.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. John Gibbs <span>Nutritionists</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td className="text-right">
@@ -1475,8 +1459,7 @@ const ClientDashboard = () => {
                                   </td>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -1484,10 +1467,10 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-10.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Olga Barlow <span>Nutritionists</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td className="text-right">
@@ -1531,12 +1514,11 @@ const ClientDashboard = () => {
                               <tbody>
                                 <tr>
                                   <td>
-                                    <a href="invoice-view.html">#INV-0010</a>
+                                    <Link to="/invoice">#INV-0010</Link>
                                   </td>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -1544,22 +1526,21 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-01.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Ruby Perrin <span>Nutritionists</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td>$450</td>
                                   <td>14 Feb 2022</td>
                                   <td className="text-right">
                                     <div className="table-action">
-                                      <a
-                                        href="invoice-view.html"
+                                      <Link to="/invoice"
                                         className="btn btn-sm bg-info-light"
                                       >
                                         <i className="far fa-eye"></i> View
-                                      </a>
+                                      </Link>
                                       <a
                                         href="#"
                                         className="btn btn-sm bg-primary-light"
@@ -1571,12 +1552,11 @@ const ClientDashboard = () => {
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="invoice-view.html">#INV-0009</a>
+                                    <Link to="/invoice">#INV-0009</Link>
                                   </td>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -1584,22 +1564,21 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-02.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Darren Elder <span>Nutritionists</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td>$300</td>
                                   <td>13 Feb 2022</td>
                                   <td className="text-right">
                                     <div className="table-action">
-                                      <a
-                                        href="invoice-view.html"
+                                      <Link to="/invoice"
                                         className="btn btn-sm bg-info-light"
                                       >
                                         <i className="far fa-eye"></i> View
-                                      </a>
+                                      </Link>
                                       <a
                                         href="#"
                                         className="btn btn-sm bg-primary-light"
@@ -1611,12 +1590,11 @@ const ClientDashboard = () => {
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="invoice-view.html">#INV-0008</a>
+                                    <Link to="/invoice">#INV-0008</Link>
                                   </td>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -1624,23 +1602,22 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-03.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Deborah Angel{" "}
                                         <span>Cardiology</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td>$150</td>
                                   <td>12 Feb 2022</td>
                                   <td className="text-right">
                                     <div className="table-action">
-                                      <a
-                                        href="invoice-view.html"
+                                      <Link to="/invoice"
                                         className="btn btn-sm bg-info-light"
                                       >
                                         <i className="far fa-eye"></i> View
-                                      </a>
+                                      </Link>
                                       <a
                                         href="#"
                                         className="btn btn-sm bg-primary-light"
@@ -1652,12 +1629,11 @@ const ClientDashboard = () => {
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="invoice-view.html">#INV-0007</a>
+                                    <Link to="/invoice">#INV-0007</Link>
                                   </td>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -1665,22 +1641,21 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-04.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Sofia Brient <span>Holistic Health</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td>$50</td>
                                   <td>11 Feb 2022</td>
                                   <td className="text-right">
                                     <div className="table-action">
-                                      <a
-                                        href="invoice-view.html"
+                                      <Link to="/invoice"
                                         className="btn btn-sm bg-info-light"
                                       >
                                         <i className="far fa-eye"></i> View
-                                      </a>
+                                      </Link>
                                       <a
                                         href="#"
                                         className="btn btn-sm bg-primary-light"
@@ -1692,12 +1667,11 @@ const ClientDashboard = () => {
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="invoice-view.html">#INV-0006</a>
+                                    <Link to="/invoice">#INV-0006</Link>
                                   </td>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -1705,23 +1679,22 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-05.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Marvin Campbell{" "}
                                         <span>Ophthalmology</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td>$600</td>
                                   <td>10 Feb 2022</td>
                                   <td className="text-right">
                                     <div className="table-action">
-                                      <a
-                                        href="invoice-view.html"
+                                      <Link to="/invoice"
                                         className="btn btn-sm bg-info-light"
                                       >
                                         <i className="far fa-eye"></i> View
-                                      </a>
+                                      </Link>
                                       <a
                                         href="#"
                                         className="btn btn-sm bg-primary-light"
@@ -1733,12 +1706,11 @@ const ClientDashboard = () => {
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="invoice-view.html">#INV-0005</a>
+                                    <Link to="/invoice">#INV-0005</Link>
                                   </td>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -1746,23 +1718,22 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-06.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Katharine Berthold{" "}
                                         <span>Wellness Health</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td>$200</td>
                                   <td>9 Feb 2022</td>
                                   <td className="text-right">
                                     <div className="table-action">
-                                      <a
-                                        href="invoice-view.html"
+                                      <Link to="/invoice"
                                         className="btn btn-sm bg-info-light"
                                       >
                                         <i className="far fa-eye"></i> View
-                                      </a>
+                                      </Link>
                                       <a
                                         href="#"
                                         className="btn btn-sm bg-primary-light"
@@ -1774,12 +1745,11 @@ const ClientDashboard = () => {
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="invoice-view.html">#INV-0004</a>
+                                    <Link to="/invoice">#INV-0004</Link>
                                   </td>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -1787,22 +1757,21 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-07.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Linda Tobin <span>kick Boxing</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td>$100</td>
                                   <td>8 Feb 2022</td>
                                   <td className="text-right">
                                     <div className="table-action">
-                                      <a
-                                        href="invoice-view.html"
+                                      <Link to="/invoice"
                                         className="btn btn-sm bg-info-light"
                                       >
                                         <i className="far fa-eye"></i> View
-                                      </a>
+                                      </Link>
                                       <a
                                         href="#"
                                         className="btn btn-sm bg-primary-light"
@@ -1814,12 +1783,11 @@ const ClientDashboard = () => {
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="invoice-view.html">#INV-0003</a>
+                                    <Link to="/invoice">#INV-0003</Link>
                                   </td>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -1827,23 +1795,22 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-08.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Paul Richard{" "}
                                         <span>Yoga Expert</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td>$250</td>
                                   <td>7 Feb 2022</td>
                                   <td className="text-right">
                                     <div className="table-action">
-                                      <a
-                                        href="invoice-view.html"
+                                      <Link to="/invoice"
                                         className="btn btn-sm bg-info-light"
                                       >
                                         <i className="far fa-eye"></i> View
-                                      </a>
+                                      </Link>
                                       <a
                                         href="#"
                                         className="btn btn-sm bg-primary-light"
@@ -1855,12 +1822,11 @@ const ClientDashboard = () => {
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="invoice-view.html">#INV-0002</a>
+                                    <Link to="/invoice">#INV-0002</Link>
                                   </td>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -1868,22 +1834,21 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-09.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. John Gibbs <span>Nutritionists</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td>$175</td>
                                   <td>6 Feb 2022</td>
                                   <td className="text-right">
                                     <div className="table-action">
-                                      <a
-                                        href="invoice-view.html"
+                                      <Link to="/invoice"
                                         className="btn btn-sm bg-info-light"
                                       >
                                         <i className="far fa-eye"></i> View
-                                      </a>
+                                      </Link>
                                       <a
                                         href="#"
                                         className="btn btn-sm bg-primary-light"
@@ -1895,12 +1860,11 @@ const ClientDashboard = () => {
                                 </tr>
                                 <tr>
                                   <td>
-                                    <a href="invoice-view.html">#INV-0001</a>
+                                    <Link to="/invoice">#INV-0001</Link>
                                   </td>
                                   <td>
                                     <h2 className="table-avatar">
-                                      <a
-                                        href="doctor-profile.html"
+                                      <Link to="/coach-profile"
                                         className="avatar avatar-sm mr-2"
                                       >
                                         <img
@@ -1908,22 +1872,21 @@ const ClientDashboard = () => {
                                           src="assets/img/doctors/doctor-thumb-10.jpg"
                                           alt="User Image"
                                         />
-                                      </a>
-                                      <a href="doctor-profile.html">
+                                      </Link>
+                                      <Link to="/coach-profile">
                                         Dr. Olga Barlow <span>#0010</span>
-                                      </a>
+                                      </Link>
                                     </h2>
                                   </td>
                                   <td>$550</td>
                                   <td>5 Feb 2022</td>
                                   <td className="text-right">
                                     <div className="table-action">
-                                      <a
-                                        href="invoice-view.html"
+                                      <Link to="/invoice"
                                         className="btn btn-sm bg-info-light"
                                       >
                                         <i className="far fa-eye"></i> View
-                                      </a>
+                                      </Link>
                                       <a
                                         href="#"
                                         className="btn btn-sm bg-primary-light"

@@ -89,13 +89,26 @@ const Appointments = () => {
                           <span>Reviews</span>
                         </Link>
                       </li>
-                      {/* <li>
-                        <a href="chat-doctor.html">
+                      <li>
+                        <Link to="/chat">
                           <i className="fas fa-comments"></i>
                           <span>Message</span>
                           <small className="unread-msg">23</small>
-                        </a>
-                      </li> */}
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/videocall">
+                          <i className="fas fa-comments"></i>
+                          <span>Video Call</span>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/audiocall">
+                          <i className="fas fa-comments"></i>
+                          <span>Voice Call</span>
+                          
+                        </Link>
+                      </li>
                       <li>
                         <Link to="/coach-profile-setting">
                           <i className="fas fa-user-cog"></i>
@@ -131,15 +144,15 @@ const Appointments = () => {
                 {/* <!-- Appointment List --> */}
                 <div className="appointment-list">
                   <div className="profile-info-widget">
-                    <a href="patient-profile.html" className="booking-doc-img">
+                    <Link to="client-dashboard" className="booking-doc-img">
                       <img
                         src="assets/img/patients/patient.jpg"
                         alt="User Image"
                       />
-                    </a>
+                    </Link>
                     <div className="profile-det-info">
                       <h3>
-                        <a href="patient-profile.html">Richard Wilson</a>
+                        <Link to="client-dashboard">Richard Wilson</Link>
                       </h3>
                       <div className="patient-details">
                         <h5>

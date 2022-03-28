@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 
 const CoachListSlider = () => {
@@ -7,8 +8,6 @@ const CoachListSlider = () => {
     autoplay: false,
     infinite: true,
     variableWidth: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
   };
   return (
     <section className="section section-doctor">
@@ -39,23 +38,25 @@ const CoachListSlider = () => {
               {/* <!-- Doctor Widget --> */}
               <div className="profile-widget">
                 <div className="doc-img">
-                  <a href="doctor-profile.html">
+                  <Link to="/coach-profile">
                     <img
                       className="img-fluid"
                       alt="User Image"
                       src="assets/img/doctors/doctor-01.jpg"
                     />
-                  </a>
+                  </Link>
                   <a href="#" className="fav-btn">
                     <i className="far fa-bookmark"></i>
                   </a>
                 </div>
                 <div className="pro-content">
                   <h3 className="title">
-                    <a href="doctor-profile.html">Ruby Perrin</a>
+                    <Link to="/coach-profile">Ruby Perrin</Link>
                     <i className="fas fa-check-circle verified"></i>
                   </h3>
-                  <p className="speciality">Sed porttitor lectus nibh.</p>
+                  <p className="speciality">
+                    MDS - Periodontology and Oral Implantology, BDS
+                  </p>
                   <div className="rating">
                     <i className="fas fa-star filled"></i>
                     <i className="fas fa-star filled"></i>
@@ -82,14 +83,14 @@ const CoachListSlider = () => {
                   </ul>
                   <div className="row row-sm">
                     <div className="col-6">
-                      <a href="doctor-profile.html" className="btn view-btn">
+                      <Link to="/coach-profile" className="btn view-btn">
                         View Profile
-                      </a>
+                      </Link>
                     </div>
                     <div className="col-6">
-                      <a href="booking.html" className="btn book-btn">
+                      <Link to="/book-appointment" className="btn book-btn">
                         Book Now
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -99,23 +100,25 @@ const CoachListSlider = () => {
               {/* <!-- Doctor Widget --> */}
               <div className="profile-widget">
                 <div className="doc-img">
-                  <a href="doctor-profile.html">
+                  <Link to="/coach-profile">
                     <img
                       className="img-fluid"
                       alt="User Image"
                       src="assets/img/doctors/doctor-02.jpg"
                     />
-                  </a>
+                  </Link>
                   <a href="#" className="fav-btn">
                     <i className="far fa-bookmark"></i>
                   </a>
                 </div>
                 <div className="pro-content">
                   <h3 className="title">
-                    <a href="doctor-profile.html">Darren Elder</a>
+                    <Link to="/coach-profile">Darren Elder</Link>
                     <i className="fas fa-check-circle verified"></i>
                   </h3>
-                  <p className="speciality">Sed porttitor lectus nibh.</p>
+                  <p className="speciality">
+                    BDS, MDS - Oral & Maxillofacial Surgery
+                  </p>
                   <div className="rating">
                     <i className="fas fa-star filled"></i>
                     <i className="fas fa-star filled"></i>
@@ -142,14 +145,14 @@ const CoachListSlider = () => {
                   </ul>
                   <div className="row row-sm">
                     <div className="col-6">
-                      <a href="doctor-profile.html" className="btn view-btn">
+                      <Link to="/coach-profile" className="btn view-btn">
                         View Profile
-                      </a>
+                      </Link>
                     </div>
                     <div className="col-6">
-                      <a href="booking.html" className="btn book-btn">
+                      <Link to="/book-appointment" className="btn book-btn">
                         Book Now
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -159,23 +162,25 @@ const CoachListSlider = () => {
               {/* <!-- Doctor Widget --> */}
               <div className="profile-widget">
                 <div className="doc-img">
-                  <a href="doctor-profile.html">
+                  <Link to="/coach-profile">
                     <img
                       className="img-fluid"
                       alt="User Image"
                       src="assets/img/doctors/doctor-03.jpg"
                     />
-                  </a>
+                  </Link>
                   <a href="#" className="fav-btn">
                     <i className="far fa-bookmark"></i>
                   </a>
                 </div>
                 <div className="pro-content">
                   <h3 className="title">
-                    <a href="doctor-profile.html">Deborah Angel</a>
+                    <Link to="/coach-profile">Deborah Angel</Link>
                     <i className="fas fa-check-circle verified"></i>
                   </h3>
-                  <p className="speciality">Sed porttitor lectus nibh.</p>
+                  <p className="speciality">
+                    MBBS, MD - General Medicine, DNB - Cardiology
+                  </p>
                   <div className="rating">
                     <i className="fas fa-star filled"></i>
                     <i className="fas fa-star filled"></i>
@@ -202,14 +207,14 @@ const CoachListSlider = () => {
                   </ul>
                   <div className="row row-sm">
                     <div className="col-6">
-                      <a href="doctor-profile.html" className="btn view-btn">
+                      <Link to="/coach-profile" className="btn view-btn">
                         View Profile
-                      </a>
+                      </Link>
                     </div>
                     <div className="col-6">
-                      <a href="booking.html" className="btn book-btn">
+                      <Link to="/book-appointment" className="btn book-btn">
                         Book Now
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -219,23 +224,25 @@ const CoachListSlider = () => {
               {/* <!-- Doctor Widget --> */}
               <div className="profile-widget">
                 <div className="doc-img">
-                  <a href="doctor-profile.html">
+                  <Link  to="/coach-profile">
                     <img
                       className="img-fluid"
                       alt="User Image"
                       src="assets/img/doctors/doctor-04.jpg"
                     />
-                  </a>
+                  </Link>
                   <a href="#" className="fav-btn">
                     <i className="far fa-bookmark"></i>
                   </a>
                 </div>
                 <div className="pro-content">
                   <h3 className="title">
-                    <a href="doctor-profile.html">Sofia Brient</a>
+                    <Link to="/coach-profile">Sofia Brient</Link>
                     <i className="fas fa-check-circle verified"></i>
                   </h3>
-                  <p className="speciality">Sed porttitor lectus nibh.</p>
+                  <p className="speciality">
+                    MBBS, MS - General Surgery, MCh - Urology
+                  </p>
                   <div className="rating">
                     <i className="fas fa-star filled"></i>
                     <i className="fas fa-star filled"></i>
@@ -262,14 +269,14 @@ const CoachListSlider = () => {
                   </ul>
                   <div className="row row-sm">
                     <div className="col-6">
-                      <a href="doctor-profile.html" className="btn view-btn">
+                      <Link to="/coach-profile" className="btn view-btn">
                         View Profile
-                      </a>
+                      </Link>
                     </div>
                     <div className="col-6">
-                      <a href="booking.html" className="btn book-btn">
+                      <Link to="/book-appointment" className="btn book-btn">
                         Book Now
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -279,23 +286,25 @@ const CoachListSlider = () => {
               {/* <!-- Doctor Widget --> */}
               <div className="profile-widget">
                 <div className="doc-img">
-                  <a href="doctor-profile.html">
+                  <Link to="/coach-profile">
                     <img
                       className="img-fluid"
                       alt="User Image"
                       src="assets/img/doctors/doctor-05.jpg"
                     />
-                  </a>
+                  </Link>
                   <a href="#" className="fav-btn">
                     <i className="far fa-bookmark"></i>
                   </a>
                 </div>
                 <div className="pro-content">
                   <h3 className="title">
-                    <a href="doctor-profile.html">Marvin Campbell</a>
+                    <Link to="/coach-profile">Marvin Campbell</Link>
                     <i className="fas fa-check-circle verified"></i>
                   </h3>
-                  <p className="speciality">Sed porttitor lectus nibh.</p>
+                  <p className="speciality">
+                    MBBS, MD - Ophthalmology, DNB - Ophthalmology
+                  </p>
                   <div className="rating">
                     <i className="fas fa-star filled"></i>
                     <i className="fas fa-star filled"></i>
@@ -322,14 +331,14 @@ const CoachListSlider = () => {
                   </ul>
                   <div className="row row-sm">
                     <div className="col-6">
-                      <a href="doctor-profile.html" className="btn view-btn">
+                      <Link to="/coach-profile" className="btn view-btn">
                         View Profile
-                      </a>
+                      </Link>
                     </div>
                     <div className="col-6">
-                      <a href="booking.html" className="btn book-btn">
+                      <Link to="/book-appointment" className="btn book-btn">
                         Book Now
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -339,23 +348,25 @@ const CoachListSlider = () => {
               {/* <!-- Doctor Widget --> */}
               <div className="profile-widget">
                 <div className="doc-img">
-                  <a href="doctor-profile.html">
+                  <Link to="/coach-profile">
                     <img
                       className="img-fluid"
                       alt="User Image"
                       src="assets/img/doctors/doctor-06.jpg"
                     />
-                  </a>
+                  </Link>
                   <a href="#" className="fav-btn">
                     <i className="far fa-bookmark"></i>
                   </a>
                 </div>
                 <div className="pro-content">
                   <h3 className="title">
-                    <a href="doctor-profile.html">Katharine Berthold</a>
+                    <Link to="/coach-profile">Katharine Berthold</Link>
                     <i className="fas fa-check-circle verified"></i>
                   </h3>
-                  <p className="speciality">Sed porttitor lectus nibh.</p>
+                  <p className="speciality">
+                    MS - Orthopaedics, MBBS, M.Ch - Orthopaedics
+                  </p>
                   <div className="rating">
                     <i className="fas fa-star filled"></i>
                     <i className="fas fa-star filled"></i>
@@ -382,14 +393,14 @@ const CoachListSlider = () => {
                   </ul>
                   <div className="row row-sm">
                     <div className="col-6">
-                      <a href="doctor-profile.html" className="btn view-btn">
+                      <Link to="/coach-profile" className="btn view-btn">
                         View Profile
-                      </a>
+                      </Link>
                     </div>
                     <div className="col-6">
-                      <a href="booking.html" className="btn book-btn">
+                      <Link to="/book-appointment" className="btn book-btn">
                         Book Now
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -399,23 +410,25 @@ const CoachListSlider = () => {
               {/* <!-- Doctor Widget --> */}
               <div className="profile-widget">
                 <div className="doc-img">
-                  <a href="doctor-profile.html">
+                  <Link to="/coach-profile">
                     <img
                       className="img-fluid"
                       alt="User Image"
                       src="assets/img/doctors/doctor-07.jpg"
                     />
-                  </a>
+                  </Link>
                   <a href="#" className="fav-btn">
                     <i className="far fa-bookmark"></i>
                   </a>
                 </div>
                 <div className="pro-content">
                   <h3 className="title">
-                    <a href="doctor-profile.html">Linda Tobin</a>
+                    <Link to="/coach-profile">Linda Tobin</Link>
                     <i className="fas fa-check-circle verified"></i>
                   </h3>
-                  <p className="speciality">Sed porttitor lectus nibh.</p>
+                  <p className="speciality">
+                    MBBS, MD - General Medicine, DM - Neurology
+                  </p>
                   <div className="rating">
                     <i className="fas fa-star filled"></i>
                     <i className="fas fa-star filled"></i>
@@ -442,14 +455,14 @@ const CoachListSlider = () => {
                   </ul>
                   <div className="row row-sm">
                     <div className="col-6">
-                      <a href="doctor-profile.html" className="btn view-btn">
+                      <Link to="/coach-profile" className="btn view-btn">
                         View Profile
-                      </a>
+                      </Link>
                     </div>
                     <div className="col-6">
-                      <a href="booking.html" className="btn book-btn">
+                      <Link to="/book-appointment" className="btn book-btn">
                         Book Now
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -459,23 +472,25 @@ const CoachListSlider = () => {
               {/* <!-- Doctor Widget --> */}
               <div className="profile-widget">
                 <div className="doc-img">
-                  <a href="doctor-profile.html">
+                  <Link to="/coach-profile">
                     <img
                       className="img-fluid"
                       alt="User Image"
                       src="assets/img/doctors/doctor-08.jpg"
                     />
-                  </a>
+                  </Link>
                   <a href="#" className="fav-btn">
                     <i className="far fa-bookmark"></i>
                   </a>
                 </div>
                 <div className="pro-content">
                   <h3 className="title">
-                    <a href="doctor-profile.html">Paul Richard</a>
+                    <Link to="/coach-profile">Paul Richard</Link>
                     <i className="fas fa-check-circle verified"></i>
                   </h3>
-                  <p className="speciality">Sed porttitor lectus nibh.</p>
+                  <p className="speciality">
+                    MBBS, MD - Dermatology , Venereology & Lepros
+                  </p>
                   <div className="rating">
                     <i className="fas fa-star filled"></i>
                     <i className="fas fa-star filled"></i>
@@ -502,14 +517,14 @@ const CoachListSlider = () => {
                   </ul>
                   <div className="row row-sm">
                     <div className="col-6">
-                      <a href="doctor-profile.html" className="btn view-btn">
+                      <Link to="/coach-profile" className="btn view-btn">
                         View Profile
-                      </a>
+                      </Link>
                     </div>
                     <div className="col-6">
-                      <a href="booking.html" className="btn book-btn">
+                      <Link to="/book-appointment" className="btn book-btn">
                         Book Now
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

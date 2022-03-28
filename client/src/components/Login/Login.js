@@ -31,19 +31,23 @@ const Login = () => {
 
   //API call
   const LoginCall = async () => {
-    const res = await auth.login(`${ENV.API_URL}api/auth/login`, loginUser);
-    if (res.success == true) {
-      localStorage.setItem("accessToken", JSON.stringify(res.user.accessToken));
-      toast.success(res.message);
-
-      if (res.user.role == "client") {
-        navigate("/client-dashboard");
-      } else {
-        navigate("/coach-dashboard");
-      }
-    } else {
-      toast.error(res.message);
-    }
+    const { email, password } = loginUser;
+    // if (email && password) {
+    //   console.log(loginUser);
+    //   const res = await auth.login(
+    //     `http://localhost:8080/api/auth/login`,
+    //     loginUser
+    //   );
+    //   if (res.success == true) {
+    //     localStorage.setItem(
+    //       "accessToken",
+    //       JSON.stringify(res.user.accessToken)
+    //     );
+    //     navigate("/");
+    //     alert(res.message);
+    //   }
+    // }
+    navigate("/");
   };
 
   return (

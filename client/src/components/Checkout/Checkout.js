@@ -26,8 +26,8 @@ const Checkout = () => {
       </div>
       {/* <!-- /Breadcrumb --> */}
 
-      {/* <!-- Page Content --> */}
-      <div className="content">
+        {/* <!-- Page Content --> */}
+        <div className="content">
         <div className="container">
           <div className="row">
             <div className="col-md-7 col-lg-8">
@@ -186,15 +186,15 @@ const Checkout = () => {
                 <div className="card-body">
                   {/* <!-- Booking Doctor Info --> */}
                   <div className="booking-doc-info">
-                    <a href="doctor-profile.html" className="booking-doc-img">
+                    <Link to="/coach-profile" className="booking-doc-img">
                       <img
                         src="assets/img/doctors/doctor-thumb-02.jpg"
                         alt="User Image"
                       />
-                    </a>
+                    </Link>
                     <div className="booking-info">
                       <h4>
-                        <a href="doctor-profile.html">Dr. Darren Elder</a>
+                        <Link to="/coach-profile">Dr. Darren Elder</Link>
                       </h4>
                       <div className="rating">
                         <i className="fas fa-star filled"></i>

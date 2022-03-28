@@ -34,13 +34,18 @@ const Register = () => {
 
   //API call
   const RegisterCall = async () => {
-    const res = await auth.register(`${ENV.API_URL}api/auth/signup`, user);
-    if (res.success == true) {
-      toast.success(res.message);
-      navigate("/login");
-    } else {
-      toast.error(res.message);
-    }
+    const { name, email, password } = user;
+    // if (name && email && password) {
+    //   const res = await auth.register(
+    //     `http://localhost:8080/api/auth/signup`,
+    //     user
+    //   );
+    //   if (res.success == true) {
+    //     navigate("/login");
+    //     alert(res.message);
+    //   }
+    // }
+    navigate("/login");
   };
 
   return (

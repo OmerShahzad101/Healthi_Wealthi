@@ -11,7 +11,7 @@ const ChangePassword = () => {
               <nav aria-label="breadcrumb" className="page-breadcrumb">
                 <ol className="breadcrumb">
                   <li className="breadcrumb-item">
-                    <a href="index-2.html">Home</a>
+                  <Link to="/">Home</Link>
                   </li>
                   <li className="breadcrumb-item active" aria-current="page">
                     Change Password
@@ -66,13 +66,26 @@ const ChangePassword = () => {
                           <span>Favourites</span>
                         </Link>
                       </li>
-                      {/* <li>
-                        <a href="chat.html">
+                      <li>
+                        <Link to="/chat">
                           <i className="fas fa-comments"></i>
                           <span>Message</span>
                           <small className="unread-msg">23</small>
-                        </a>
-                      </li> */}
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/videocall">
+                          <i className="fas fa-comments"></i>
+                          <span>Video Call</span>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/audiocall">
+                          <i className="fas fa-comments"></i>
+                          <span>Voice Call</span>
+                         
+                        </Link>
+                      </li>
                       <li>
                         <Link to="/profile-settings">
                           <i className="fas fa-user-cog"></i>

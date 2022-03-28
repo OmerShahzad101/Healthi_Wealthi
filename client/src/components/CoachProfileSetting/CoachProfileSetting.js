@@ -71,12 +71,7 @@ const CoachProfileSetting = () => {
                           <span>My Clients</span>
                         </Link>
                       </li>
-                      {/* <li>
-                        <a href="schedule-timings.html">
-                          <i className="fas fa-hourglass-start"></i>
-                          <span>Schedule Timings</span>
-                        </a>
-                      </li> */}
+                    
                       <li >
                         <Link to="/invoices-view">
                           <i className="fas fa-file-invoice"></i>
@@ -89,13 +84,26 @@ const CoachProfileSetting = () => {
                           <span>Reviews</span>
                         </Link>
                       </li>
-                      {/* <li>
-                        <a href="chat-doctor.html">
+                      <li>
+                        <Link to="/chat">
                           <i className="fas fa-comments"></i>
                           <span>Message</span>
                           <small className="unread-msg">23</small>
-                        </a>
-                      </li> */}
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/videocall">
+                          <i className="fas fa-comments"></i>
+                          <span>Video Call</span>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/audiocall">
+                          <i className="fas fa-comments"></i>
+                          <span>Voice Call</span>
+                         
+                        </Link>
+                      </li>
                       <li className="active">
                         <Link to="/profile-setting">
                           <i className="fas fa-user-cog"></i>

@@ -5,9 +5,9 @@ import Header from '../components/Header/Header'
 const FavouritesPage = () => {
   return (
   <>
-  <Header/>
+
   <Favourites/>
-    <Footer/>
+  
   </>
   )
 }
