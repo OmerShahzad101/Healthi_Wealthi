@@ -1,7 +1,41 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import auth from "../../services/auth.service";
+import { ENV } from "../../env";
+import $ from "jquery";
 
 const ForgotPassword = () => {
+  const InitialValues = { email: "" };
+  const [forgotpass, setForgotpass] = useState(InitialValues);
+  let navigate = useNavigate();
+
+  // JQuery for Input
+  $(".floating").on("focus blur", function (e) {
+    $(this)
+      .parents(".form-focus")
+      .toggleClass("focused", e.type === "focus" || this.value.length > 0);
+  });
+
+  //Handle Changes to Get Values
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForgotpass({
+      ...forgotpass,
+      [name]: value,
+    });
+  };
+
+  //API call
+  const ForgotPasswordCall = async () => {
+    const res = await auth.forgot(`${ENV.API_URL}api/auth/forgot-password` , forgotpass);
+    if (res.success == true) {
+      toast.success(res.message);
+      // navigate("/login");
+    } else {
+      toast.error(res.message);
+    }
+  };
   return (
     <div className="account-page">
       <div className="content">
@@ -11,6 +45,15 @@ const ForgotPassword = () => {
               <div className="account-content">
                 <div className="row align-items-center justify-content-center">
                   <div className="col-md-7 col-lg-6 login-left">
+                    <ToastContainer
+                      position="top-center"
+                      autoClose={600}
+                      hideProgressBar
+                      newestOnTop={false}
+                      closeOnClick
+                      rtl={false}
+                      theme="colored"
+                    />
                     <img
                       src="assets/img/login-banner.png"
                       className="img-fluid"
@@ -27,7 +70,13 @@ const ForgotPassword = () => {
 
                     <form action="#">
                       <div className="form-group form-focus">
-                        <input type="email" className="form-control floating" />
+                        <input
+                          type="email"
+                          name="email"
+                          value={forgotpass.email}
+                          onChange={handleChange}
+                          className="form-control floating"
+                        />
                         <label className="focus-label">Email</label>
                       </div>
                       <div className="text-right">
@@ -37,7 +86,8 @@ const ForgotPassword = () => {
                       </div>
                       <button
                         className="btn btn-primary btn-block btn-lg login-btn"
-                        type="submit"
+                        type="button"
+                        onClick={ForgotPasswordCall}
                       >
                         Reset Password
                       </button>

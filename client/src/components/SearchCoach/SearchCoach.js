@@ -157,6 +157,7 @@ const SearchCoach = () => {
                             alt="Speciality"
                           />
                           Nutritionists
+                          
                         </h5>
                         <div className="rating">
                           <i className="fas fa-star filled"></i>

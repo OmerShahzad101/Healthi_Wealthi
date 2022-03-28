@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import $ from "jquery";
+import { ToastContainer, toast } from "react-toastify";
 import auth from "../../services/auth.service";
-import jwt_decode from "jwt-decode";
-
+import { ENV } from "../../env";
+import $ from "jquery";
 
 const Login = () => {
   //Initial Values
@@ -62,11 +62,20 @@ const Login = () => {
                     <img
                       src="assets/img/login-banner.png"
                       className="img-fluid"
-                      alt="Doccure Login"
+                      alt="Login"
                     />
                   </div>
                   <div className="col-md-12 col-lg-6 login-right">
                     <div className="login-header">
+                      <ToastContainer
+                        position="top-center"
+                        autoClose={300}
+                        hideProgressBar
+                        newestOnTop={false}
+                        closeOnClick
+                        rtl={false}
+                        theme="colored"
+                      />
                       <h3>Login</h3>
                     </div>
                     <form action="#">
